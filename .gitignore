@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/swift,xcode,macos,swiftpackagemanager
-# Edit at https://www.toptal.com/developers/gitignore?templates=swift,xcode,macos,swiftpackagemanager
+# Created by https://www.toptal.com/developers/gitignore/api/swift,swiftpackagemanager,macos,xcode
+# Edit at https://www.toptal.com/developers/gitignore?templates=swift,swiftpackagemanager,macos,xcode
 
 ### macOS ###
 # General
@@ -121,7 +121,7 @@ iOSInjectionProject/
 ### SwiftPackageManager ###
 Packages
 xcuserdata
-*.xcodeproj
+#*.xcodeproj
 
 
 ### Xcode ###
@@ -137,4 +137,4 @@ xcuserdata
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
-# End of https://www.toptal.com/developers/gitignore/api/swift,xcode,macos,swiftpackagemanager
+# End of https://www.toptal.com/developers/gitignore/api/swift,swiftpackagemanager,macos,xcode

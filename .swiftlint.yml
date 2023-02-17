@@ -59,7 +59,6 @@ opt_in_rules:
   - shorthand_optional_binding
   - single_test_class
   - sorted_first_last
-  - sorted_imports
   - static_operator
   - strong_iboutlet
   - test_case_accessibility

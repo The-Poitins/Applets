@@ -92,6 +92,7 @@ function_body_length: 60
 type_body_length: 400
 line_length:
   ignores_urls: true
+  ignores_comments: true
 
 force_cast: error
 force_try: error

@@ -7,6 +7,6 @@
 
 import Foundation
 
-class ContentViewModel: ObservableObject {
+final class ContentViewModel: ObservableObject {
     let tasks: [String] = ["Some Task", "Another Task", "One more Task"]
 }

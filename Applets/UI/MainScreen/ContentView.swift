@@ -8,19 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var contentVM: ContentViewModel
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            List(contentVM.tasks, id: \.self) { task in
+                NavigationLink {
+                    TaskView(taskName: task)
+                } label: {
+                    Text(task)
+                }
+            }
+            .listStyle(.plain)
+            .navigationTitle("Your tasks")
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(contentVM: ContentViewModel())
     }
 }

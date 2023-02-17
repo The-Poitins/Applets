@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct AppletsApp: App {
+    @ObservedObject var contentVM = ContentViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(contentVM: contentVM)
         }
     }
 }

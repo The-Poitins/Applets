@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var contentVM = ContentViewModel()
     var body: some View {
         NavigationView {
-            ZStack {
-                Color.gray.edgesIgnoringSafeArea(.all).opacity(0.20)
-                VStack(alignment: .leading) {
-                    ForEach(cells, id: \.id) { cell in
-                        CellView(cell: cell)
-                    }
+            List(contentVM.tasks, id: \.self) { task in
+                NavigationLink {
+                    TaskView(taskName: task)
+                } label: {
+                    Text(task)
                 }
                 .navigationTitle("Your tasks")
             }
+            .listStyle(.plain)
+            .navigationTitle("Your tasks")
         }
     }
 }

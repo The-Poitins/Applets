@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A201FD6299F82DE00F06692 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A201FD5299F82DE00F06692 /* CellView.swift */; };
-		2A201FD8299F834000F06692 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A201FD7299F834000F06692 /* MainView.swift */; };
+		2A201FD8299F834000F06692 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A201FD7299F834000F06692 /* ContentView.swift */; };
 		C1B13A96299E2B3E008A8DE0 /* AppletsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B13A95299E2B3E008A8DE0 /* AppletsApp.swift */; };
 		C1B13A9A299E2B3F008A8DE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B13A99299E2B3F008A8DE0 /* Assets.xcassets */; };
 		C1B13A9D299E2B3F008A8DE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B13A9C299E2B3F008A8DE0 /* Preview Assets.xcassets */; };
@@ -17,7 +17,7 @@
 
 /* Begin PBXFileReference section */
 		2A201FD5299F82DE00F06692 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
-		2A201FD7299F834000F06692 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2A201FD7299F834000F06692 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C1B13A92299E2B3E008A8DE0 /* Applets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Applets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B13A95299E2B3E008A8DE0 /* AppletsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppletsApp.swift; sourceTree = "<group>"; };
 		C1B13A99299E2B3F008A8DE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 		C1B13AA5299E5D7D008A8DE0 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
-				2A201FD7299F834000F06692 /* MainView.swift */,
+				2A201FD7299F834000F06692 /* ContentView.swift */,
 				2A201FD5299F82DE00F06692 /* CellView.swift */,
 			);
 			path = MainScreen;
@@ -191,7 +191,7 @@
 			files = (
 				C1B13AA8299E60A9008A8DE0 /* Model.swift in Sources */,
 				2A201FD6299F82DE00F06692 /* CellView.swift in Sources */,
-				2A201FD8299F834000F06692 /* MainView.swift in Sources */,
+				2A201FD8299F834000F06692 /* ContentView.swift in Sources */,
 				C1B13A96299E2B3E008A8DE0 /* AppletsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

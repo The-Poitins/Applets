@@ -10,7 +10,9 @@ import SwiftUI
 struct TaskView: View {
     var taskName: String
     var body: some View {
-        Text(taskName)
+            VStack {
+                Text(taskName)
+            }
     }
 }
 

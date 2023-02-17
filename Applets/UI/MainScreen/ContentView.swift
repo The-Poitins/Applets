@@ -10,19 +10,29 @@ import SwiftUI
 struct ContentView: View {
     @StateObject private var contentVM = ContentViewModel()
     var body: some View {
-        NavigationView {
-            List(contentVM.tasks, id: \.self) { task in
-                NavigationLink {
-                    TaskView(taskName: task)
-                } label: {
-                    Text(task)
+        NavigationStack {
+            ZStack {
+                Color.gray
+                    .ignoresSafeArea()
+                    .scaledToFill()
+                    .opacity(0.2)
+                ScrollView {
+                    ForEach(contentVM.tasks, id: \.self) { task in
+                        NavigationLink {
+                            TaskView(taskName: task)
+                                .navigationTitle(task)
+                                .navigationBarTitleDisplayMode(.inline)
+                        } label: {
+                            Text(task)
+                        }
+                    }
                 }
             }
-            .listStyle(.plain)
             .navigationTitle("Your tasks")
         }
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

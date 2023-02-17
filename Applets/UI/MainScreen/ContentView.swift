@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var contentVM: ContentViewModel
+    @StateObject private var contentVM = ContentViewModel()
     var body: some View {
         NavigationView {
             List(contentVM.tasks, id: \.self) { task in
@@ -26,6 +26,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(contentVM: ContentViewModel())
+        ContentView()
     }
 }

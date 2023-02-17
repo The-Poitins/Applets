@@ -13,6 +13,13 @@ struct TaskView: View {
             VStack {
                 Text(taskName)
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(
+                Image("bg")
+                    .resizable()
+                    .scaledToFill()
+                    .ignoresSafeArea()
+            )
     }
 }
 

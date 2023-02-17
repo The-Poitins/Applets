@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13656375299F8459003F0F31 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13656374299F8459003F0F31 /* TaskView.swift */; };
+		13656377299F8760003F0F31 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13656376299F8760003F0F31 /* ContentViewModel.swift */; };
 		C1B13A96299E2B3E008A8DE0 /* AppletsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B13A95299E2B3E008A8DE0 /* AppletsApp.swift */; };
 		C1B13A98299E2B3E008A8DE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B13A97299E2B3E008A8DE0 /* ContentView.swift */; };
 		C1B13A9A299E2B3F008A8DE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B13A99299E2B3F008A8DE0 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13656374299F8459003F0F31 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		13656376299F8760003F0F31 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		C1B13A92299E2B3E008A8DE0 /* Applets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Applets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B13A95299E2B3E008A8DE0 /* AppletsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppletsApp.swift; sourceTree = "<group>"; };
 		C1B13A97299E2B3E008A8DE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 		C1B13AA4299E5D75008A8DE0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				13656374299F8459003F0F31 /* TaskView.swift */,
 				C1B13AA5299E5D7D008A8DE0 /* MainScreen */,
 			);
 			path = UI;
@@ -85,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				C1B13A97299E2B3E008A8DE0 /* ContentView.swift */,
+				13656376299F8760003F0F31 /* ContentViewModel.swift */,
 			);
 			path = MainScreen;
 			sourceTree = "<group>";
@@ -209,6 +215,8 @@
 				C1B13AAB299F7995008A8DE0 /* Applets.xcdatamodeld in Sources */,
 				C1B13A98299E2B3E008A8DE0 /* ContentView.swift in Sources */,
 				C1B13A96299E2B3E008A8DE0 /* AppletsApp.swift in Sources */,
+				13656375299F8459003F0F31 /* TaskView.swift in Sources */,
+				13656377299F8760003F0F31 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var contentVM = ContentViewModel()
+
+    @StateObject var contentVM = ContentViewModel()
+
     var body: some View {
         NavigationView {
             List(contentVM.tasks, id: \.self) { task in
                 NavigationLink {
-                    TaskView(taskName: task)
+                    TaskView(taskName: task.title ?? "")
                 } label: {
-                    Text(task)
+                    Text(task.title ?? "")
                 }
             }
             .listStyle(.plain)
@@ -26,6 +28,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        let viewModel = ContentViewModel(dataManager: TasksDataManager.preview)
+        ContentView(contentVM: viewModel)
     }
 }

@@ -15,6 +15,7 @@
 		C1B13A9D299E2B3F008A8DE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B13A9C299E2B3F008A8DE0 /* Preview Assets.xcassets */; };
 		C1B13AAB299F7995008A8DE0 /* Applets.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1B13AA9299F7995008A8DE0 /* Applets.xcdatamodeld */; };
 		C1B13AAF299F7A5A008A8DE0 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B13AAE299F7A5A008A8DE0 /* PersistenceController.swift */; };
+		C1E43AB529A382AD0008D7B0 /* TasksDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E43AB429A382AD0008D7B0 /* TasksDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		C1B13A9C299E2B3F008A8DE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C1B13AAA299F7995008A8DE0 /* Applets.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Applets.xcdatamodel; sourceTree = "<group>"; };
 		C1B13AAE299F7A5A008A8DE0 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		C1E43AB429A382AD0008D7B0 /* TasksDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				C1B13AAE299F7A5A008A8DE0 /* PersistenceController.swift */,
+				C1E43AB429A382AD0008D7B0 /* TasksDataManager.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1E43AB529A382AD0008D7B0 /* TasksDataManager.swift in Sources */,
 				C1B13AAF299F7A5A008A8DE0 /* PersistenceController.swift in Sources */,
 				C1B13AAB299F7995008A8DE0 /* Applets.xcdatamodeld in Sources */,
 				C1B13A98299E2B3E008A8DE0 /* ContentView.swift in Sources */,

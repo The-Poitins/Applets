@@ -8,5 +8,14 @@
 import Foundation
 
 final class ContentViewModel: ObservableObject {
-    let tasks: [String] = ["Some Task", "Another Task", "One more Task"]
+
+    @Published private var dataManager: TasksDataManager
+
+    var tasks: [Task] {
+        dataManager.tasks
+    }
+
+    init(dataManager: TasksDataManager = TasksDataManager.shared) {
+        self.dataManager = dataManager
+    }
 }

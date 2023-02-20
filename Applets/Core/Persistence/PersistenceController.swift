@@ -62,15 +62,4 @@ struct PersistenceController {
         }
         container.viewContext.automaticallyMergesChangesFromParent = true
     }
-
-    func saveContext(completionHandler: @escaping (Error?) -> Void) {
-        if context.hasChanges {
-            do {
-                try PersistenceController.shared.container.viewContext.save()
-                completionHandler(nil)
-            } catch {
-                completionHandler(error)
-            }
-        }
-    }
 }

@@ -13,8 +13,8 @@ struct Cell: Identifiable {
     let approxTime: String
     let percentOfDone: Double
     let imageName: String
-    let steps: [String]
-    init(cellTitle: String, approxTime: String, percentOfDone: Double, imageName: String = "placeholder", steps: [String] = ["No data yet"]) {
+    let steps: [Step]
+    init(cellTitle: String, approxTime: String, percentOfDone: Double, imageName: String = "placeholder", steps: [Step] = []) {
         self.cellTitle = cellTitle
         self.approxTime = approxTime
         self.percentOfDone = percentOfDone

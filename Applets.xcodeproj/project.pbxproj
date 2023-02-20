@@ -10,6 +10,7 @@
 		13656375299F8459003F0F31 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13656374299F8459003F0F31 /* TaskView.swift */; };
 		13656377299F8760003F0F31 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13656376299F8760003F0F31 /* ContentViewModel.swift */; };
 		13A114B229A3D46D00F74200 /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A114B129A3D46D00F74200 /* StepView.swift */; };
+		13A114B429A3DD2400F74200 /* ModalStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A114B329A3DD2400F74200 /* ModalStepView.swift */; };
 		2A201FD6299F82DE00F06692 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A201FD5299F82DE00F06692 /* CellView.swift */; };
 		2A201FD8299F834000F06692 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A201FD7299F834000F06692 /* ContentView.swift */; };
 		C1B13A96299E2B3E008A8DE0 /* AppletsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B13A95299E2B3E008A8DE0 /* AppletsApp.swift */; };
@@ -22,6 +23,7 @@
 		13656374299F8459003F0F31 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		13656376299F8760003F0F31 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		13A114B129A3D46D00F74200 /* StepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
+		13A114B329A3DD2400F74200 /* ModalStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalStepView.swift; sourceTree = "<group>"; };
 		2A201FD5299F82DE00F06692 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		2A201FD7299F834000F06692 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C1B13A92299E2B3E008A8DE0 /* Applets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Applets.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				13656374299F8459003F0F31 /* TaskView.swift */,
+				13A114B329A3DD2400F74200 /* ModalStepView.swift */,
 				13A114B129A3D46D00F74200 /* StepView.swift */,
 			);
 			path = TaskView;
@@ -208,6 +211,7 @@
 			files = (
 				C1B13AA8299E60A9008A8DE0 /* Model.swift in Sources */,
 				2A201FD6299F82DE00F06692 /* CellView.swift in Sources */,
+				13A114B429A3DD2400F74200 /* ModalStepView.swift in Sources */,
 				2A201FD8299F834000F06692 /* ContentView.swift in Sources */,
 				C1B13A96299E2B3E008A8DE0 /* AppletsApp.swift in Sources */,
 				13656375299F8459003F0F31 /* TaskView.swift in Sources */,

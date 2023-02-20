@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Step: Identifiable {
+struct Step: Identifiable, Hashable {
     let id = UUID()
     var isDone: Bool
     let stepTitle: String

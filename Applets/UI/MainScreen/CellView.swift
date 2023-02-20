@@ -11,13 +11,15 @@ struct Cell: Identifiable {
     let id = UUID()
     let cellTitle: String
     let approxTime: String
-    let percentOfDone: Int
+    let percentOfDone: Double
     let imageName: String
-    init(cellTitle: String, approxTime: String, percentOfDone: Int, imageName: String = "placeholder") {
+    let steps: [String]
+    init(cellTitle: String, approxTime: String, percentOfDone: Double, imageName: String = "placeholder", steps: [String] = ["No data yet"]) {
         self.cellTitle = cellTitle
         self.approxTime = approxTime
         self.percentOfDone = percentOfDone
         self.imageName = imageName
+        self.steps = steps
     }
 }
 
@@ -69,6 +71,6 @@ struct CellView: View {
 
 struct Cell_Previews: PreviewProvider {
     static var previews: some View {
-        CellView(cell: Cell(cellTitle: "Task name", approxTime: "1-2 weeks", percentOfDone: 20))
+        CellView(cell: Cell(cellTitle: "Task name", approxTime: "1-2 weeks", percentOfDone: 0.2))
     }
 }

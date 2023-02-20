@@ -9,13 +9,13 @@ import Foundation
 
 final class ContentViewModel: ObservableObject {
 
-    @Published private var dataManager: TasksDataManager
+    @Published private var dataManager: DataManager
 
     var tasks: [Task] {
         dataManager.tasks
     }
 
-    init(dataManager: TasksDataManager = TasksDataManager.shared) {
+    init(dataManager: DataManager = DataManager.shared) {
         self.dataManager = dataManager
     }
 }

@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct TaskView: View {
-    var taskName: String
+
+    var task: Task
+
     var body: some View {
-        Text(taskName)
+        ScrollView {
+            Text(task.title ?? "")
+            ForEach(Array(task.allSteps)) { step in
+                Text(step.title ?? "")
+            }
+        }
     }
 }
 
 struct TaskView_Previews: PreviewProvider {
     static var previews: some View {
-        TaskView(taskName: "Task name")
+        let task = Task.previewExample(for: 0, in: PersistenceController.preview.context)
+        TaskView(task: task)
     }
 }

@@ -1,5 +1,5 @@
 //
-//  TasksDataManager.swift
+//  DataManager.swift
 //  Applets
 //
 //  Created by Ekaterina Grishina on 20/02/23.
@@ -8,10 +8,10 @@
 import Foundation
 import CoreData
 
-final class TasksDataManager: NSObject, ObservableObject, NSFetchedResultsControllerDelegate {
+final class DataManager: NSObject, ObservableObject, NSFetchedResultsControllerDelegate {
 
-    static let shared = TasksDataManager(isPreview: false)
-    static let preview = TasksDataManager(isPreview: true)
+    static let shared = DataManager(isPreview: false)
+    static let preview = DataManager(isPreview: true)
 
     @Published var tasks: [Task] = []
 

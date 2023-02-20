@@ -1,8 +1,8 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  Applets
 //
-//  Created by Ekaterina Grishina on 16/02/23.
+//  Created by Aleksandra Nikiforova on 17/02/23.
 //
 
 import SwiftUI
@@ -12,13 +12,13 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                ForEach(contentVM.tasks, id: \.self) { task in
+                ForEach(contentVM.cells, id: \.id) { cell in
                     NavigationLink {
                         TaskView(taskName: task)
                             .navigationTitle(task)
                             .navigationBarTitleDisplayMode(.inline)
                     } label: {
-                        Text(task)
+                        CellView(cell: cell)
                     }
                 }
             }
@@ -40,3 +40,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+

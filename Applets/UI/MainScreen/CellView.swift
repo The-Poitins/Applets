@@ -12,10 +12,12 @@ struct Cell: Identifiable {
     let cellTitle: String
     let approxTime: String
     let percentOfDone: Int
-    init(cellTitle: String, approxTime: String, percentOfDone: Int) {
+    let imageName: String
+    init(cellTitle: String, approxTime: String, percentOfDone: Int, imageName: String = "placeholder") {
         self.cellTitle = cellTitle
         self.approxTime = approxTime
         self.percentOfDone = percentOfDone
+        self.imageName = imageName
     }
 }
 
@@ -24,7 +26,7 @@ struct CellView: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .foregroundColor(.gray.opacity(0.80))
+                .foregroundColor(.gray.opacity(0.50))
                 .frame(width: 370, height: 100)
                 .cornerRadius(20)
             VStack(alignment: .leading) {

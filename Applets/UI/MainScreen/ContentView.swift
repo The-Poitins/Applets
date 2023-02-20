@@ -14,7 +14,7 @@ struct ContentView: View {
             ScrollView {
                 ForEach(contentVM.cells, id: \.id) { cell in
                     NavigationLink {
-                        TaskView(taskName: cell.cellTitle)
+                        TaskView(taskName: cell.cellTitle, taskImage: cell.imageName)
                             .navigationTitle(cell.cellTitle)
                             .navigationBarTitleDisplayMode(.inline)
                     } label: {

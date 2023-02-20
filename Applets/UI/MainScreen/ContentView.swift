@@ -8,14 +8,43 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isShowingProfilePage: Bool = false
+
+    @State private var isEditing: Bool = false
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            HStack {
+                Spacer()
+                Button {
+                    isShowingProfilePage.toggle()
+                } label: {
+                    Image(systemName: "person.circle")
+
+                }
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+                .font(.system(size: 50))
+            }
+            Spacer()
         }
-        .padding()
+        .padding(20)
+        .sheet(isPresented: $isShowingProfilePage, onDismiss: { isEditing = false }) {
+            NavigationStack {
+                UserProfileView(isEditing: $isEditing)
+                    .navigationTitle("User Profile")
+                    .toolbar {
+                        ToolbarItem(placement: .automatic) {
+                            Button {
+                                isEditing.toggle()
+                            } label: {
+                                Text("Edit")
+                            }
+                        }
+                    }
+            }
+
+        }
     }
 }
 

@@ -25,34 +25,50 @@ struct CellView: View {
     var cell: Cell
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(cell.cellTitle)
-                .font(.largeTitle.bold())
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.leading, 30)
-                .foregroundColor(.black)
-            Text(cell.approxTime)
-                .font(.subheadline)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.leading, 30)
-                .foregroundColor(.black)
+        ZStack {
+            Text("\(Int(cell.percentOfDone * 100))%")
+                .frame(width: 370, height: 100, alignment: .trailing)
+                .font(.system(size: 100).bold())
+                .foregroundColor(.white.opacity(0.30))
+            
+            VStack(alignment: .leading) {
+                Text(cell.cellTitle)
+                    .font(.largeTitle.bold())
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading, 15)
+                    .foregroundColor(.black)
+                Text(cell.approxTime)
+                    .font(.subheadline)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading, 15)
+                    .foregroundColor(.black)
+            }
         }
         .frame(width: 370, height: 100)
-        .background(
-            GeometryReader { geometry in
-                ZStack {
-                    ZStack(alignment: .leading) {
-                        Rectangle()
-                            .fill(Color.gray.opacity(0.40))
-                            .frame(width: geometry.size.width, height: geometry.size.height)
-                        Rectangle()
-                            .fill(Color.accentColor)
-                            .frame(width: CGFloat(cell.percentOfDone) * geometry.size.width, height:  geometry.size.height)
+        .modifier(FilledCell(percentOfDone: cell.percentOfDone))
+        .cornerRadius(20)
+    }
+}
+
+struct FilledCell: ViewModifier {
+    var percentOfDone: Double
+    
+    func body(content: Content) -> some View {
+        content
+            .background(
+                GeometryReader { geometry in
+                    ZStack {
+                        ZStack(alignment: .leading) {
+                            Rectangle()
+                                .fill(Color.gray.opacity(0.40))
+                                .frame(width: geometry.size.width, height: geometry.size.height)
+                            Rectangle()
+                                .fill(Color.accentColor)
+                                .frame(width: CGFloat(percentOfDone) * geometry.size.width, height:  geometry.size.height)
+                        }
                     }
                 }
-            }
-        )
-        .cornerRadius(20)
+            )
     }
 }
 

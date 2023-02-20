@@ -12,7 +12,6 @@ struct Cell: Identifiable {
     let cellTitle: String
     let approxTime: String
     let percentOfDone: Int
-    
     init(cellTitle: String, approxTime: String, percentOfDone: Int) {
         self.cellTitle = cellTitle
         self.approxTime = approxTime
@@ -22,11 +21,10 @@ struct Cell: Identifiable {
 
 struct CellView: View {
     var cell: Cell
-    
     var body: some View {
         ZStack {
             Rectangle()
-                .foregroundColor(.gray.opacity(0.40))
+                .foregroundColor(.gray.opacity(0.80))
                 .frame(width: 370, height: 100)
                 .cornerRadius(20)
             VStack(alignment: .leading) {
@@ -43,7 +41,6 @@ struct CellView: View {
             }
         }
     }
-    
     func fillDone() {
         var percent: CGFloat = 0.7
 
@@ -70,8 +67,6 @@ struct CellView: View {
 
 struct Cell_Previews: PreviewProvider {
     static var previews: some View {
-        CellView(cell: Cell(cellTitle: "10", approxTime: "10", percentOfDone: 20))
+        CellView(cell: Cell(cellTitle: "Task name", approxTime: "1-2 weeks", percentOfDone: 20))
     }
 }
-
-

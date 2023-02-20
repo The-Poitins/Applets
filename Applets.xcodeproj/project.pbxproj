@@ -38,6 +38,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		136DCD6829A38142001ED23F /* TaskView */ = {
+			isa = PBXGroup;
+			children = (
+				13656374299F8459003F0F31 /* TaskView.swift */,
+			);
+			path = TaskView;
+			sourceTree = "<group>";
+		};
 		C1B13A89299E2B3E008A8DE0 = {
 			isa = PBXGroup;
 			children = (
@@ -77,7 +85,7 @@
 		C1B13AA4299E5D75008A8DE0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				13656374299F8459003F0F31 /* TaskView.swift */,
+				136DCD6829A38142001ED23F /* TaskView */,
 				C1B13AA5299E5D7D008A8DE0 /* MainScreen */,
 			);
 			path = UI;

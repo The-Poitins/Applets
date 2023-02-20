@@ -1,5 +1,5 @@
 //
-//  DataManager.swift
+//  PersistenceController.swift
 //  Applets
 //
 //  Created by Ekaterina Grishina on 17/02/23.
@@ -7,11 +7,11 @@
 
 import CoreData
 
-struct DataManager {
-    static let shared = DataManager()
+struct PersistenceController {
+    static let shared = PersistenceController()
 
-    static var preview: DataManager = {
-        let result = DataManager(inMemory: true)
+    static var preview: PersistenceController = {
+        let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         for index in 0..<10 {
             let task = Task(context: viewContext)
@@ -44,6 +44,8 @@ struct DataManager {
 
     let container: NSPersistentContainer
 
+    var context: NSManagedObjectContext { container.viewContext }
+
     init(inMemory: Bool = false) {
         container = NSPersistentContainer(name: "Applets")
         if inMemory {
@@ -58,9 +60,9 @@ struct DataManager {
     }
 
     func saveContext(completionHandler: @escaping (Error?) -> Void) {
-        if DataManager.shared.container.viewContext.hasChanges {
+        if context.hasChanges {
             do {
-                try DataManager.shared.container.viewContext.save()
+                try PersistenceController.shared.container.viewContext.save()
                 completionHandler(nil)
             } catch {
                 completionHandler(error)

@@ -10,7 +10,7 @@ import SwiftUI
 struct TaskView: View {
     let taskName: String
     let taskImage: String
-    let steps: [Step]
+    var steps: [Step]
     var body: some View {
         ScrollView {
             ZStack(alignment: .leading) {
@@ -59,6 +59,9 @@ struct TaskView: View {
 
 struct TaskView_Previews: PreviewProvider {
     static var previews: some View {
-        TaskView(taskName: "Task name", taskImage: "placeholder", steps: [Step(stepTitle: "Step 1", isDone: false), Step(stepTitle: "Step 1", isDone: false)])
+        TaskView(taskName: "Task name", taskImage: "placeholder", steps: [
+            Step(stepTitle: "Step 1", isDone: false),
+            Step(stepTitle: "Step Two", isDone: false)
+        ])
     }
 }

@@ -1,8 +1,8 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  Applets
 //
-//  Created by Ekaterina Grishina on 16/02/23.
+//  Created by Aleksandra Nikiforova on 17/02/23.
 //
 
 import SwiftUI
@@ -10,19 +10,30 @@ import SwiftUI
 struct ContentView: View {
     @StateObject private var contentVM = ContentViewModel()
     var body: some View {
-        NavigationView {
-            List(contentVM.tasks, id: \.self) { task in
-                NavigationLink {
-                    TaskView(taskName: task)
-                } label: {
-                    Text(task)
+        NavigationStack {
+            ScrollView {
+                ForEach(contentVM.cells, id: \.id) { cell in
+                    NavigationLink {
+                        TaskView(taskName: cell.cellTitle, taskImage: cell.imageName, steps: cell.steps)
+                            .navigationTitle(cell.cellTitle)
+                            .navigationBarTitleDisplayMode(.inline)
+                    } label: {
+                        CellView(cell: cell)
+                    }
                 }
             }
-            .listStyle(.plain)
             .navigationTitle("Your tasks")
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(
+                Image("bg")
+                    .resizable()
+                    .scaledToFill()
+                    .ignoresSafeArea()
+            )
         }
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

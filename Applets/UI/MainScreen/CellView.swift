@@ -14,69 +14,64 @@ struct Cell: Identifiable {
     let percentOfDone: Double
     let imageName: String
     let steps: [Step]
-    init(
-        cellTitle: String,
-        approxTime: String,
-        percentOfDone: Double,
-        imageName: String = "placeholder",
-        steps: [Step] = []
-    ) {
+    let color = Color.accentColor
+    let isEnabled: Bool
+    
+    init(cellTitle: String, approxTime: String, percentOfDone: Double, imageName: String = "placeholder", steps: [Step] = [], isEnabled: Bool) {
         self.cellTitle = cellTitle
         self.approxTime = approxTime
         self.percentOfDone = percentOfDone
         self.imageName = imageName
         self.steps = steps
+        self.isEnabled = isEnabled
     }
 }
 
 struct CellView: View {
     var cell: Cell
     var body: some View {
-        ZStack {
-            Rectangle()
-                .foregroundColor(.gray.opacity(0.50))
-                .frame(width: 370, height: 100)
-                .cornerRadius(20)
-            VStack(alignment: .leading) {
-                Text(cell.cellTitle)
-                    .font(.largeTitle.bold())
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.leading, 30)
-                    .foregroundColor(.black)
-                Text(cell.approxTime)
-                    .font(.subheadline)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.leading, 30)
-                    .foregroundColor(.black)
-            }
-        }
-    }
-    func fillDone() {
-        var percent: CGFloat = 0.7
-
-        @ViewBuilder
-        func cell(_ string: String) -> some View {
-            Text(string)
-                .padding(.all, 5)
-                .background(
-                    GeometryReader { geometry in
-                        ZStack(alignment: .leading) {
-                            Rectangle()
-                                .foregroundColor(.green)
-                                .frame(width: geometry.size.width * percent, height: geometry.size.height)
-                            Rectangle()
-                                .foregroundColor(.gray.opacity(0.40))
-                                .cornerRadius(20)
+            ZStack {
+                if cell.isEnabled {
+                    if cell.percentOfDone < 1 {
+                        HStack (alignment: .lastTextBaseline) {
+                            Text("\(Int(cell.percentOfDone * 100))")
+                                .font(.system(size: 100).bold().weight(.black))
+                                .padding(-10)
+                            Text("%")
+                                .font(.system(size: 40).bold().weight(.black))
+                                .padding(5)
                         }
+                        .frame(width: 370, height: 100, alignment: .trailing)
+                        .foregroundColor(.white.opacity(0.30))
+                    } else {
+                        Text("DONE")
+                            .font(.system(size: 120).bold().weight(.black))
+                            .foregroundColor(.white.opacity(0.30))
                     }
-                )
-                .clipShape(Capsule())
-        }
+                }
+                
+                VStack(alignment: .leading) {
+                    Text(cell.cellTitle)
+                        .font(.largeTitle.bold())
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading, 15)
+                        .foregroundColor(cell.isEnabled ? .black : .gray)
+                    Text(cell.approxTime)
+                        .font(.subheadline)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading, 15)
+                        .foregroundColor(cell.isEnabled ? .black : .gray)
+                }
+            }
+            .frame(width: 370, height: 100)
+            .modifier(FilledCell(percentOfDone: cell.percentOfDone))
+            .cornerRadius(20)
     }
 }
 
+
 struct Cell_Previews: PreviewProvider {
     static var previews: some View {
-        CellView(cell: Cell(cellTitle: "Task name", approxTime: "1-2 weeks", percentOfDone: 0.2))
+        CellView(cell: Cell(cellTitle: "10", approxTime: "10", percentOfDone: 0, isEnabled: false))
     }
 }

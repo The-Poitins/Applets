@@ -10,23 +10,12 @@ import SwiftUI
 struct ContentView: View {
     @StateObject private var contentVM = ContentViewModel()
 
-    @State private var isShowingProfilePage = false
-    @State private var isEditing = false
+    @State private var isShowingProfilePage: Bool = false
+    @State private var isEditing: Bool = false
 
     var body: some View {
         NavigationStack {
             ScrollView {
-                HStack {
-                    Spacer()
-                    Button {
-                        isShowingProfilePage.toggle()
-                    } label: {
-                        Image(systemName: "person.circle")
-                    }
-                    .foregroundColor(.secondary)
-                    .font(.title)
-                }
-                .position(x: 170, y: -25)
                 ForEach(contentVM.cells, id: \.id) { cell in
                     NavigationLink {
                         TaskView(taskName: cell.cellTitle, taskImage: cell.imageName, steps: cell.steps)
@@ -45,6 +34,17 @@ struct ContentView: View {
                     .scaledToFill()
                     .ignoresSafeArea()
             )
+            .toolbar {
+                ToolbarItem {
+                    Button {
+                        isShowingProfilePage.toggle()
+                    } label: {
+                        Image(systemName: "person.circle")
+                    }
+                    .foregroundColor(.secondary)
+                    .font(.title)
+                }
+            }
             .sheet(isPresented: $isShowingProfilePage, onDismiss: { isEditing = false }) {
                 NavigationStack {
                     UserProfileView(isEditing: $isEditing)

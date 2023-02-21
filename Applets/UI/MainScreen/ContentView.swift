@@ -14,13 +14,13 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                ForEach(contentVM.cells, id: \.id) { cell in
+                ForEach(contentVM.goals, id: \.id) { goal in
                     NavigationLink {
-                        TaskView(taskName: cell.cellTitle, taskImage: cell.imageName, steps: cell.steps)
-                            .navigationTitle(cell.cellTitle)
+                        TaskView(goal: goal)
+                            .navigationTitle(goal.title ?? "")
                             .navigationBarTitleDisplayMode(.inline)
                     } label: {
-                        CellView(cell: cell)
+                        CellView(model: goal)
                     }
                 }
             }

@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct FilledCell: ViewModifier {
+struct FilledCellModifier: ViewModifier {
     var percentOfDone: Double
-    
+
     func body(content: Content) -> some View {
         content
             .background(
@@ -21,7 +21,7 @@ struct FilledCell: ViewModifier {
                                 .frame(width: geometry.size.width, height: geometry.size.height)
                             Rectangle()
                                 .fill(Color.accentColor)
-                                .frame(width: CGFloat(percentOfDone) * geometry.size.width, height:  geometry.size.height)
+                                .frame(width: CGFloat(percentOfDone) * geometry.size.width, height: geometry.size.height)
                         }
                     }
                 }

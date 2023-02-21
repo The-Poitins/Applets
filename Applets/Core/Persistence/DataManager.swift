@@ -13,25 +13,25 @@ final class DataManager: NSObject, ObservableObject, NSFetchedResultsControllerD
     static let shared = DataManager(isPreview: false)
     static let preview = DataManager(isPreview: true)
 
-    @Published var tasks: [Task] = []
+    @Published var goals: [Goal] = []
 
-    private let tasksFRC: NSFetchedResultsController<Task>
+    private let goalsFRC: NSFetchedResultsController<Goal>
     private let managedObjectContext: NSManagedObjectContext
 
     init(isPreview: Bool) {
         managedObjectContext = isPreview ? PersistenceController.preview.context : PersistenceController.shared.context
-        let tasksFR: NSFetchRequest<Task> = Task.fetchRequest()
-        tasksFR.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
-        tasksFRC = NSFetchedResultsController(fetchRequest: tasksFR,
+        let goalsFR: NSFetchRequest<Goal> = Goal.fetchRequest()
+        goalsFR.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
+        goalsFRC = NSFetchedResultsController(fetchRequest: goalsFR,
                                               managedObjectContext: managedObjectContext,
                                               sectionNameKeyPath: nil,
                                               cacheName: nil)
         super.init()
         // Initial fetch to populate tasks array
-        tasksFRC.delegate = self
-        try? tasksFRC.performFetch()
-        if let newTasks = tasksFRC.fetchedObjects {
-            self.tasks = newTasks
+        goalsFRC.delegate = self
+        try? goalsFRC.performFetch()
+        if let newGoals = goalsFRC.fetchedObjects {
+            self.goals = newGoals
         }
     }
 
@@ -48,9 +48,9 @@ final class DataManager: NSObject, ObservableObject, NSFetchedResultsControllerD
     // MARK: - NSFetchedResultsControllerDelegate
 
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        guard let newTasks = controller.fetchedObjects as? [Task] else {
+        guard let newGoals = controller.fetchedObjects as? [Goal] else {
             return
         }
-        self.tasks = newTasks
+        self.goals = newGoals
     }
 }

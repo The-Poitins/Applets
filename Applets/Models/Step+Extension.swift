@@ -1,29 +1,24 @@
 //
-//  Task+Extension.swift
+//  Step+Extension.swift
 //  Applets
 //
-//  Created by Ekaterina Grishina on 20/02/23.
+//  Created by Ekaterina Grishina on 21/02/23.
 //
 
 import Foundation
 import CoreData
 
-extension Task {
-
-    var allSteps: Set<Step> {
-        return (steps as? Set<Step>) ?? []
-    }
-
-    static func previewExample(for index: Int, in context: NSManagedObjectContext) -> Task {
-        let task = Task(context: context)
-        task.id = UUID()
-        task.title = "Task \(index)"
-        task.information = """
+extension Step {
+    static func previewExample(in context: NSManagedObjectContext) -> Step {
+        let goal = Goal(context: context)
+        goal.id = UUID()
+        goal.title = "Task \(index)"
+        goal.information = """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         """
-        task.timeFrame = 3
+        goal.timeFrame = "Approx. time 2-4 weeks"
 
         let step = Step(context: context)
         step.text = """
@@ -36,9 +31,9 @@ extension Task {
         step.title = "Step 123"
         step.isDone = false
 
-        step.task = task
-        task.addToSteps(step)
+        step.task = goal
+        goal.addToSteps(step)
 
-        return task
+        return step
     }
 }

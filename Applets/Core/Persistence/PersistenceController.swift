@@ -14,7 +14,7 @@ struct PersistenceController {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         for index in 0..<10 {
-            let task = Task.previewExample(for: index, in: viewContext)
+            let task = Goal.previewExample(for: index, in: viewContext)
         }
         do {
             try viewContext.save()

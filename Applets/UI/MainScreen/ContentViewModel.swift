@@ -9,7 +9,12 @@ import Foundation
 
 final class ContentViewModel: ObservableObject {
     let cells: [Cell] = [
-        Cell(cellTitle: "Codice fiscale", approxTime: "Approx. time 2-4 weeks", percentOfDone: 0.1, imageName: "cf", steps: [
+        Cell(
+            cellTitle: "Codice fiscale",
+            approxTime: "Approx. time 2-4 weeks",
+            percentOfDone: 0.1,
+            imageName: "cf",
+            steps: [
             Step(stepTitle: "Step 1", isDone: false),
             Step(stepTitle: "Step 2", isDone: false),
             Step(stepTitle: "Step 3", isDone: false)

@@ -12,20 +12,23 @@ struct Cell: Identifiable {
     let cellTitle: String
     let approxTime: String
     let percentOfDone: Double
-    let isEnabled: Bool
+    let imageName: String
+    let steps: [Step]
     let color = Color.accentColor
+    let isEnabled: Bool
     
-    init(cellTitle: String, approxTime: String, percentOfDone: Double, isEnabled: Bool) {
+    init(cellTitle: String, approxTime: String, percentOfDone: Double, imageName: String = "placeholder", steps: [Step] = [], isEnabled: Bool) {
         self.cellTitle = cellTitle
         self.approxTime = approxTime
         self.percentOfDone = percentOfDone
+        self.imageName = imageName
+        self.steps = steps
         self.isEnabled = isEnabled
     }
 }
 
 struct CellView: View {
     var cell: Cell
-    
     var body: some View {
             ZStack {
                 if cell.isEnabled {
@@ -72,5 +75,3 @@ struct Cell_Previews: PreviewProvider {
         CellView(cell: Cell(cellTitle: "10", approxTime: "10", percentOfDone: 0, isEnabled: false))
     }
 }
-
-

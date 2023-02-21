@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13656375299F8459003F0F31 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13656374299F8459003F0F31 /* TaskView.swift */; };
 		13656377299F8760003F0F31 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13656376299F8760003F0F31 /* ContentViewModel.swift */; };
+		13A114B229A3D46D00F74200 /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A114B129A3D46D00F74200 /* StepView.swift */; };
+		13A114B429A3DD2400F74200 /* ModalStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A114B329A3DD2400F74200 /* ModalStepView.swift */; };
 		2A201FD6299F82DE00F06692 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A201FD5299F82DE00F06692 /* CellView.swift */; };
 		2A201FD8299F834000F06692 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A201FD7299F834000F06692 /* ContentView.swift */; };
+		2A689D0729A4C9D6003908A4 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A689D0629A4C9D6003908A4 /* TaskView.swift */; };
 		2A84DB0929A397FB00E01DC3 /* FilledCellModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A84DB0829A397FB00E01DC3 /* FilledCellModifier.swift */; };
 		C1B13A96299E2B3E008A8DE0 /* AppletsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B13A95299E2B3E008A8DE0 /* AppletsApp.swift */; };
 		C1B13A9A299E2B3F008A8DE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B13A99299E2B3F008A8DE0 /* Assets.xcassets */; };
@@ -19,10 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		13656374299F8459003F0F31 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		13656376299F8760003F0F31 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		13A114B129A3D46D00F74200 /* StepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
+		13A114B329A3DD2400F74200 /* ModalStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalStepView.swift; sourceTree = "<group>"; };
 		2A201FD5299F82DE00F06692 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		2A201FD7299F834000F06692 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2A689D0629A4C9D6003908A4 /* TaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		2A84DB0829A397FB00E01DC3 /* FilledCellModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledCellModifier.swift; sourceTree = "<group>"; };
 		C1B13A92299E2B3E008A8DE0 /* Applets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Applets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B13A95299E2B3E008A8DE0 /* AppletsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppletsApp.swift; sourceTree = "<group>"; };
@@ -42,6 +46,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		136DCD6829A38142001ED23F /* TaskView */ = {
+			isa = PBXGroup;
+			children = (
+				2A689D0629A4C9D6003908A4 /* TaskView.swift */,
+				13A114B329A3DD2400F74200 /* ModalStepView.swift */,
+				13A114B129A3D46D00F74200 /* StepView.swift */,
+			);
+			path = TaskView;
+			sourceTree = "<group>";
+		};
 		2A84DB0729A397E400E01DC3 /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,9 +103,9 @@
 		C1B13AA4299E5D75008A8DE0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				136DCD6829A38142001ED23F /* TaskView */,
 				C1B13AA5299E5D7D008A8DE0 /* MainScreen */,
 				2A84DB0729A397E400E01DC3 /* Modifiers */,
-				13656374299F8459003F0F31 /* TaskView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -208,9 +222,11 @@
 			files = (
 				C1B13AA8299E60A9008A8DE0 /* Model.swift in Sources */,
 				2A201FD6299F82DE00F06692 /* CellView.swift in Sources */,
+				13A114B429A3DD2400F74200 /* ModalStepView.swift in Sources */,
+				2A689D0729A4C9D6003908A4 /* TaskView.swift in Sources */,
 				2A201FD8299F834000F06692 /* ContentView.swift in Sources */,
 				C1B13A96299E2B3E008A8DE0 /* AppletsApp.swift in Sources */,
-				13656375299F8459003F0F31 /* TaskView.swift in Sources */,
+				13A114B229A3D46D00F74200 /* StepView.swift in Sources */,
 				13656377299F8760003F0F31 /* ContentViewModel.swift in Sources */,
 				2A84DB0929A397FB00E01DC3 /* FilledCellModifier.swift in Sources */,
 			);
@@ -341,7 +357,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Applets/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3523U23689;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -370,7 +386,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Applets/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3523U23689;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

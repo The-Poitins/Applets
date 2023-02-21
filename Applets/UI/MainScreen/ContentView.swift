@@ -9,6 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var contentVM = ContentViewModel()
+
+    @State private var isShowingProfilePage = false
+    @State private var isEditing = false
+
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -30,6 +34,32 @@ struct ContentView: View {
                     .scaledToFill()
                     .ignoresSafeArea()
             )
+            .toolbar {
+                ToolbarItem {
+                    Button {
+                        isShowingProfilePage.toggle()
+                    } label: {
+                        Image(systemName: "person.circle")
+                    }
+                    .foregroundColor(.secondary)
+                    .font(.title)
+                }
+            }
+            .sheet(isPresented: $isShowingProfilePage, onDismiss: { isEditing = false }) {
+                NavigationStack {
+                    UserProfileView(isEditing: $isEditing)
+                        .navigationTitle("User Profile")
+                        .toolbar {
+                            ToolbarItem(placement: .automatic) {
+                                Button {
+                                    isEditing.toggle()
+                                } label: {
+                                    Text("Edit")
+                                }
+                            }
+                        }
+                }
+            }
         }
     }
 }

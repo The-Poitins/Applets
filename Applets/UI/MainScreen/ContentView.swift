@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var tasksDataModel: TasksDataModel
     @StateObject private var contentVM = ContentViewModel()
 
     @State private var isShowingProfilePage: Bool = false
@@ -65,7 +66,9 @@ struct ContentView: View {
 
 
 struct ContentView_Previews: PreviewProvider {
+
     static var previews: some View {
         ContentView()
+            .environmentObject(TasksDataModel())
     }
 }

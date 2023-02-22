@@ -1,0 +1,43 @@
+[
+    {
+        "title": "Codice Fiscale",
+        "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "timeFrame": "Approx. time 2-4 weeks",
+        "imageName": "some name",
+        "steps": [
+            {
+               "title": "Step 1",
+               "number": 1,
+               "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+               "isDone": false,
+               "weight": 0.8,
+               "location": {
+                   "longitude": 58.783,
+                   "latitude": 39.2143
+               }
+            },
+            {
+               "title": "Step 2",
+               "number": 2,
+               "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+               "isDone": false,
+               "weight": 0.1,
+               "location": {
+                   "longitude": 58.783,
+                   "latitude": 39.2143
+               }
+            },
+            {
+               "title": "Step 3",
+               "number": 3,
+               "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+               "isDone": false,
+               "weight": 0.1,
+               "location": {
+                   "longitude": 58.783,
+                   "latitude": 39.2143
+               }
+            }
+        ]
+    }
+]

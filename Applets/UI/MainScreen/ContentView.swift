@@ -1,31 +1,74 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  Applets
 //
-//  Created by Ekaterina Grishina on 16/02/23.
+//  Created by Aleksandra Nikiforova on 17/02/23.
 //
 
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var contentVM = ContentViewModel()
+
+    @StateObject var contentVM = ContentViewModel()
+
+    @State private var isShowingProfilePage = false
+    @State private var isEditing = false
+
     var body: some View {
-        NavigationView {
-            List(contentVM.tasks, id: \.self) { task in
-                NavigationLink {
-                    TaskView(taskName: task)
-                } label: {
-                    Text(task)
+        NavigationStack {
+            ScrollView {
+                ForEach(contentVM.goals, id: \.id) { goal in
+                    NavigationLink {
+                        TaskView(goal: goal)
+                            .navigationTitle(goal.title ?? "")
+                            .navigationBarTitleDisplayMode(.inline)
+                    } label: {
+                        CellView(model: goal)
+                    }
                 }
             }
-            .listStyle(.plain)
             .navigationTitle("Your tasks")
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(
+                Image("bg")
+                    .resizable()
+                    .scaledToFill()
+                    .ignoresSafeArea()
+            )
+            .toolbar {
+                ToolbarItem {
+                    Button {
+                        isShowingProfilePage.toggle()
+                    } label: {
+                        Image(systemName: "person.circle")
+                    }
+                    .foregroundColor(.secondary)
+                    .font(.title)
+                }
+            }
+            .sheet(isPresented: $isShowingProfilePage, onDismiss: { isEditing = false }) {
+                NavigationStack {
+                    UserProfileView(isEditing: $isEditing)
+                        .navigationTitle("User Profile")
+                        .toolbar {
+                            ToolbarItem(placement: .automatic) {
+                                Button {
+                                    isEditing.toggle()
+                                } label: {
+                                    Text("Edit")
+                                }
+                            }
+                        }
+                }
+            }
         }
     }
 }
 
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        let viewModel = ContentViewModel(dataManager: DataManager.preview)
+        ContentView(contentVM: viewModel)
     }
 }

@@ -8,21 +8,14 @@
 import Foundation
 
 final class ContentViewModel: ObservableObject {
-    let cells: [Cell] = [
-        Cell(
-            cellTitle: "Codice fiscale",
-            approxTime: "Approx. time 2-4 weeks",
-            percentOfDone: 0.1,
-            imageName: "cf",
-            steps: [
-            Step(stepTitle: "Step 1", isDone: false),
-            Step(stepTitle: "Step 2", isDone: false),
-            Step(stepTitle: "Step 3", isDone: false)
-        ], isEnabled: false),
-        Cell(cellTitle: "Accomodation", approxTime: "Approx. time 2-4 weeks", percentOfDone: 0.1, isEnabled: false),
-        Cell(cellTitle: "Permesso di Sogiorno", approxTime: "Approx. time 2-6 months", percentOfDone: 0, isEnabled: false),
-        Cell(cellTitle: "ADA contract", approxTime: "Approx. time 1-2 weeks", percentOfDone: 0.3, isEnabled: false),
-        Cell(cellTitle: "Transport in NA", approxTime: "Approx. time 1-2 weeks", percentOfDone: 0.1, isEnabled: false),
-        Cell(cellTitle: "Mobile operator", approxTime: "Approx. time 1-2 days", percentOfDone: 0, isEnabled: false)
-    ]
+
+    @Published private var dataManager: DataManager
+
+    var goals: [Goal] {
+        dataManager.goals
+    }
+
+    init(dataManager: DataManager = DataManager.shared) {
+        self.dataManager = dataManager
+    }
 }

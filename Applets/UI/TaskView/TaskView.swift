@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct TaskView: View {
-    let taskName: String
-    let taskImage: String
-    var steps: [Step]
+
+    @State var goal: Goal
+
     var body: some View {
         ScrollView {
             ZStack(alignment: .leading) {
@@ -26,7 +26,7 @@ struct TaskView: View {
                     .frame(maxWidth: .infinity)
             }
             .padding(.horizontal)
-            Image(taskImage)
+            Image(goal.image ?? "")
                 .resizable()
                 .scaledToFit()
                 .cornerRadius(20)
@@ -43,7 +43,7 @@ struct TaskView: View {
                 .padding(.top, 2)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal)
-            ForEach(steps, id: \.self) { step in
+            ForEach(goal.allSteps, id: \.self) { step in
                 StepView(step: step)
             }
         }
@@ -59,9 +59,7 @@ struct TaskView: View {
 
 struct TaskView_Previews: PreviewProvider {
     static var previews: some View {
-        TaskView(taskName: "Task name", taskImage: "placeholder", steps: [
-            Step(stepTitle: "Step 1", isDone: false),
-            Step(stepTitle: "Step Two", isDone: false)
-        ])
+        let goal = Goal.previewExample(for: 0, in: PersistenceController.preview.context)
+        TaskView(goal: goal)
     }
 }

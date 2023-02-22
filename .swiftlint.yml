@@ -59,7 +59,6 @@ opt_in_rules:
   - shorthand_optional_binding
   - single_test_class
   - sorted_first_last
-  - sorted_imports
   - static_operator
   - strong_iboutlet
   - test_case_accessibility
@@ -70,7 +69,6 @@ opt_in_rules:
   - untyped_error_in_catch
   - vertical_parameter_alignment_on_call
   - vertical_whitespace_closing_braces
-  - vertical_whitespace_opening_braces
   - xct_specific_matcher
   - yoda_condition
 
@@ -93,6 +91,7 @@ function_body_length: 60
 type_body_length: 400
 line_length:
   ignores_urls: true
+  ignores_comments: true
 
 force_cast: error
 force_try: error

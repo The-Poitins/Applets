@@ -7,19 +7,11 @@
 
 import SwiftUI
 
-struct Step: Identifiable, Hashable {
-    let id = UUID()
-    var isDone: Bool
-    let stepTitle: String
-    init(stepTitle: String, isDone: Bool) {
-        self.stepTitle = stepTitle
-        self.isDone = isDone
-    }
-}
-
 struct StepView: View {
+
     @State var step: Step
     @State var isModal = false
+
     var body: some View {
         Button {
             isModal.toggle()
@@ -30,7 +22,7 @@ struct StepView: View {
                     .frame(width: 370, height: 50)
                     .cornerRadius(10)
                 HStack {
-                    Text(step.stepTitle)
+                    Text(step.title ?? "")
                         .font(.headline)
                     Spacer()
                     ZStack {
@@ -54,7 +46,7 @@ struct StepView: View {
         .sheet(isPresented: $isModal) {
             NavigationStack {
                 ModalStepView()
-                    .navigationBarTitle(step.stepTitle, displayMode: .inline)
+                    .navigationBarTitle(step.title ?? "", displayMode: .inline)
                     .toolbar {
                         ToolbarItem(placement: .navigationBarTrailing) {
                             Button("Close") { isModal.toggle()
@@ -76,6 +68,7 @@ struct StepView: View {
 
 struct StepView_Previews: PreviewProvider {
     static var previews: some View {
-        StepView(step: Step(stepTitle: "Step title", isDone: true))
+        let step = Step.previewExample(in: PersistenceController.preview.context)
+        StepView(step: step)
     }
 }

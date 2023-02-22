@@ -14,6 +14,7 @@
 		2A201FD8299F834000F06692 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A201FD7299F834000F06692 /* ContentView.swift */; };
 		2A689D0729A4C9D6003908A4 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A689D0629A4C9D6003908A4 /* TaskView.swift */; };
 		2A84DB0929A397FB00E01DC3 /* FilledCellModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A84DB0829A397FB00E01DC3 /* FilledCellModifier.swift */; };
+		4CB2E5AC29A4D84100839C9A /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2E5AB29A4D84100839C9A /* UserProfileView.swift */; };
 		C13940A229A4186A00BD7DC2 /* Goal+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13940A129A4186A00BD7DC2 /* Goal+Extension.swift */; };
 		C1479A4D29A4E4F5008023B6 /* Step+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1479A4C29A4E4F5008023B6 /* Step+Extension.swift */; };
 		C1B13A96299E2B3E008A8DE0 /* AppletsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B13A95299E2B3E008A8DE0 /* AppletsApp.swift */; };
@@ -32,6 +33,7 @@
 		2A201FD7299F834000F06692 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2A689D0629A4C9D6003908A4 /* TaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		2A84DB0829A397FB00E01DC3 /* FilledCellModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledCellModifier.swift; sourceTree = "<group>"; };
+		4CB2E5AB29A4D84100839C9A /* UserProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		C13940A129A4186A00BD7DC2 /* Goal+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal+Extension.swift"; sourceTree = "<group>"; };
 		C1479A4C29A4E4F5008023B6 /* Step+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Step+Extension.swift"; sourceTree = "<group>"; };
 		C1B13A92299E2B3E008A8DE0 /* Applets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Applets.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +72,14 @@
 				2A84DB0829A397FB00E01DC3 /* FilledCellModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		4CB2E5AA29A4D83000839C9A /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				4CB2E5AB29A4D84100839C9A /* UserProfileView.swift */,
+			);
+			path = UserProfile;
 			sourceTree = "<group>";
 		};
 		C1B13A89299E2B3E008A8DE0 = {
@@ -112,6 +122,7 @@
 		C1B13AA4299E5D75008A8DE0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4CB2E5AA29A4D83000839C9A /* UserProfile */,
 				136DCD6829A38142001ED23F /* TaskView */,
 				C1B13AA5299E5D7D008A8DE0 /* MainScreen */,
 				2A84DB0729A397E400E01DC3 /* Modifiers */,
@@ -252,6 +263,7 @@
 				13A114B429A3DD2400F74200 /* ModalStepView.swift in Sources */,
 				2A689D0729A4C9D6003908A4 /* TaskView.swift in Sources */,
 				2A201FD8299F834000F06692 /* ContentView.swift in Sources */,
+				4CB2E5AC29A4D84100839C9A /* UserProfileView.swift in Sources */,
 				C1E43AB529A382AD0008D7B0 /* DataManager.swift in Sources */,
 				C1479A4D29A4E4F5008023B6 /* Step+Extension.swift in Sources */,
 				C1B13AAF299F7A5A008A8DE0 /* PersistenceController.swift in Sources */,

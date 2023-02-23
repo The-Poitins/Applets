@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct AppletsApp: App {
+    @StateObject var tasksDataModel = TasksDataModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(tasksDataModel)
         }
     }
 }

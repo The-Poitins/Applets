@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var tasksDataModel: TasksDataModel
 
     @StateObject var contentVM = ContentViewModel()
 
@@ -67,8 +68,10 @@ struct ContentView: View {
 
 
 struct ContentView_Previews: PreviewProvider {
+
     static var previews: some View {
         let viewModel = ContentViewModel(dataManager: DataManager.preview)
         ContentView(contentVM: viewModel)
+            .environmentObject(TasksDataModel())
     }
 }

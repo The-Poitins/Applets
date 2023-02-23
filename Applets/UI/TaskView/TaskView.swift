@@ -43,7 +43,7 @@ struct TaskView: View {
                 .padding(.top, 2)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal)
-            ForEach(goal.allSteps, id: \.self) { step in
+            ForEach(goal.allSteps.sorted(by: { $0.number < $1.number }), id: \.self) { step in
                 StepView(step: step)
             }
         }

@@ -9,20 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var tasksDataModel: TasksDataModel
-    @StateObject private var contentVM = ContentViewModel()
 
-    @State private var isShowingProfilePage: Bool = false
-    @State private var isEditing: Bool = false
+    @StateObject var contentVM = ContentViewModel()
+
+    @State private var isShowingProfilePage = false
+    @State private var isEditing = false
+
     var body: some View {
         NavigationStack {
             ScrollView {
-                ForEach(contentVM.cells, id: \.id) { cell in
+                ForEach(contentVM.goals, id: \.id) { goal in
                     NavigationLink {
-                        TaskView(taskName: cell.cellTitle, taskImage: cell.imageName, steps: cell.steps)
-                            .navigationTitle(cell.cellTitle)
+                        TaskView(goal: goal)
+                            .navigationTitle(goal.title ?? "")
                             .navigationBarTitleDisplayMode(.inline)
                     } label: {
-                        CellView(cell: cell)
+                        CellView(model: goal)
                     }
                 }
             }
@@ -68,7 +70,8 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
 
     static var previews: some View {
-        ContentView()
+        let viewModel = ContentViewModel(dataManager: DataManager.preview)
+        ContentView(contentVM: viewModel)
             .environmentObject(TasksDataModel())
     }
 }

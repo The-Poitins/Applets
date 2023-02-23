@@ -104,12 +104,10 @@ struct UserProfileView: View {
                 } header: {
                     Text("Permesso di Soggiorno")
                 }
-
             }
             .listStyle(.insetGrouped)
         }
     }
-
 }
 
 struct UserProfileView_Previews: PreviewProvider {

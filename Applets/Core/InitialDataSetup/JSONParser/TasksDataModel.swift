@@ -12,6 +12,7 @@ struct TasksData: Codable {
     let information: String
     let timeFrame: String
     let imageName: String
+    let isEnabled: Bool
     let steps: [StepData]
 }
 

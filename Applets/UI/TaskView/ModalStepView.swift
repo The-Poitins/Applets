@@ -13,7 +13,7 @@ struct ModalStepView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
-            Text(step.text ?? "")
+            Text(LocalizedStringKey(step.text ?? ""))
             Spacer()
         }
         .frame(maxWidth: .infinity, alignment: .leading)

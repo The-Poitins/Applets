@@ -45,7 +45,7 @@ struct StepView: View {
         }
         .sheet(isPresented: $isModal) {
             NavigationStack {
-                ModalStepView()
+                ModalStepView(step: step)
                     .navigationBarTitle(step.title ?? "", displayMode: .inline)
                     .toolbar {
                         ToolbarItem(placement: .navigationBarTrailing) {

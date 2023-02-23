@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct ModalStepView: View {
+
+    @State var step: Step
+
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
-            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium nisi rhoncus, facilisis velit in, pellentesque massa.")
-            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium nisi rhoncus, facilisis velit in, pellentesque massa.")
-            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium nisi rhoncus, facilisis velit in, pellentesque massa.")
+            Text(LocalizedStringKey(step.text ?? ""))
             Spacer()
         }
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -22,6 +23,7 @@ struct ModalStepView: View {
 
 struct ModalStepView_Previews: PreviewProvider {
     static var previews: some View {
-        ModalStepView()
+        let step = Step.previewExample(in: PersistenceController.preview.context)
+        ModalStepView(step: step)
     }
 }

@@ -36,14 +36,14 @@ struct TaskView: View {
                 .padding(.top, 2)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal)
-            Text("There is some text about the TASK. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean maximus nisi quis sem pharetra, sit amet vulputate nisi efficitur.")
+            Text(goal.information ?? "")
                 .padding(.horizontal)
             Text("Steps")
                 .font(.title)
                 .padding(.top, 2)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal)
-            ForEach(goal.allSteps, id: \.self) { step in
+            ForEach(goal.allSteps.sorted(by: { $0.number < $1.number }), id: \.self) { step in
                 StepView(step: step)
             }
         }

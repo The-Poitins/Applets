@@ -67,6 +67,7 @@ struct ContentView: View {
 
 
 struct ContentView_Previews: PreviewProvider {
+
     static var previews: some View {
         let viewModel = ContentViewModel(dataManager: DataManager.preview)
         ContentView(contentVM: viewModel)

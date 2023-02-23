@@ -6,10 +6,13 @@
 //
 
 import Foundation
+import Combine
 
 final class ContentViewModel: ObservableObject {
 
     @Published private var dataManager: DataManager
+
+    private var anyCancellable: AnyCancellable?
 
     var goals: [Goal] {
         dataManager.goals
@@ -17,5 +20,8 @@ final class ContentViewModel: ObservableObject {
 
     init(dataManager: DataManager = DataManager.shared) {
         self.dataManager = dataManager
+        self.anyCancellable = dataManager.objectWillChange.sink { [weak self] _ in
+            self?.objectWillChange.send()
+        }
     }
 }

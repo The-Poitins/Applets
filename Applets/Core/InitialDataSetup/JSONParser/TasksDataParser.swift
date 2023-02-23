@@ -7,8 +7,8 @@
 
 import Foundation
 
-class TasksDataModel: ObservableObject {
-    @Published var allTasks: [TasksData] = []
+final class TasksDataParser {
+    var allTasks: [TasksData] = []
     
     init() {
         loadTasks()

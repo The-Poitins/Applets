@@ -9,12 +9,19 @@ import SwiftUI
 
 @main
 struct AppletsApp: App {
-    @StateObject var tasksDataModel = TasksDataModel()
+
+    private let dataPreloadService = DataPreloadAction()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(tasksDataModel)
+                .onAppear {
+                    dataPreloadService.preloadData { error in
+                        if let error = error {
+                            // TODO: show error
+                        }
+                    }
+                }
         }
     }
 }

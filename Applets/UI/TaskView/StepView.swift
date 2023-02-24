@@ -9,7 +9,9 @@ import SwiftUI
 
 struct StepView: View {
 
-    @State var step: Step
+    @ObservedObject var viewModel: TaskViewModel
+    @ObservedObject var step: Step
+
     @State var isModal = false
 
     var body: some View {
@@ -36,7 +38,7 @@ struct StepView: View {
                         }
                     }
                     .onTapGesture {
-                        step.isDone.toggle()
+                        viewModel.toggleIsDone(step: step)
                     }
                 }
                 .padding(.horizontal)
@@ -56,7 +58,7 @@ struct StepView: View {
                             ToolbarItem(placement: .navigationBarLeading) {
                                 Button("Done") {
                                     isModal.toggle()
-                                    step.isDone.toggle()
+                                    viewModel.toggleIsDone(step: step)
                                 }
                             }
                         }
@@ -68,7 +70,9 @@ struct StepView: View {
 
 struct StepView_Previews: PreviewProvider {
     static var previews: some View {
+        let goal = Goal.previewExample(for: 1, in: PersistenceController.preview.context)
         let step = Step.previewExample(in: PersistenceController.preview.context)
-        StepView(step: step)
+        let viewModel = TaskViewModel(goal: goal)
+        StepView(viewModel: viewModel, step: step)
     }
 }

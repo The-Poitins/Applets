@@ -37,6 +37,7 @@
 		13656376299F8760003F0F31 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		13A114B129A3D46D00F74200 /* StepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
 		13A114B329A3DD2400F74200 /* ModalStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalStepView.swift; sourceTree = "<group>"; };
+		13DFD6C929A8D26300003B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2A09D33C29A57340009ACE7C /* TasksDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDataModel.swift; sourceTree = "<group>"; };
 		2A09D33E29A573E9009ACE7C /* TasksDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDataParser.swift; sourceTree = "<group>"; };
 		2A201FD5299F82DE00F06692 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
@@ -126,6 +127,7 @@
 		C1B13A94299E2B3E008A8DE0 /* Applets */ = {
 			isa = PBXGroup;
 			children = (
+				13DFD6C929A8D26300003B64 /* Info.plist */,
 				C1B13AAC299F7A30008A8DE0 /* Core */,
 				2A689D0C29A4E84C003908A4 /* Resourses */,
 				C1B13AA6299E609B008A8DE0 /* Models */,
@@ -485,13 +487,14 @@
 				DEVELOPMENT_TEAM = 3523U23689;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Applets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Ask Barbara";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -516,13 +519,14 @@
 				DEVELOPMENT_TEAM = 3523U23689;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Applets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Ask Barbara";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

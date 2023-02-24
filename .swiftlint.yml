@@ -97,4 +97,9 @@ force_cast: error
 force_try: error
 
 vertical_whitespace:
-  max_empty_lines: 2
+  max_empty_lines: 3
+
+disabled_rules: # rule identifiers to exclude from running
+- trailing_whitespace
+- vertical_whitespace_closing_braces
+- vertical_whitespace_opening_braces

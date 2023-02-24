@@ -15,6 +15,10 @@
 		2A689D0729A4C9D6003908A4 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A689D0629A4C9D6003908A4 /* TaskView.swift */; };
 		2A84DB0929A397FB00E01DC3 /* FilledCellModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A84DB0829A397FB00E01DC3 /* FilledCellModifier.swift */; };
 		4CB2E5AC29A4D84100839C9A /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2E5AB29A4D84100839C9A /* UserProfileView.swift */; };
+		4CE0908D29A6259900840F7C /* BoardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0908C29A6259900840F7C /* BoardingScreen.swift */; };
+		4CE0909329A625CA00840F7C /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0909129A625CA00840F7C /* OnBoarding.swift */; };
+		4CE0909429A625CA00840F7C /* OffsetPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE0909229A625CA00840F7C /* OffsetPageTabView.swift */; };
+		4CEFE35829A77242001215E9 /* QuestionButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEFE35729A77242001215E9 /* QuestionButtonsView.swift */; };
 		C13940A229A4186A00BD7DC2 /* Goal+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13940A129A4186A00BD7DC2 /* Goal+Extension.swift */; };
 		C1479A4D29A4E4F5008023B6 /* Step+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1479A4C29A4E4F5008023B6 /* Step+Extension.swift */; };
 		C1B13A96299E2B3E008A8DE0 /* AppletsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B13A95299E2B3E008A8DE0 /* AppletsApp.swift */; };
@@ -34,6 +38,10 @@
 		2A689D0629A4C9D6003908A4 /* TaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		2A84DB0829A397FB00E01DC3 /* FilledCellModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledCellModifier.swift; sourceTree = "<group>"; };
 		4CB2E5AB29A4D84100839C9A /* UserProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		4CE0908C29A6259900840F7C /* BoardingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardingScreen.swift; sourceTree = "<group>"; };
+		4CE0909129A625CA00840F7C /* OnBoarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
+		4CE0909229A625CA00840F7C /* OffsetPageTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffsetPageTabView.swift; sourceTree = "<group>"; };
+		4CEFE35729A77242001215E9 /* QuestionButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionButtonsView.swift; sourceTree = "<group>"; };
 		C13940A129A4186A00BD7DC2 /* Goal+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal+Extension.swift"; sourceTree = "<group>"; };
 		C1479A4C29A4E4F5008023B6 /* Step+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Step+Extension.swift"; sourceTree = "<group>"; };
 		C1B13A92299E2B3E008A8DE0 /* Applets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Applets.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +90,33 @@
 			path = UserProfile;
 			sourceTree = "<group>";
 		};
+		4CE0908A29A6255600840F7C /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				4CE0909029A625C200840F7C /* Onboarding Views */,
+				4CE0908B29A6257E00840F7C /* Onboarding Model */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		4CE0908B29A6257E00840F7C /* Onboarding Model */ = {
+			isa = PBXGroup;
+			children = (
+				4CE0908C29A6259900840F7C /* BoardingScreen.swift */,
+			);
+			path = "Onboarding Model";
+			sourceTree = "<group>";
+		};
+		4CE0909029A625C200840F7C /* Onboarding Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CE0909229A625CA00840F7C /* OffsetPageTabView.swift */,
+				4CE0909129A625CA00840F7C /* OnBoarding.swift */,
+				4CEFE35729A77242001215E9 /* QuestionButtonsView.swift */,
+			);
+			path = "Onboarding Views";
+			sourceTree = "<group>";
+		};
 		C1B13A89299E2B3E008A8DE0 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +157,7 @@
 		C1B13AA4299E5D75008A8DE0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4CE0908A29A6255600840F7C /* Onboarding */,
 				4CB2E5AA29A4D83000839C9A /* UserProfile */,
 				136DCD6829A38142001ED23F /* TaskView */,
 				C1B13AA5299E5D7D008A8DE0 /* MainScreen */,
@@ -266,12 +302,16 @@
 				4CB2E5AC29A4D84100839C9A /* UserProfileView.swift in Sources */,
 				C1E43AB529A382AD0008D7B0 /* DataManager.swift in Sources */,
 				C1479A4D29A4E4F5008023B6 /* Step+Extension.swift in Sources */,
+				4CE0909429A625CA00840F7C /* OffsetPageTabView.swift in Sources */,
+				4CE0908D29A6259900840F7C /* BoardingScreen.swift in Sources */,
 				C1B13AAF299F7A5A008A8DE0 /* PersistenceController.swift in Sources */,
+				4CEFE35829A77242001215E9 /* QuestionButtonsView.swift in Sources */,
 				C13940A229A4186A00BD7DC2 /* Goal+Extension.swift in Sources */,
 				C1B13AAB299F7995008A8DE0 /* Applets.xcdatamodeld in Sources */,
 				C1B13A96299E2B3E008A8DE0 /* AppletsApp.swift in Sources */,
 				13A114B229A3D46D00F74200 /* StepView.swift in Sources */,
 				13656377299F8760003F0F31 /* ContentViewModel.swift in Sources */,
+				4CE0909329A625CA00840F7C /* OnBoarding.swift in Sources */,
 				2A84DB0929A397FB00E01DC3 /* FilledCellModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,7 +441,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Applets/Preview Content\"";
-				DEVELOPMENT_TEAM = 3523U23689;
+				DEVELOPMENT_TEAM = U77Q6FJLJF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -430,7 +470,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Applets/Preview Content\"";
-				DEVELOPMENT_TEAM = 3523U23689;
+				DEVELOPMENT_TEAM = U77Q6FJLJF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

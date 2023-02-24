@@ -26,7 +26,7 @@ struct TaskView: View {
                     .frame(width: 70, height: 25)
                     .foregroundColor(.accentColor)
                     .cornerRadius(20)
-                Text("15% has done")
+                Text("\(viewModel.goal.percentOfDone)% has done")
                     .frame(maxWidth: .infinity)
             }
             .padding(.horizontal)

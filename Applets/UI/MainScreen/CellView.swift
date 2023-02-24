@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct CellView: View {
-    var model: Goal
+
+    @ObservedObject var model: Goal
+
     var body: some View {
         ZStack(alignment: .center) {
             VStack(alignment: .leading) {

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ModalStepView: View {
 
-    @State var step: Step
+    var step: Step
 
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {

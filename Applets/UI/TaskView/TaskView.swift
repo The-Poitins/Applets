@@ -9,7 +9,11 @@ import SwiftUI
 
 struct TaskView: View {
 
-    @State var goal: Goal
+    @ObservedObject var viewModel: TaskViewModel
+
+    init(goal: Goal) {
+        self.viewModel = TaskViewModel(goal: goal)
+    }
 
     var body: some View {
         ScrollView {
@@ -26,7 +30,7 @@ struct TaskView: View {
                     .frame(maxWidth: .infinity)
             }
             .padding(.horizontal)
-            Image(goal.image ?? "")
+            Image(viewModel.goal.image ?? "")
                 .resizable()
                 .scaledToFit()
                 .cornerRadius(20)
@@ -36,15 +40,15 @@ struct TaskView: View {
                 .padding(.top, 2)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal)
-            Text(goal.information ?? "")
+            Text(viewModel.goal.information ?? "")
                 .padding(.horizontal)
             Text("Steps")
                 .font(.title)
                 .padding(.top, 2)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal)
-            ForEach(goal.allSteps.sorted(by: { $0.number < $1.number }), id: \.self) { step in
-                StepView(step: step)
+            ForEach(viewModel.sortedSteps, id: \.self) { step in
+                StepView(viewModel: viewModel, step: step)
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)

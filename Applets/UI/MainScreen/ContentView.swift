@@ -29,18 +29,14 @@ struct ContentView: View {
             }
             .navigationTitle("Your tasks")
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(
-                Image("bg")
-                    .resizable()
-                    .scaledToFill()
-                    .ignoresSafeArea()
-            )
+            .background(Color.accentColor.opacity(0.10))
             .toolbar {
                 ToolbarItem {
                     Button {
                         isShowingProfilePage.toggle()
                     } label: {
                         Image(systemName: "person.circle")
+                            .foregroundColor(.accentColor)
                     }
                     .foregroundColor(.secondary)
                     .font(.title)

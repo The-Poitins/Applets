@@ -10,42 +10,51 @@ import SwiftUI
 struct CellView: View {
     var model: Goal
     var body: some View {
-            ZStack {
-                if model.isEnabled {
-                    if model.percentOfDone < 1 {
-                        HStack(alignment: .lastTextBaseline) {
-                            Text("\(Int(model.percentOfDone * 100))")
-                                .font(.system(size: 100).bold().weight(.black))
-                                .padding(-10)
-                            Text("%")
-                                .font(.system(size: 40).bold().weight(.black))
-                                .padding(5)
-                        }
-                        .frame(width: 370, height: 100, alignment: .trailing)
-                        .foregroundColor(.white.opacity(0.30))
-                    } else {
-                        Text("DONE")
-                            .font(.system(size: 120).bold().weight(.black))
-                            .foregroundColor(.white.opacity(0.30))
+        ZStack(alignment: .center) {
+            VStack(alignment: .leading) {
+                Text(model.title ?? "")
+                    .font(.system(size: 20).bold())
+                    .frame(maxWidth: .infinity, alignment: .topLeading)
+                    .padding(.leading, 15)
+                    .foregroundColor(model.isEnabled ? .black : .gray)
+                    .padding(1)
+                
+                Text(model.goalDescription ?? "")
+                    .frame(maxWidth: .infinity, alignment: .topLeading)
+                    .padding(.leading, 15)
+                    .foregroundColor(model.isEnabled ? .gray : .gray.opacity(0.50))
+                
+                if model.percentOfDone != 1 {
+                    ZStack(alignment: .leading) {
+                        Rectangle()
+                            .frame(width: 340, height: 2)
+                            .foregroundColor(Color("Peach").opacity(0.40))
+                        
+                        Rectangle()
+                            .frame(width: 150, height: 2)
+                            .foregroundColor(Color("Peach"))
                     }
                 }
-
-                VStack(alignment: .leading) {
-                    Text(model.title ?? "")
-                        .font(.largeTitle.bold())
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.leading, 15)
-                        .foregroundColor(model.isEnabled ? .black : .gray)
-                    Text(model.timeFrame ?? "")
-                        .font(.subheadline)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.leading, 15)
-                        .foregroundColor(model.isEnabled ? .black : .gray)
+                
+                HStack {
+                    HStack {
+                        Image(systemName: "checkmark.circle")
+                        Text("Done")
+                    }
+                    .padding(30)
+                    Spacer()
+                    HStack {
+                        Image(systemName: "clock")
+                        Text("\(model.timeFrame ?? "")")
+                    }
+                    Spacer()
                 }
+                .foregroundColor(model.isEnabled ? .black : .gray)
             }
-            .frame(width: 370, height: 100)
-            .modifier(FilledCellModifier(percentOfDone: model.percentOfDone))
-            .cornerRadius(20)
+        }
+        .frame(width: 370, height: 150)
+        .background(model.percentOfDone == 1 ? Color.accentColor : .white)
+        .cornerRadius(20)
     }
 }
 

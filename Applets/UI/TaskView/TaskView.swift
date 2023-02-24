@@ -20,12 +20,13 @@ struct TaskView: View {
             ZStack(alignment: .leading) {
                 Rectangle()
                     .frame(width: 370, height: 25)
+                    .modifier(FilledCellModifier(percentOfDone: viewModel.goal.fractionOfDone))
                     .foregroundColor(.gray.opacity(0.30))
                     .cornerRadius(20)
-                Rectangle()
-                    .frame(width: 70, height: 25)
-                    .foregroundColor(.accentColor)
-                    .cornerRadius(20)
+//                Rectangle()
+//                    .frame(width: 70, height: 25)
+//                    .foregroundColor(.accentColor)
+//                    .cornerRadius(20)
                 Text("\(viewModel.goal.percentOfDone)% has done")
                     .frame(maxWidth: .infinity)
             }

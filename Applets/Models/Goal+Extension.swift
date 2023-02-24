@@ -45,9 +45,14 @@ extension Goal {
 }
 
 extension Goal {
-    var percentOfDone: Double {
-        return allSteps.reduce(0) {
-            $0 + $1.weight
+    var percentOfDone: Int {
+        return Int(fractionOfDone * 100)
+    }
+
+    var fractionOfDone: Double {
+        return allSteps.reduce(0) { result, step in
+            guard step.isDone else { return result }
+            return result + step.weight
         }
     }
 }

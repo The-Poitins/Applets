@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct CellView: View {
-    var model: Goal
+
+    @ObservedObject var model: Goal
+
     var body: some View {
             ZStack {
                 if model.isEnabled {
-                    if model.percentOfDone < 1 {
+                    if model.percentOfDone < 100 {
                         HStack(alignment: .lastTextBaseline) {
-                            Text("\(Int(model.percentOfDone * 100))")
+                            Text("\(model.percentOfDone)")
                                 .font(.system(size: 100).bold().weight(.black))
                                 .padding(-10)
                             Text("%")
@@ -44,7 +46,7 @@ struct CellView: View {
                 }
             }
             .frame(width: 370, height: 100)
-            .modifier(FilledCellModifier(percentOfDone: model.percentOfDone))
+            .modifier(FilledCellModifier(percentOfDone: model.fractionOfDone))
             .cornerRadius(20)
     }
 }

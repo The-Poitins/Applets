@@ -103,6 +103,8 @@ struct UserProfileView: View {
                     }
                 } header: {
                     Text("Permesso di Soggiorno")
+                } footer: {
+                    Text("[Privacy Policy](https://github.com/The-Poitins/Applets/blob/dev/Privacy%20policy.md)")
                 }
             }
             .listStyle(.insetGrouped)

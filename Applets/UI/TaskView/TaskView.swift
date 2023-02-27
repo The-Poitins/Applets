@@ -23,10 +23,6 @@ struct TaskView: View {
                     .modifier(FilledCellModifier(percentOfDone: viewModel.goal.fractionOfDone))
                     .foregroundColor(.gray.opacity(0.30))
                     .cornerRadius(20)
-//                Rectangle()
-//                    .frame(width: 70, height: 25)
-//                    .foregroundColor(.accentColor)
-//                    .cornerRadius(20)
                 Text("\(viewModel.goal.percentOfDone)% has done")
                     .frame(maxWidth: .infinity)
             }

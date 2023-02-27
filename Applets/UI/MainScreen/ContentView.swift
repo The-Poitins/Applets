@@ -24,6 +24,7 @@ struct ContentView: View {
                             .navigationBarTitleDisplayMode(.inline)
                     } label: {
                         CellView(model: goal)
+                            .padding(6)
                     }
                 }
             }

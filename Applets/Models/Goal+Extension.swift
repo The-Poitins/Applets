@@ -26,6 +26,7 @@ extension Goal {
         """
         goal.timeFrame = "2-4 weeks"
         goal.image = "cf"
+        goal.isEnabled = true
 
         let step = Step(context: context)
         step.text = """

@@ -14,16 +14,16 @@ struct FilledCellModifier: ViewModifier {
         content
             .background(
                 GeometryReader { geometry in
-                    ZStack {
+//                    ZStack {
                         ZStack(alignment: .leading) {
                             Rectangle()
-                                .fill(Color.gray.opacity(0.40))
-                                .frame(width: geometry.size.width, height: geometry.size.height)
-                            Rectangle()
-                                .fill(Color.accentColor)
+                                .fill(Color("peach"))
                                 .frame(width: CGFloat(percentOfDone) * geometry.size.width, height: geometry.size.height)
+                            Rectangle()
+                                .fill(Color("peach").opacity(0.3))
+                                .frame(width: geometry.size.width, height: geometry.size.height)
                         }
-                    }
+//                    }
                 }
             )
     }

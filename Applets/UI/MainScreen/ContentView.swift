@@ -38,7 +38,6 @@ struct ContentView: View {
                     } label: {
                         Image(systemName: "person.circle")
                     }
-//                    .foregroundColor(.secondary)
                     .font(.title)
                 }
             }

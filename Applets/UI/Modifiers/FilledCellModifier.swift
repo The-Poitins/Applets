@@ -14,7 +14,6 @@ struct FilledCellModifier: ViewModifier {
         content
             .background(
                 GeometryReader { geometry in
-//                    ZStack {
                         ZStack(alignment: .leading) {
                             Rectangle()
                                 .fill(Color("peach"))
@@ -23,7 +22,6 @@ struct FilledCellModifier: ViewModifier {
                                 .fill(Color("peach").opacity(0.3))
                                 .frame(width: geometry.size.width, height: geometry.size.height)
                         }
-//                    }
                 }
             )
     }

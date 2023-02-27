@@ -18,7 +18,7 @@ final class DataPreloadAction {
         guard !hasPreloadedData else { return }
 
         dataPopulateService.preloadData { [weak self] error in
-            guard let error = error else {
+            guard let error else {
                 completion(nil)
                 self?.localStorage.write(value: true, for: LocalStorageKey.hasPreloadedData)
                 return

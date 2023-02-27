@@ -9,10 +9,11 @@ import Foundation
 
 struct UserProfileModel: Identifiable {
     var id = UUID().uuidString
-    var firstName: String
-    var surname: String
-    var emailAddress: String
-    var mobileNumber: String
-    var codiceFiscaleNumber: String
-    var permessoDiSoggiornoNumber: String
+    var firstName: String?
+    var surname: String?
+    var emailAddress: String?
+    var mobileNumber: String?
+    var codiceFiscaleNumber: String?
+    var permessoDiSoggiornoNumber: String?
+    var isEUCitizen: Bool?
 }

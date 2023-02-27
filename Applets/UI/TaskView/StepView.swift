@@ -29,12 +29,12 @@ struct StepView: View {
                     Spacer()
                     ZStack {
                         Circle()
-                            .strokeBorder(Color.accentColor, lineWidth: 3)
+                            .strokeBorder(Color("yellowColor"), lineWidth: 3)
                             .frame(width: 40)
                         if step.isDone {
                             Circle()
                                 .frame(width: 30)
-                                .foregroundColor(.accentColor)
+                                .foregroundColor(Color("yellowColor"))
                         }
                     }
                     .onTapGesture {

@@ -59,7 +59,7 @@ struct CellView: View {
             }
         }
         .frame(width: 370, height: 150)
-        .background(model.percentOfDone == 1 ? Color.accentColor : .white)
+        .background(model.percentOfDone == 1 ? Color("yellowColor") : .white)
         .cornerRadius(20)
         .shadow(color: .black.opacity(0.08), radius: 15, y: 2)
     }

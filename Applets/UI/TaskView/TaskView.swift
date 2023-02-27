@@ -49,12 +49,7 @@ struct TaskView: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(
-            Image("bg")
-                .resizable()
-                .scaledToFill()
-                .ignoresSafeArea()
-        )
+        .background(Color("yellowColor").opacity(0.10))
     }
 }
 

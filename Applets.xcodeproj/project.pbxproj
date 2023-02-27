@@ -18,6 +18,30 @@
 		2A689D0E29A4E861003908A4 /* InitialData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A689D0D29A4E861003908A4 /* InitialData.json */; };
 		2A84DB0929A397FB00E01DC3 /* FilledCellModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A84DB0829A397FB00E01DC3 /* FilledCellModifier.swift */; };
 		4CB2E5AC29A4D84100839C9A /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2E5AB29A4D84100839C9A /* UserProfileView.swift */; };
+		C106ACCB29ACC79E003B27E2 /* TasksDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A09D33C29A57340009ACE7C /* TasksDataModel.swift */; };
+		C106ACCC29ACC79E003B27E2 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A201FD5299F82DE00F06692 /* CellView.swift */; };
+		C106ACCD29ACC79E003B27E2 /* ModalStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A114B329A3DD2400F74200 /* ModalStepView.swift */; };
+		C106ACCE29ACC79E003B27E2 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A689D0629A4C9D6003908A4 /* TaskView.swift */; };
+		C106ACCF29ACC79E003B27E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A201FD7299F834000F06692 /* ContentView.swift */; };
+		C106ACD029ACC79E003B27E2 /* DataPreloadAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B29EB729A7759400A55192 /* DataPreloadAction.swift */; };
+		C106ACD129ACC79E003B27E2 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2E5AB29A4D84100839C9A /* UserProfileView.swift */; };
+		C106ACD229ACC79E003B27E2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E43AB429A382AD0008D7B0 /* DataManager.swift */; };
+		C106ACD329ACC79E003B27E2 /* LocalStorageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B29EB529A7731D00A55192 /* LocalStorageKey.swift */; };
+		C106ACD429ACC79E003B27E2 /* Step+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1479A4C29A4E4F5008023B6 /* Step+Extension.swift */; };
+		C106ACD529ACC79E003B27E2 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B13AAE299F7A5A008A8DE0 /* PersistenceController.swift */; };
+		C106ACD629ACC79E003B27E2 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B29EB329A771C100A55192 /* LocalStorage.swift */; };
+		C106ACD729ACC79E003B27E2 /* Goal+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13940A129A4186A00BD7DC2 /* Goal+Extension.swift */; };
+		C106ACD829ACC79E003B27E2 /* Applets.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1B13AA9299F7995008A8DE0 /* Applets.xcdatamodeld */; };
+		C106ACD929ACC79E003B27E2 /* AppletsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B13A95299E2B3E008A8DE0 /* AppletsApp.swift */; };
+		C106ACDA29ACC79E003B27E2 /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A114B129A3D46D00F74200 /* StepView.swift */; };
+		C106ACDB29ACC79E003B27E2 /* DataPopulateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B29EB029A76E5500A55192 /* DataPopulateService.swift */; };
+		C106ACDC29ACC79E003B27E2 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13656376299F8760003F0F31 /* ContentViewModel.swift */; };
+		C106ACDD29ACC79E003B27E2 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B29EBA29A8B2DB00A55192 /* TaskViewModel.swift */; };
+		C106ACDE29ACC79E003B27E2 /* FilledCellModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A84DB0829A397FB00E01DC3 /* FilledCellModifier.swift */; };
+		C106ACDF29ACC79E003B27E2 /* TasksDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A09D33E29A573E9009ACE7C /* TasksDataParser.swift */; };
+		C106ACE229ACC79E003B27E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B13A9C299E2B3F008A8DE0 /* Preview Assets.xcassets */; };
+		C106ACE329ACC79E003B27E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B13A99299E2B3F008A8DE0 /* Assets.xcassets */; };
+		C106ACE429ACC79E003B27E2 /* InitialData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A689D0D29A4E861003908A4 /* InitialData.json */; };
 		C13940A229A4186A00BD7DC2 /* Goal+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13940A129A4186A00BD7DC2 /* Goal+Extension.swift */; };
 		C1479A4D29A4E4F5008023B6 /* Step+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1479A4C29A4E4F5008023B6 /* Step+Extension.swift */; };
 		C1B13A96299E2B3E008A8DE0 /* AppletsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B13A95299E2B3E008A8DE0 /* AppletsApp.swift */; };
@@ -46,6 +70,7 @@
 		2A689D0D29A4E861003908A4 /* InitialData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = InitialData.json; sourceTree = "<group>"; };
 		2A84DB0829A397FB00E01DC3 /* FilledCellModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledCellModifier.swift; sourceTree = "<group>"; };
 		4CB2E5AB29A4D84100839C9A /* UserProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		C106ACE929ACC79E003B27E2 /* Swiftlint Autocorrect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swiftlint Autocorrect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13940A129A4186A00BD7DC2 /* Goal+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal+Extension.swift"; sourceTree = "<group>"; };
 		C1479A4C29A4E4F5008023B6 /* Step+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Step+Extension.swift"; sourceTree = "<group>"; };
 		C1B13A92299E2B3E008A8DE0 /* Applets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Applets.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +88,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C106ACE029ACC79E003B27E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1B13A8F299E2B3E008A8DE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -120,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				C1B13A92299E2B3E008A8DE0 /* Applets.app */,
+				C106ACE929ACC79E003B27E2 /* Swiftlint Autocorrect.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -245,6 +278,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C106ACC929ACC79E003B27E2 /* Swiftlint Autocorrect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C106ACE629ACC79E003B27E2 /* Build configuration list for PBXNativeTarget "Swiftlint Autocorrect" */;
+			buildPhases = (
+				C106ACCA29ACC79E003B27E2 /* Sources */,
+				C106ACE029ACC79E003B27E2 /* Frameworks */,
+				C106ACE129ACC79E003B27E2 /* Resources */,
+				C106ACE529ACC79E003B27E2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swiftlint Autocorrect";
+			productName = Applets;
+			productReference = C106ACE929ACC79E003B27E2 /* Swiftlint Autocorrect.app */;
+			productType = "com.apple.product-type.application";
+		};
 		C1B13A91299E2B3E008A8DE0 /* Applets */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1B13AA0299E2B3F008A8DE0 /* Build configuration list for PBXNativeTarget "Applets" */;
@@ -292,11 +343,22 @@
 			projectRoot = "";
 			targets = (
 				C1B13A91299E2B3E008A8DE0 /* Applets */,
+				C106ACC929ACC79E003B27E2 /* Swiftlint Autocorrect */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C106ACE129ACC79E003B27E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C106ACE229ACC79E003B27E2 /* Preview Assets.xcassets in Resources */,
+				C106ACE329ACC79E003B27E2 /* Assets.xcassets in Resources */,
+				C106ACE429ACC79E003B27E2 /* InitialData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1B13A90299E2B3E008A8DE0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,6 +372,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		C106ACE529ACC79E003B27E2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint >/dev/null; then\n    swiftlint --fix && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		C1B13AA3299E30B4008A8DE0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -326,11 +406,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint >/dev/null; then\n    swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C106ACCA29ACC79E003B27E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C106ACCB29ACC79E003B27E2 /* TasksDataModel.swift in Sources */,
+				C106ACCC29ACC79E003B27E2 /* CellView.swift in Sources */,
+				C106ACCD29ACC79E003B27E2 /* ModalStepView.swift in Sources */,
+				C106ACCE29ACC79E003B27E2 /* TaskView.swift in Sources */,
+				C106ACCF29ACC79E003B27E2 /* ContentView.swift in Sources */,
+				C106ACD029ACC79E003B27E2 /* DataPreloadAction.swift in Sources */,
+				C106ACD129ACC79E003B27E2 /* UserProfileView.swift in Sources */,
+				C106ACD229ACC79E003B27E2 /* DataManager.swift in Sources */,
+				C106ACD329ACC79E003B27E2 /* LocalStorageKey.swift in Sources */,
+				C106ACD429ACC79E003B27E2 /* Step+Extension.swift in Sources */,
+				C106ACD529ACC79E003B27E2 /* PersistenceController.swift in Sources */,
+				C106ACD629ACC79E003B27E2 /* LocalStorage.swift in Sources */,
+				C106ACD729ACC79E003B27E2 /* Goal+Extension.swift in Sources */,
+				C106ACD829ACC79E003B27E2 /* Applets.xcdatamodeld in Sources */,
+				C106ACD929ACC79E003B27E2 /* AppletsApp.swift in Sources */,
+				C106ACDA29ACC79E003B27E2 /* StepView.swift in Sources */,
+				C106ACDB29ACC79E003B27E2 /* DataPopulateService.swift in Sources */,
+				C106ACDC29ACC79E003B27E2 /* ContentViewModel.swift in Sources */,
+				C106ACDD29ACC79E003B27E2 /* TaskViewModel.swift in Sources */,
+				C106ACDE29ACC79E003B27E2 /* FilledCellModifier.swift in Sources */,
+				C106ACDF29ACC79E003B27E2 /* TasksDataParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1B13A8E299E2B3E008A8DE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -362,6 +470,70 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		C106ACE729ACC79E003B27E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"Applets/Preview Content\"";
+				DEVELOPMENT_TEAM = 3523U23689;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Applets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ask Barbara";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appletsacademy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C106ACE829ACC79E003B27E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"Applets/Preview Content\"";
+				DEVELOPMENT_TEAM = 3523U23689;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Applets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ask Barbara";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appletsacademy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		C1B13A9E299E2B3F008A8DE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -543,6 +715,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C106ACE629ACC79E003B27E2 /* Build configuration list for PBXNativeTarget "Swiftlint Autocorrect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C106ACE729ACC79E003B27E2 /* Debug */,
+				C106ACE829ACC79E003B27E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C1B13A8D299E2B3E008A8DE0 /* Build configuration list for PBXProject "Applets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -22,7 +22,7 @@ struct StepData: Codable {
     let text: String
     let isDone: Bool
     let weight: Double
-    let location: Location
+    // TODO: add location when we need it
 }
 
 struct Location: Codable {

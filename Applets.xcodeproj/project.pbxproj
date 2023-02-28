@@ -17,10 +17,11 @@
 		2A689D0729A4C9D6003908A4 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A689D0629A4C9D6003908A4 /* TaskView.swift */; };
 		2A689D0E29A4E861003908A4 /* InitialData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A689D0D29A4E861003908A4 /* InitialData.json */; };
 		2A84DB0929A397FB00E01DC3 /* FilledCellModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A84DB0829A397FB00E01DC3 /* FilledCellModifier.swift */; };
+		4C126A4929ADF77D00E2B29E /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C126A4829ADF77D00E2B29E /* OnboardingViewModel.swift */; };
 		4CAA1F4B29A8D65400D38C91 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA1F4A29A8D65400D38C91 /* OnboardingScreen.swift */; };
 		4CAA1F4F29A8D66200D38C91 /* OffsetPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA1F4C29A8D66200D38C91 /* OffsetPageTabView.swift */; };
 		4CAA1F5029A8D66200D38C91 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA1F4D29A8D66200D38C91 /* OnBoarding.swift */; };
-		4CAA1F5129A8D66200D38C91 /* QuestionButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA1F4E29A8D66200D38C91 /* QuestionButtonsView.swift */; };
+		4CAA1F5129A8D66200D38C91 /* QuestionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA1F4E29A8D66200D38C91 /* QuestionButtonView.swift */; };
 		4CB2E5AC29A4D84100839C9A /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2E5AB29A4D84100839C9A /* UserProfileView.swift */; };
 		C13940A229A4186A00BD7DC2 /* Goal+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13940A129A4186A00BD7DC2 /* Goal+Extension.swift */; };
 		C1479A4D29A4E4F5008023B6 /* Step+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1479A4C29A4E4F5008023B6 /* Step+Extension.swift */; };
@@ -48,10 +49,11 @@
 		2A689D0629A4C9D6003908A4 /* TaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		2A689D0D29A4E861003908A4 /* InitialData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = InitialData.json; sourceTree = "<group>"; };
 		2A84DB0829A397FB00E01DC3 /* FilledCellModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledCellModifier.swift; sourceTree = "<group>"; };
+		4C126A4829ADF77D00E2B29E /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		4CAA1F4A29A8D65400D38C91 /* OnboardingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		4CAA1F4C29A8D66200D38C91 /* OffsetPageTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffsetPageTabView.swift; sourceTree = "<group>"; };
 		4CAA1F4D29A8D66200D38C91 /* OnBoarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
-		4CAA1F4E29A8D66200D38C91 /* QuestionButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionButtonsView.swift; sourceTree = "<group>"; };
+		4CAA1F4E29A8D66200D38C91 /* QuestionButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionButtonView.swift; sourceTree = "<group>"; };
 		4CB2E5AB29A4D84100839C9A /* UserProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		C13940A129A4186A00BD7DC2 /* Goal+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal+Extension.swift"; sourceTree = "<group>"; };
 		C1479A4C29A4E4F5008023B6 /* Step+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Step+Extension.swift"; sourceTree = "<group>"; };
@@ -107,9 +109,18 @@
 			path = Modifiers;
 			sourceTree = "<group>";
 		};
+		4C126A4629ADF22800E2B29E /* OnboardingViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4C126A4829ADF77D00E2B29E /* OnboardingViewModel.swift */,
+			);
+			path = OnboardingViewModel;
+			sourceTree = "<group>";
+		};
 		4CAA1F4729A8D60600D38C91 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				4C126A4629ADF22800E2B29E /* OnboardingViewModel */,
 				4CAA1F4929A8D64300D38C91 /* OnboardingViews */,
 				4CAA1F4829A8D63100D38C91 /* OnboardingModel */,
 			);
@@ -129,7 +140,7 @@
 			children = (
 				4CAA1F4C29A8D66200D38C91 /* OffsetPageTabView.swift */,
 				4CAA1F4D29A8D66200D38C91 /* OnBoarding.swift */,
-				4CAA1F4E29A8D66200D38C91 /* QuestionButtonsView.swift */,
+				4CAA1F4E29A8D66200D38C91 /* QuestionButtonView.swift */,
 			);
 			path = OnboardingViews;
 			sourceTree = "<group>";
@@ -372,7 +383,7 @@
 				2A09D33D29A57340009ACE7C /* TasksDataModel.swift in Sources */,
 				2A201FD6299F82DE00F06692 /* CellView.swift in Sources */,
 				13A114B429A3DD2400F74200 /* ModalStepView.swift in Sources */,
-				4CAA1F5129A8D66200D38C91 /* QuestionButtonsView.swift in Sources */,
+				4CAA1F5129A8D66200D38C91 /* QuestionButtonView.swift in Sources */,
 				2A689D0729A4C9D6003908A4 /* TaskView.swift in Sources */,
 				2A201FD8299F834000F06692 /* ContentView.swift in Sources */,
 				C1B29EB829A7759400A55192 /* DataPreloadAction.swift in Sources */,
@@ -388,6 +399,7 @@
 				C1B13AAB299F7995008A8DE0 /* Applets.xcdatamodeld in Sources */,
 				C1B13A96299E2B3E008A8DE0 /* AppletsApp.swift in Sources */,
 				13A114B229A3D46D00F74200 /* StepView.swift in Sources */,
+				4C126A4929ADF77D00E2B29E /* OnboardingViewModel.swift in Sources */,
 				C1B29EB129A76E5500A55192 /* DataPopulateService.swift in Sources */,
 				13656377299F8760003F0F31 /* ContentViewModel.swift in Sources */,
 				C1B29EBB29A8B2DB00A55192 /* TaskViewModel.swift in Sources */,

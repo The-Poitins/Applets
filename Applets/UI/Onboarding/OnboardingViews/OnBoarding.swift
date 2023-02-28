@@ -13,7 +13,7 @@ struct OnBoarding: View {
     @State private var offset: CGFloat = 0
     @State private var isEUButton: Bool? = nil
     @Binding var firstRun: Bool
-    
+
     var body: some View {
         // Custom Pageing View
         OffsetPageTabView(offset: $offset) {
@@ -28,13 +28,13 @@ struct OnBoarding: View {
                         // The following tests for small screens
                             .scaleEffect(getScreenBounds().height < 750 ? 0.9 : 1)
                             .offset(y: getScreenBounds().height < 750 ? -100 : -120)
-                        
+
                         VStack(alignment: .leading, spacing: 12) {
                             Text(screen.title)
                                 .font(.largeTitle.bold())
                                 .foregroundColor(.white)
                                 .padding(.top, 20)
-                            
+
                             Text(screen.description)
                                 .fontWeight(.semibold)
                                 .foregroundColor(.white)
@@ -59,7 +59,7 @@ struct OnBoarding: View {
                 .rotationEffect(.init(degrees: 25))
                 .rotationEffect(.init(degrees: getRotation()))
                 .offset(y: -getScreenBounds().width + 20)
-            
+
             , alignment: .leading
         )
         .background(Color("screen\(getIndex() + 1)"))
@@ -154,6 +154,7 @@ extension View {
         return UIScreen.main.bounds
     }
 }
+
 
 struct OnBoarding_Previews: PreviewProvider {
     static var previews: some View {

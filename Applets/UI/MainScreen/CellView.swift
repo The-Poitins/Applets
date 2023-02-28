@@ -45,7 +45,7 @@ struct CellView: View {
                     Spacer()
                     HStack {
                         Image(systemName: "clock")
-                        Text("\(model.timeFrame ?? "")")
+                        Text(LocalizedStringKey(model.timeFrame ?? ""))
                             .font(.system(size: 16))
                     }
                     Spacer()

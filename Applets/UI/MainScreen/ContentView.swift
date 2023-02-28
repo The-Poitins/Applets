@@ -28,17 +28,15 @@ struct ContentView: View {
                         }
                     } else {
                         CellView(model: goal)
+                            .padding(.horizontal, 16)
+                            .padding(.bottom)
                     }
                 }
             }
+            .padding(.top, 8)
             .navigationTitle("Your tasks")
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(
-                Image("bg")
-                    .resizable()
-                    .scaledToFill()
-                    .ignoresSafeArea()
-            )
+            .background(Color("yellowColor").opacity(0.10))
             .toolbar {
                 ToolbarItem {
                     Button {
@@ -46,7 +44,6 @@ struct ContentView: View {
                     } label: {
                         Image(systemName: "person.circle")
                     }
-                    .foregroundColor(.secondary)
                     .font(.title)
                 }
             }

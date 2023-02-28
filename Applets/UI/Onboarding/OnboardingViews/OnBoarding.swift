@@ -11,8 +11,7 @@ import CoreGraphics
 
 struct OnBoarding: View {
     @State private var offset: CGFloat = 0
-    @State private var isEUButtonPressed = false
-    @State private var isNonEUButtonPressed = false
+    @State private var isEUButton: Bool? = nil
     @Binding var firstRun: Bool
     
     var body: some View {
@@ -49,7 +48,6 @@ struct OnBoarding: View {
                     .frame(maxHeight: .infinity)
                 }
             }
-
         }
         // Main background animation
         .background(
@@ -72,13 +70,10 @@ struct OnBoarding: View {
                 if offset == min(offset + getScreenBounds().width, getScreenBounds().width * 1) {
                     HStack {
                         QuestionButtonView(title: "EU",
-                                           isPressed: $isEUButtonPressed,
-                                           isOtherButtonPressed: $isNonEUButtonPressed)
+                                           isEUButton: $isEUButton)
                         QuestionButtonView(title: "non-EU",
-                                           isPressed: $isNonEUButtonPressed,
-                                           isOtherButtonPressed: $isEUButtonPressed )
+                                           isEUButton: $isEUButton)
                     }
-
                 }
 
                 HStack {

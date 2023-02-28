@@ -55,6 +55,7 @@ struct CellView: View {
             }
             .padding(16)
             .background(model.fractionOfDone == 1 ? Color.accentColor : .white)
+            .overlay(model.isEnabled ? .clear : .white.opacity(0.6))
             .cornerRadius(20)
             .shadow(color: .black.opacity(0.08), radius: 15, y: 2)
         }

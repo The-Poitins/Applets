@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  Applets
+
+  Created by Viacheslav on 28/02/23.
+  
+*/
+
+"Your tasks" = "Ваши задачи";
+"User Profile" = "Пользователь";
+"Edit" = "Редактировать";
+"DONE" = "ВЫПОЛНЕНО";
+"Close" = "Закрыть";
+"Done" = "Выполнено";
+"%lld%% has done" = "%lld%% выполнено";
+"Description" = "Описание";
+"Steps" = "Шаги";
+"Name" = "Имя";
+"Mobile number" = "Номер телефона";
+"Task %lld" = "Задача %lld";

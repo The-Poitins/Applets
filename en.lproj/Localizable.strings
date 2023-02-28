@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  Applets
+
+  Created by Viacheslav on 28/02/23.
+  
+*/
+"Your tasks" = "Your tasks";
+"User Profile" = "User Profile";
+"Edit" = "Edit";
+"DONE" = "DONE";
+"Close" = "Close";
+"Done" = "Done";
+"%lld%% has done" = "%lld%% has done";
+"Description";
+"Steps";
+"Name";
+"Mobile number";
+"Task %lld";
+"Book an appointment";
+"Approx. time 2-4 weeks";
+"The Codice Fiscale is a tax code unique to each person. It is required for many things, including getting a Permesso di Soggiorno, signing the contract with the academy or with your landlord, or even for joining a gym." = "Il Codice Fiscale è un codice fiscale unico per ogni persona. È necessario per molte cose, tra cui ottenere il Permesso di Soggiorno, firmare il contratto con l'Academy ,con il padrone di casa, o anche per iscriversi a una palestra.";

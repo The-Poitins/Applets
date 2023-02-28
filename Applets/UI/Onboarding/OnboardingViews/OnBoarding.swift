@@ -18,7 +18,7 @@ struct OnBoarding: View {
         // Custom Pageing View
         OffsetPageTabView(offset: $offset) {
             HStack(spacing: 0) {
-                ForEach(BoardingScreen.boardingScreens) { screen in
+                ForEach(OnboardingScreen.boardingScreens) { screen in
 
                     VStack(spacing: 15) {
                         Image(screen.image)
@@ -84,10 +84,9 @@ struct OnBoarding: View {
                             .fontWeight(.semibold)
                             .foregroundColor(.white)
                     }
-                    
                     // Indicators
                     HStack(spacing: 8) {
-                        ForEach(BoardingScreen.boardingScreens.indices, id: \.self) { index in
+                        ForEach(OnboardingScreen.boardingScreens.indices, id: \.self) { index in
                             Circle()
                                 .fill(.white)
                                 .opacity(index == getIndex() ? 1 : 0.4)
@@ -132,20 +131,19 @@ struct OnBoarding: View {
             , alignment: .bottom
         )
     }
-    
+
     // Get rotation
     func getRotation() -> Double {
         let progress = offset / (getScreenBounds().width * 4)
         let rotation = Double(progress) * 360         // Do one full rotation (can also do less)
-        
+
         return rotation
     }
-    
-    
+
     // Change the background colour based on the offset
     func getIndex() -> Int {
         let progress = (offset / getScreenBounds().width).rounded()
-        
+
         return Int(progress)
     }
 }
@@ -156,8 +154,6 @@ extension View {
         return UIScreen.main.bounds
     }
 }
-
-
 
 struct OnBoarding_Previews: PreviewProvider {
     static var previews: some View {

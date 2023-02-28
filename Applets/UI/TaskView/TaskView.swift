@@ -29,32 +29,28 @@ struct TaskView: View {
             }
             .padding(.horizontal)
 
-            if let image = viewModel.goal.image, !image.isEmpty {
-                Image(image)
-                    .resizable()
-                    .scaledToFit()
-                    .cornerRadius(20)
-                    .padding(.horizontal)
-                    .shadow(color: .black.opacity(0.08), radius: 20, y: 2)
+            VStack(alignment: .leading) {
+                if let image = viewModel.goal.image, !image.isEmpty {
+                    Image(image)
+                        .resizable()
+                        .scaledToFit()
+                        .cornerRadius(20)
+                        .shadow(color: .black.opacity(0.08), radius: 20, y: 2)
+                }
+
+                Text("Description")
+                    .font(.title)
+                    .padding(.vertical, 2)
+                Text(LocalizedStringKey(viewModel.goal.information ?? ""))
+                Text("Steps")
+                    .font(.title)
+                    .padding(.top, 2)
             }
-            
-            Text("Description")
-                .font(.title)
-                .padding(.top, 2)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal)
-            Text(LocalizedStringKey(viewModel.goal.information ?? ""))
-                .padding(.horizontal)
-            Text("Steps")
-                .font(.title)
-                .padding(.top, 2)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal)
+            .padding(.horizontal)
             ForEach(viewModel.sortedSteps, id: \.self) { step in
                 StepView(viewModel: viewModel, step: step)
             }
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color("yellowColor").opacity(0.10))
     }
 }

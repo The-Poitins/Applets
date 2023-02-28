@@ -46,7 +46,7 @@ struct StepView: View {
         .sheet(isPresented: $isModal) {
             NavigationStack {
                 ModalStepView(step: step)
-                    .navigationBarTitle(step.title ?? "", displayMode: .inline)
+                    .navigationBarTitle(LocalizedStringKey(step.title ?? ""), displayMode: .inline)
                     .toolbar {
                         ToolbarItem(placement: .navigationBarTrailing) {
                             Button("Close") { isModal.toggle()

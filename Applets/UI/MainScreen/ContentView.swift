@@ -25,6 +25,8 @@ struct ContentView: View {
                                 .navigationBarTitleDisplayMode(.inline)
                         } label: {
                             CellView(model: goal)
+                                .padding(.horizontal, 16)
+                                .padding(.bottom)
                         }
                     } else {
                         CellView(model: goal)

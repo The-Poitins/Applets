@@ -33,12 +33,12 @@ struct CellView: View {
                 }
 
                 VStack(alignment: .leading) {
-                    Text(model.title ?? "")
+                    Text(LocalizedStringKey(model.title ?? ""))
                         .font(.largeTitle.bold())
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.leading, 15)
                         .foregroundColor(model.isEnabled ? .black : .gray)
-                    Text(model.timeFrame ?? "")
+                    Text(LocalizedStringKey(model.timeFrame ?? ""))
                         .font(.subheadline)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.leading, 15)

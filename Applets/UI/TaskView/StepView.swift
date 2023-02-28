@@ -24,7 +24,7 @@ struct StepView: View {
                     .frame(width: 370, height: 50)
                     .cornerRadius(10)
                 HStack {
-                    Text(step.title ?? "")
+                    Text(LocalizedStringKey(step.title ?? ""))
                         .font(.headline)
                     Spacer()
                     ZStack {

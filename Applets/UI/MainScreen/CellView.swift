@@ -29,19 +29,9 @@ struct CellView: View {
                 if model.fractionOfDone < 1 {
                     ZStack(alignment: .center) {
                         Rectangle()
-                            .frame(height: 3)
+                            .frame(height: 4)
                             .foregroundColor(.clear)
-                            .modifier(FilledCellModifier(percentOfDone: model.fractionOfDone))
-                        //                                .position(x: 182, y: 20)
-                        //                            Circle()
-                        //                                .foregroundColor(Color("peach"))
-                        //                                .frame(width: 8, height: 8)
-                        //                                .offset(x: -150 + (model.fractionOfDone * 300), y: 16)
-                        //                            Circle()
-                        //                                .foregroundColor(.white)
-                        //                                .frame(width: 4, height: 4)
-                        //                                .offset(x: -150 + (model.fractionOfDone * 300), y: 16)
-                        //                        }
+                            .modifier(CircledProgressBar(percentOfDone: model.fractionOfDone))
                     }
                     .padding(.top, 12)
                     

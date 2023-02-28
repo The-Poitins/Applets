@@ -26,4 +26,3 @@ struct FilledCellModifier: ViewModifier {
             )
     }
 }
-

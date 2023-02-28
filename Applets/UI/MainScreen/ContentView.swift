@@ -24,10 +24,12 @@ struct ContentView: View {
                             .navigationBarTitleDisplayMode(.inline)
                     } label: {
                         CellView(model: goal)
-                            .padding(6)
+                            .padding(.horizontal, 16)
+                            .padding(.bottom)
                     }
                 }
             }
+            .padding(.top, 8)
             .navigationTitle("Your tasks")
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.accentColor.opacity(0.10))

@@ -34,24 +34,24 @@ struct CellView: View {
                             .modifier(CircledProgressBar(percentOfDone: model.fractionOfDone))
                     }
                     .padding(.top, 12)
-                    
-                    HStack {
-                        HStack {
-                            Image(systemName: "checkmark.circle")
-                            Text(model.percentOfDone == 100 ? "Done" : "\(model.completedSteps.count)/\(model.allSteps.count)")
-                                .font(.system(size: 16))
-                        }
-                        Spacer()
-                        HStack {
-                            Image(systemName: "clock")
-                            Text("\(model.timeFrame ?? "")")
-                                .font(.system(size: 16))
-                        }
-                        Spacer()
-                    }
-                    .padding(.top, 12)
-                    .foregroundColor(model.isEnabled ? .black : .gray)
                 }
+                
+                HStack {
+                    HStack {
+                        Image(systemName: "checkmark.circle")
+                        Text(model.percentOfDone == 100 ? "Done" : "\(model.completedSteps.count)/\(model.allSteps.count)")
+                            .font(.system(size: 16))
+                    }
+                    Spacer()
+                    HStack {
+                        Image(systemName: "clock")
+                        Text("\(model.timeFrame ?? "")")
+                            .font(.system(size: 16))
+                    }
+                    Spacer()
+                }
+                .padding(.top, 12)
+                .foregroundColor(model.isEnabled ? .black : .gray)
             }
             .padding(16)
             .background(model.fractionOfDone == 1 ? Color.accentColor : .white)

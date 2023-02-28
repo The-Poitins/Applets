@@ -18,6 +18,7 @@
 "Name" = "Nome";
 "Mobile number" = "Numero di cellulare";
 "Task %lld" = "Attivita %lld";
+"[Privacy Policy](https://github.com/The-Poitins/Applets/blob/dev/Privacy%20policy.md)" = "[Informativa sulla privacy](https://github.com/The-Poitins/Applets/blob/dev/Privacy%20policy.md)";
 
 //Codice fiscale
 

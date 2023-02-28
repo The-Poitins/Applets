@@ -26,6 +26,7 @@
 		4CAA1F5029A8D66200D38C91 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA1F4D29A8D66200D38C91 /* OnBoarding.swift */; };
 		4CAA1F5129A8D66200D38C91 /* QuestionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA1F4E29A8D66200D38C91 /* QuestionButtonView.swift */; };
 		4CB2E5AC29A4D84100839C9A /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2E5AB29A4D84100839C9A /* UserProfileView.swift */; };
+		4CE53EC529AA72EE00792923 /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE53EC429AA72EE00792923 /* UserProfileModel.swift */; };
 		C106ACCB29ACC79E003B27E2 /* TasksDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A09D33C29A57340009ACE7C /* TasksDataModel.swift */; };
 		C106ACCC29ACC79E003B27E2 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A201FD5299F82DE00F06692 /* CellView.swift */; };
 		C106ACCD29ACC79E003B27E2 /* ModalStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A114B329A3DD2400F74200 /* ModalStepView.swift */; };
@@ -87,6 +88,7 @@
 		4CAA1F4E29A8D66200D38C91 /* QuestionButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionButtonView.swift; sourceTree = "<group>"; };
 		4CB2E5AB29A4D84100839C9A /* UserProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		4CF832CF29AE14C700B9E879 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CE53EC429AA72EE00792923 /* UserProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = "<group>"; };
 		C106ACE929ACC79E003B27E2 /* Swiftlint Autocorrect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swiftlint Autocorrect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13940A129A4186A00BD7DC2 /* Goal+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal+Extension.swift"; sourceTree = "<group>"; };
 		C1479A4C29A4E4F5008023B6 /* Step+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Step+Extension.swift"; sourceTree = "<group>"; };
@@ -200,6 +202,14 @@
 				4CB2E5AB29A4D84100839C9A /* UserProfileView.swift */,
 			);
 			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		4CE53EC329AA72D300792923 /* UserProfileModel */ = {
+			isa = PBXGroup;
+			children = (
+				4CE53EC429AA72EE00792923 /* UserProfileModel.swift */,
+			);
+			path = UserProfileModel;
 			sourceTree = "<group>";
 		};
 		C1B13A89299E2B3E008A8DE0 = {
@@ -537,6 +547,7 @@
 				C1B29EBB29A8B2DB00A55192 /* TaskViewModel.swift in Sources */,
 				2A84DB0929A397FB00E01DC3 /* FilledCellModifier.swift in Sources */,
 				4CAA1F5029A8D66200D38C91 /* OnBoarding.swift in Sources */,
+				4CE53EC529AA72EE00792923 /* UserProfileModel.swift in Sources */,
 				2A09D33F29A573E9009ACE7C /* TasksDataParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

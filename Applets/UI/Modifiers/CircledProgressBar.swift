@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CircledProgressBar: ViewModifier {
     var percentOfDone: Double
-    
+
     func body(content: Content) -> some View {
         content
             .background(
@@ -17,7 +17,10 @@ struct CircledProgressBar: ViewModifier {
                     ZStack(alignment: .leading) {
                         Rectangle()
                             .fill(Color("peach"))
-                            .frame(width: CGFloat(percentOfDone) * geometry.size.width + 2, height: geometry.size.height)
+                            .frame(
+                                width: CGFloat(percentOfDone) * geometry.size.width + 2,
+                                height: geometry.size.height
+                            )
                             .cornerRadius(geometry.size.height / 2)
                         Rectangle()
                             .fill(Color("peach").opacity(0.3))

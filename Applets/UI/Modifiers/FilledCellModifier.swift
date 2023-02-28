@@ -17,7 +17,10 @@ struct FilledCellModifier: ViewModifier {
                         ZStack(alignment: .leading) {
                             Rectangle()
                                 .fill(Color("peach"))
-                                .frame(width: CGFloat(percentOfDone) * geometry.size.width, height: geometry.size.height)
+                                .frame(
+                                    width: CGFloat(percentOfDone) * geometry.size.width,
+                                    height: geometry.size.height
+                                )
                             Rectangle()
                                 .fill(Color("peach").opacity(0.3))
                                 .frame(width: geometry.size.width, height: geometry.size.height)

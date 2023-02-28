@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct CellView: View {
-    
+
     @ObservedObject var model: Goal
-    
+
     var body: some View {
         ZStack(alignment: .center) {
             VStack(alignment: .leading) {
@@ -20,7 +20,7 @@ struct CellView: View {
                         .frame(maxWidth: .infinity, alignment: .topLeading)
                         .padding(.bottom, 4)
                         .foregroundColor(model.isEnabled ? .black : .gray)
-                    
+
                     Text(model.goalDescription ?? "")
                         .frame(maxWidth: .infinity, alignment: .topLeading)
                         .font(.system(size: 16))
@@ -35,7 +35,7 @@ struct CellView: View {
                     }
                     .padding(.top, 12)
                 }
-                
+
                 HStack {
                     HStack {
                         Image(systemName: "checkmark.circle")

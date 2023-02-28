@@ -17,14 +17,16 @@ extension Goal {
     static func previewExample(for index: Int, in context: NSManagedObjectContext) -> Goal {
         let goal = Goal(context: context)
         goal.id = UUID()
+        goal.goalDescription = "Obtain Italian tax number"
         goal.title = "Task \(index)"
         goal.information = """
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         """
-        goal.timeFrame = "Approx. time 2-4 weeks"
+        goal.timeFrame = "2-4 weeks"
         goal.image = "cf"
+        goal.isEnabled = true
 
         let step = Step(context: context)
         step.text = """
@@ -47,6 +49,10 @@ extension Goal {
 extension Goal {
     var percentOfDone: Int {
         return Int(fractionOfDone * 100)
+    }
+
+    var completedSteps: [Step] {
+        allSteps.filter { $0.isDone }
     }
 
     var fractionOfDone: Double {

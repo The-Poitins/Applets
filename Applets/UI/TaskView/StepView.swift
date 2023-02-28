@@ -18,23 +18,19 @@ struct StepView: View {
         Button {
             isModal.toggle()
         } label: {
-            ZStack {
-                Rectangle()
-                    .foregroundColor(.gray.opacity(0.1))
-                    .frame(width: 370, height: 50)
-                    .cornerRadius(10)
                 HStack {
-                    Text(step.title ?? "")
-                        .font(.headline)
+                    Text(LocalizedStringKey(step.title ?? ""))
+                        .multilineTextAlignment(.leading)
+                        .lineLimit(2)
                     Spacer()
                     ZStack {
                         Circle()
-                            .strokeBorder(Color.accentColor, lineWidth: 3)
+                            .strokeBorder(Color("peach"), lineWidth: 3)
                             .frame(width: 40)
                         if step.isDone {
                             Circle()
                                 .frame(width: 30)
-                                .foregroundColor(.accentColor)
+                                .foregroundColor(Color("peach"))
                         }
                     }
                     .onTapGesture {
@@ -42,13 +38,15 @@ struct StepView: View {
                     }
                 }
                 .padding(.horizontal)
-            }
-            .padding(.horizontal)
+            .frame(width: 370, height: 50)
+            .background(.white)
+            .cornerRadius(15)
+            .shadow(color: .black.opacity(0.08), radius: 15, y: 2)
         }
         .sheet(isPresented: $isModal) {
             NavigationStack {
                 ModalStepView(step: step)
-                    .navigationBarTitle(step.title ?? "", displayMode: .inline)
+                    .navigationBarTitle(LocalizedStringKey(step.title ?? ""), displayMode: .inline)
                     .toolbar {
                         ToolbarItem(placement: .navigationBarTrailing) {
                             Button("Close") { isModal.toggle()

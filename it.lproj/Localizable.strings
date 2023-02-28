@@ -1,0 +1,70 @@
+/* 
+  Localizable.strings
+  Applets
+
+  Created by Viacheslav on 28/02/23.
+  
+*/
+
+"Your tasks" = "I tuoi compiti";
+"User Profile" = "Profilo";
+"Edit" = "Modifica";
+"Done" = "Finito";
+"Close" = "Chiudi";
+"Done" = "Finito";
+"%lld%% has done" = "%lld%% ha finito";
+"Description" = "Descrizione";
+"Steps" = "Fase";
+"Name" = "Nome";
+"Mobile number" = "Numero di cellulare";
+"Task %lld" = "Attivita %lld";
+"[Privacy Policy](https://github.com/The-Poitins/Applets/blob/dev/Privacy%20policy.md)" = "[Informativa sulla privacy](https://github.com/The-Poitins/Applets/blob/dev/Privacy%20policy.md)";
+
+//Codice fiscale
+
+"The Codice Fiscale is a tax code unique to each person. It is required for many things, including getting a Permesso di Soggiorno, signing the contract with the academy or with your landlord, or even for joining a gym." = "Il Codice Fiscale è un codice fiscale unico per ogni persona. È necessario per molte cose, tra cui ottenere il Permesso di Soggiorno, firmare il contratto con l'Academy ,con il padrone di casa, o anche per iscriversi a una palestra.";
+
+//first step
+
+"Book an appointment" = "Prendi un appuntamento";
+
+"Approx. time 2-4 weeks" = "Tempo stimato: 2-4 settimane";
+
+"Book an appointment either online or through the app. If you can't make the appointment, remember to cancel it. Note that the English and German versions of the website are different to the Italian one.\nBook or cancel an appointment on the website: \nUse the translate service built into Safari or Google Translate to navigate the booking. \n\n [Book Appointment](https://prenotazioneweb.agenziaentrate.gov.it/PrenotazioneWeb/prenotazione.action) \n\n Agenzia app: (The Agenzia app is unlikely to be available on non-Italian app stores).\n\n[App Store](https://itunes.apple.com/it/app/agenziaentrate/id1014942268)\n\n[Play Store](https://play.google.com/store/apps/details?id=it.agenziaentrate.mobile.servizionline.ServiziActivity)" = "
+Tempo stimato: 2-4 settimane
+
+Prenotate un appuntamento online o tramite l'app. Se non riuscite a fissare l'appuntamento, ricordatevi di cancellarlo. Nota bene che le versioni inglese e tedesco del sito web sono diverse da quella italiana.   Prenotare o cancellare un appuntamento sul sito web:   Utilizzare il servizio di traduzione integrato in Safari o Google Translate per navigare nella prenotazione.
+
+[Prenota un appuntamento](https://prenotazioneweb.agenziaentrate.gov.it/PrenotazioneWeb/prenotazione.action)
+
+Agenzia app: (È improbabile che l'app Agenzia sia disponibile su app store non italiani.).
+
+[AppStore](https://itunes.apple.com/it/app/agenziaentrate/id1014942268)
+[PlayStore](https://play.google.com/store/apps/details?id=it.agenziaentrate.mobile.servizionline.ServiziActivity)";
+
+//Second step
+"Gather the required documents" = "Raccogliere i documenti richiesti";
+
+"Download and fill out the form:\n\n[Editable PDF - English](https://www.agenziaentrate.gov.it/portale/documents/20143/278995/Form+AA48+Editable_AA4_8_Modello_ING.pdf/e32d806e-92e3-05a5-37ac-ab270ff86a74)\n\n[PDF - Italian/German](https://www.agenziaentrate.gov.it/portale/documents/20143/274278/Vordrucke+AA9+12+modello+AA9+12_AA9_12_modello_TED_def.pdf/3fca2bd2-e875-74fa-2b2b-c7ef966647d1)\n\nRequired documents:\n - Completed form \n- Letter of invitation from Academy (Non-EU) \n- ID (Non-EU) \n- Passport \n- Valid visa (if applicable) \n- ID (EU): \n- Passport/Passport card \n- Photocopy of passport/passport card \n- Photocopy of visa (Non-EU)" = "Scaricare e compilare il modulo
+
+ [Modificabile PDF - Inglese](https://www.agenziaentrate.gov.it/portale/documents/20143/278995/Form+AA48+Editable_AA4_8_Modello_ING.pdf/e32d806e-92e3-05a5-37ac-ab270ff86a74)
+ [PDF - Italiano/Tedesco](https://www.agenziaentrate.gov.it/portale/documents/20143/274278/Vordrucke+AA9+12+modello+AA9+12_AA9_12_modello_TED_def.pdf/3fca2bd2-e875-74fa-2b2b-c7ef966647d1)
+
+
+ Documenti richiesti:
+  - Completare il form
+- Lettera d'invito dall'Academy (non-UE)
+- Documenti (Non-EU)
+ - Passaporto
+ - Visto valido (se applicabile)
+- Documenti (EU):
+ - Passaporto/Carta d'identità
+- Fotocopia del passaporto/carta d'identità
+ - Fotocopia del visto (non-UE)";
+
+//Third step
+
+"Go to the Agenzia for your appointment" = "Vai all'agenzia per il tuo appuntamento";
+
+"Location:\n\n[Agenzia delle Entrate Office](https://maps.apple.com/?address=Via%20Guglielmo%20Oberdan%201-3,%2080134%20Naples,%20Italy&auid=6110987139943857305&ll=40.842925,14.249981&lsp=9902&q=Agenzia%20delle%20Entrate)\n(Entrance on Via Guglielmo Oberdan)" = "Posizione: [Ufficio Agenzia delle Entrate](https://maps.apple.com/?address=Via%20Guglielmo%20Oberdan%201-3,%2080134%20Naples,%20Italy&auid=6110987139943857305&ll=40.842925,14.249981&lsp=9902&q=Agenzia%20delle%20Entrate)
+(Entrata da Via Guglielmo Oberdan)";

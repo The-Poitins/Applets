@@ -15,7 +15,6 @@ struct ModalStepView: View {
         VStack(alignment: .leading, spacing: 5) {
             Text(LocalizedStringKey(step.text ?? ""))
             Spacer()
-
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.horizontal)

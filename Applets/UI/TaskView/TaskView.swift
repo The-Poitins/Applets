@@ -27,14 +27,17 @@ struct TaskView: View {
                 Text("\(viewModel.goal.percentOfDone)% has done")
                     .frame(maxWidth: .infinity)
             }
-
             .padding(.horizontal)
-            Image(viewModel.goal.image ?? "")
-                .resizable()
-                .scaledToFit()
-                .cornerRadius(20)
-                .padding(.horizontal)
-                .shadow(color: .black.opacity(0.08), radius: 20, y: 2)
+
+            if let image = viewModel.goal.image, !image.isEmpty {
+                Image(image)
+                    .resizable()
+                    .scaledToFit()
+                    .cornerRadius(20)
+                    .padding(.horizontal)
+                    .shadow(color: .black.opacity(0.08), radius: 20, y: 2)
+            }
+            
             Text("Description")
                 .font(.title)
                 .padding(.top, 2)

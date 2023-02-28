@@ -18,6 +18,7 @@
 		2A689D0E29A4E861003908A4 /* InitialData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A689D0D29A4E861003908A4 /* InitialData.json */; };
 		2A84DB0929A397FB00E01DC3 /* FilledCellModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A84DB0829A397FB00E01DC3 /* FilledCellModifier.swift */; };
 		4CB2E5AC29A4D84100839C9A /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2E5AB29A4D84100839C9A /* UserProfileView.swift */; };
+		C1356D1329AE1569009F4654 /* CircledProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1356D1229AE1569009F4654 /* CircledProgressBar.swift */; };
 		C13940A229A4186A00BD7DC2 /* Goal+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13940A129A4186A00BD7DC2 /* Goal+Extension.swift */; };
 		C1479A4D29A4E4F5008023B6 /* Step+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1479A4C29A4E4F5008023B6 /* Step+Extension.swift */; };
 		C1B13A96299E2B3E008A8DE0 /* AppletsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B13A95299E2B3E008A8DE0 /* AppletsApp.swift */; };
@@ -46,6 +47,7 @@
 		2A689D0D29A4E861003908A4 /* InitialData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = InitialData.json; sourceTree = "<group>"; };
 		2A84DB0829A397FB00E01DC3 /* FilledCellModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledCellModifier.swift; sourceTree = "<group>"; };
 		4CB2E5AB29A4D84100839C9A /* UserProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		C1356D1229AE1569009F4654 /* CircledProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircledProgressBar.swift; sourceTree = "<group>"; };
 		C13940A129A4186A00BD7DC2 /* Goal+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal+Extension.swift"; sourceTree = "<group>"; };
 		C1479A4C29A4E4F5008023B6 /* Step+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Step+Extension.swift"; sourceTree = "<group>"; };
 		C1B13A92299E2B3E008A8DE0 /* Applets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Applets.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +97,7 @@
 		2A84DB0729A397E400E01DC3 /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				C1356D1229AE1569009F4654 /* CircledProgressBar.swift */,
 				2A84DB0829A397FB00E01DC3 /* FilledCellModifier.swift */,
 			);
 			path = Modifiers;
@@ -348,6 +351,7 @@
 				C1B13AAF299F7A5A008A8DE0 /* PersistenceController.swift in Sources */,
 				C1B29EB429A771C100A55192 /* LocalStorage.swift in Sources */,
 				C13940A229A4186A00BD7DC2 /* Goal+Extension.swift in Sources */,
+				C1356D1329AE1569009F4654 /* CircledProgressBar.swift in Sources */,
 				C1B13AAB299F7995008A8DE0 /* Applets.xcdatamodeld in Sources */,
 				C1B13A96299E2B3E008A8DE0 /* AppletsApp.swift in Sources */,
 				13A114B229A3D46D00F74200 /* StepView.swift in Sources */,

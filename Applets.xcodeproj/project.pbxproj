@@ -19,6 +19,7 @@
 		2A689D0729A4C9D6003908A4 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A689D0629A4C9D6003908A4 /* TaskView.swift */; };
 		2A689D0E29A4E861003908A4 /* InitialData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A689D0D29A4E861003908A4 /* InitialData.json */; };
 		2A84DB0929A397FB00E01DC3 /* FilledCellModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A84DB0829A397FB00E01DC3 /* FilledCellModifier.swift */; };
+		4C0F5F4929AE17E900C779FB /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F5F4829AE17E800C779FB /* UserProfileModel.swift */; };
 		4C126A4929ADF77D00E2B29E /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C126A4829ADF77D00E2B29E /* OnboardingViewModel.swift */; };
 		4CAA1F4B29A8D65400D38C91 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA1F4A29A8D65400D38C91 /* OnboardingScreen.swift */; };
 		4CAA1F4F29A8D66200D38C91 /* OffsetPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA1F4C29A8D66200D38C91 /* OffsetPageTabView.swift */; };
@@ -71,7 +72,6 @@
 		13CEA97F29ADF8F50002FAB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		13CEA98429ADF9B20002FAB6 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		13CEA98529ADF9BD0002FAB6 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		13DFD6C929A8D26300003B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2A09D33C29A57340009ACE7C /* TasksDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDataModel.swift; sourceTree = "<group>"; };
 		2A09D33E29A573E9009ACE7C /* TasksDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDataParser.swift; sourceTree = "<group>"; };
 		2A201FD5299F82DE00F06692 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
@@ -79,6 +79,7 @@
 		2A689D0629A4C9D6003908A4 /* TaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		2A689D0D29A4E861003908A4 /* InitialData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = InitialData.json; sourceTree = "<group>"; };
 		2A84DB0829A397FB00E01DC3 /* FilledCellModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledCellModifier.swift; sourceTree = "<group>"; };
+		4C0F5F4829AE17E800C779FB /* UserProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = "<group>"; };
 		4C126A4829ADF77D00E2B29E /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		4CAA1F4A29A8D65400D38C91 /* OnboardingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		4CAA1F4C29A8D66200D38C91 /* OffsetPageTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffsetPageTabView.swift; sourceTree = "<group>"; };
@@ -148,6 +149,14 @@
 			path = Modifiers;
 			sourceTree = "<group>";
 		};
+		4C0F5F4729AE17E800C779FB /* UserProfileModel */ = {
+			isa = PBXGroup;
+			children = (
+				4C0F5F4829AE17E800C779FB /* UserProfileModel.swift */,
+			);
+			path = UserProfileModel;
+			sourceTree = "<group>";
+		};
 		4C126A4629ADF22800E2B29E /* OnboardingViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +196,7 @@
 		4CB2E5AA29A4D83000839C9A /* UserProfile */ = {
 			isa = PBXGroup;
 			children = (
+				4C0F5F4729AE17E800C779FB /* UserProfileModel */,
 				4CB2E5AB29A4D84100839C9A /* UserProfileView.swift */,
 			);
 			path = UserProfile;
@@ -520,6 +530,7 @@
 				C1B13AAB299F7995008A8DE0 /* Applets.xcdatamodeld in Sources */,
 				C1B13A96299E2B3E008A8DE0 /* AppletsApp.swift in Sources */,
 				13A114B229A3D46D00F74200 /* StepView.swift in Sources */,
+				4C0F5F4929AE17E900C779FB /* UserProfileModel.swift in Sources */,
 				4C126A4929ADF77D00E2B29E /* OnboardingViewModel.swift in Sources */,
 				C1B29EB129A76E5500A55192 /* DataPopulateService.swift in Sources */,
 				13656377299F8760003F0F31 /* ContentViewModel.swift in Sources */,

@@ -20,21 +20,21 @@ struct TaskView: View {
             ZStack(alignment: .leading) {
                 Rectangle()
                     .frame(width: 370, height: 25)
-                    .foregroundColor(.gray.opacity(0.30))
+                    .modifier(FilledCellModifier(percentOfDone: viewModel.goal.fractionOfDone))
+                    .foregroundColor(.clear)
                     .cornerRadius(20)
-                Rectangle()
-                    .frame(width: 70, height: 25)
-                    .foregroundColor(.accentColor)
-                    .cornerRadius(20)
+                    .shadow(color: .black.opacity(0.1), radius: 20, y: 2)
                 Text("\(viewModel.goal.percentOfDone)% has done")
                     .frame(maxWidth: .infinity)
             }
+
             .padding(.horizontal)
             Image(viewModel.goal.image ?? "")
                 .resizable()
                 .scaledToFit()
                 .cornerRadius(20)
                 .padding(.horizontal)
+                .shadow(color: .black.opacity(0.08), radius: 20, y: 2)
             Text("Description")
                 .font(.title)
                 .padding(.top, 2)
@@ -52,12 +52,7 @@ struct TaskView: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(
-            Image("bg")
-                .resizable()
-                .scaledToFill()
-                .ignoresSafeArea()
-        )
+        .background(Color("yellowColor").opacity(0.10))
     }
 }
 

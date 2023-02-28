@@ -32,16 +32,14 @@ struct ContentView: View {
             .padding(.top, 8)
             .navigationTitle("Your tasks")
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color.accentColor.opacity(0.10))
+            .background(Color("yellowColor").opacity(0.10))
             .toolbar {
                 ToolbarItem {
                     Button {
                         isShowingProfilePage.toggle()
                     } label: {
                         Image(systemName: "person.circle")
-                            .foregroundColor(.accentColor)
                     }
-                    .foregroundColor(.secondary)
                     .font(.title)
                 }
             }

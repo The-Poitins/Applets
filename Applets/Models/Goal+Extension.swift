@@ -50,6 +50,10 @@ extension Goal {
     var percentOfDone: Int {
         return Int(fractionOfDone * 100)
     }
+    
+    var completedSteps: [Step] {
+        allSteps.filter { $0.isDone }
+    }
 
     var fractionOfDone: Double {
         return allSteps.reduce(0) { result, step in

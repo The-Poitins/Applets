@@ -18,11 +18,15 @@ struct ContentView: View {
         NavigationStack {
             ScrollView {
                 ForEach(contentVM.goals, id: \.id) { goal in
-                    NavigationLink {
-                        TaskView(goal: goal)
-                            .navigationTitle(goal.title ?? "")
-                            .navigationBarTitleDisplayMode(.inline)
-                    } label: {
+                    if goal.isEnabled {
+                        NavigationLink {
+                            TaskView(goal: goal)
+                                .navigationTitle(goal.title ?? "")
+                                .navigationBarTitleDisplayMode(.inline)
+                        } label: {
+                            CellView(model: goal)
+                        }
+                    } else {
                         CellView(model: goal)
                     }
                 }

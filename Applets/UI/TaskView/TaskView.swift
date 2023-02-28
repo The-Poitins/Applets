@@ -21,40 +21,37 @@ struct TaskView: View {
                 Rectangle()
                     .frame(width: 370, height: 25)
                     .modifier(FilledCellModifier(percentOfDone: viewModel.goal.fractionOfDone))
-                    .foregroundColor(.gray.opacity(0.30))
+                    .foregroundColor(.clear)
                     .cornerRadius(20)
+                    .shadow(color: .black.opacity(0.1), radius: 20, y: 2)
                 Text("\(viewModel.goal.percentOfDone)% has done")
                     .frame(maxWidth: .infinity)
             }
             .padding(.horizontal)
-            Image(viewModel.goal.image ?? "")
-                .resizable()
-                .scaledToFit()
-                .cornerRadius(20)
-                .padding(.horizontal)
-            Text("Description")
-                .font(.title)
-                .padding(.top, 2)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal)
-            Text(LocalizedStringKey(viewModel.goal.information ?? ""))
-                .padding(.horizontal)
-            Text("Steps")
-                .font(.title)
-                .padding(.top, 2)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal)
+
+            VStack(alignment: .leading) {
+                if let image = viewModel.goal.image, !image.isEmpty {
+                    Image(image)
+                        .resizable()
+                        .scaledToFit()
+                        .cornerRadius(20)
+                        .shadow(color: .black.opacity(0.08), radius: 20, y: 2)
+                }
+
+                Text("Description")
+                    .font(.title)
+                    .padding(.vertical, 2)
+                Text(LocalizedStringKey(viewModel.goal.information ?? ""))
+                Text("Steps")
+                    .font(.title)
+                    .padding(.top, 2)
+            }
+            .padding(.horizontal)
             ForEach(viewModel.sortedSteps, id: \.self) { step in
                 StepView(viewModel: viewModel, step: step)
             }
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(
-            Image("bg")
-                .resizable()
-                .scaledToFill()
-                .ignoresSafeArea()
-        )
+        .background(Color("yellowColor").opacity(0.10))
     }
 }
 

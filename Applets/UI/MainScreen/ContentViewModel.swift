@@ -15,7 +15,7 @@ final class ContentViewModel: ObservableObject {
     private var anyCancellable: AnyCancellable?
 
     var goals: [Goal] {
-        dataManager.goals
+        dataManager.goals.sorted(by: { $0.isEnabled || !$1.isEnabled })
     }
 
     init(dataManager: DataManager = DataManager.shared) {

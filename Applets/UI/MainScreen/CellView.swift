@@ -12,42 +12,53 @@ struct CellView: View {
     @ObservedObject var model: Goal
 
     var body: some View {
-            ZStack {
-                if model.isEnabled {
-                    if model.percentOfDone < 100 {
-                        HStack(alignment: .lastTextBaseline) {
-                            Text("\(model.percentOfDone)")
-                                .font(.system(size: 100).bold().weight(.black))
-                                .padding(-10)
-                            Text("%")
-                                .font(.system(size: 40).bold().weight(.black))
-                                .padding(5)
-                        }
-                        .frame(width: 370, height: 100, alignment: .trailing)
-                        .foregroundColor(.white.opacity(0.30))
-                    } else {
-                        Text("DONE")
-                            .font(.system(size: 120).bold().weight(.black))
-                            .foregroundColor(.white.opacity(0.30))
+        ZStack(alignment: .center) {
+            VStack(alignment: .leading) {
+                VStack {
+                    Text(model.title ?? "")
+                        .font(.system(size: 20, weight: .semibold))
+                        .frame(maxWidth: .infinity, alignment: .topLeading)
+                        .padding(.bottom, 4)
+                        .foregroundColor(model.isEnabled ? .black : .gray)
+
+                    Text(model.goalDescription ?? "")
+                        .frame(maxWidth: .infinity, alignment: .topLeading)
+                        .font(.system(size: 16))
+                        .foregroundColor(model.isEnabled ? .gray : .gray.opacity(0.50))
+                }
+                if model.fractionOfDone < 1 {
+                    ZStack(alignment: .center) {
+                        Rectangle()
+                            .frame(height: 4)
+                            .foregroundColor(.clear)
+                            .modifier(CircledProgressBar(percentOfDone: model.fractionOfDone))
                     }
+                    .padding(.top, 12)
                 }
 
-                VStack(alignment: .leading) {
-                    Text(LocalizedStringKey(model.title ?? ""))
-                        .font(.largeTitle.bold())
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.leading, 15)
-                        .foregroundColor(model.isEnabled ? .black : .gray)
-                    Text(LocalizedStringKey(model.timeFrame ?? ""))
-                        .font(.subheadline)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.leading, 15)
-                        .foregroundColor(model.isEnabled ? .black : .gray)
+                HStack {
+                    HStack {
+                        Image(systemName: "checkmark.circle")
+                        Text(model.percentOfDone == 100 ? "Done" : "\(model.completedSteps.count)/\(model.allSteps.count)")
+                            .font(.system(size: 16))
+                    }
+                    Spacer()
+                    HStack {
+                        Image(systemName: "clock")
+                        Text("\(model.timeFrame ?? "")")
+                            .font(.system(size: 16))
+                    }
+                    Spacer()
                 }
+                .padding(.top, 12)
+                .foregroundColor(model.isEnabled ? .black : .gray)
             }
-            .frame(width: 370, height: 100)
-            .modifier(FilledCellModifier(percentOfDone: model.fractionOfDone))
+            .padding(16)
+            .background(model.fractionOfDone == 1 ? Color("yellowColor") : .white)
+            .overlay(model.isEnabled ? .clear : .white.opacity(0.6))
             .cornerRadius(20)
+            .shadow(color: .black.opacity(0.08), radius: 15, y: 2)
+        }
     }
 }
 

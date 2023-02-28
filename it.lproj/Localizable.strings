@@ -17,6 +17,7 @@
 "Steps" = "Fase";
 "Name" = "Nome";
 "Mobile number" = "Numero di cellulare";
+"2-3 months" = "2-3 mesi"
 "Task %lld" = "Attivita %lld";
 "[Privacy Policy](https://github.com/The-Poitins/Applets/blob/dev/Privacy%20policy.md)" = "[Informativa sulla privacy](https://github.com/The-Poitins/Applets/blob/dev/Privacy%20policy.md)";
 
@@ -28,7 +29,7 @@
 
 "Book an appointment" = "Prendi un appuntamento";
 
-"Approx. time 2-4 weeks" = "Tempo stimato: 2-4 settimane";
+"2-4 weeks" = "2-4 settimane";
 
 "Book an appointment either online or through the app. If you can't make the appointment, remember to cancel it. Note that the English and German versions of the website are different to the Italian one.\nBook or cancel an appointment on the website: \nUse the translate service built into Safari or Google Translate to navigate the booking. \n\n [Book Appointment](https://prenotazioneweb.agenziaentrate.gov.it/PrenotazioneWeb/prenotazione.action) \n\n Agenzia app: (The Agenzia app is unlikely to be available on non-Italian app stores).\n\n[App Store](https://itunes.apple.com/it/app/agenziaentrate/id1014942268)\n\n[Play Store](https://play.google.com/store/apps/details?id=it.agenziaentrate.mobile.servizionline.ServiziActivity)" = "
 Tempo stimato: 2-4 settimane

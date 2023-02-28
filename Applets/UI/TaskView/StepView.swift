@@ -19,7 +19,7 @@ struct StepView: View {
             isModal.toggle()
         } label: {
                 HStack {
-                    Text(step.title ?? "")
+                    Text(LocalizedStringKey(step.title ?? ""))
                         .multilineTextAlignment(.leading)
                         .lineLimit(2)
                     Spacer()

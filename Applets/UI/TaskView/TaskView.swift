@@ -43,7 +43,7 @@ struct TaskView: View {
                 .padding(.top, 2)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal)
-            Text(viewModel.goal.information ?? "")
+            Text(LocalizedStringKey(viewModel.goal.information ?? ""))
                 .padding(.horizontal)
             Text("Steps")
                 .font(.title)

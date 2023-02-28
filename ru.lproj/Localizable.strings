@@ -1,0 +1,69 @@
+/* 
+  Localizable.strings
+  Applets
+
+  Created by Viacheslav on 28/02/23.
+  
+*/
+
+"Your tasks" = "Ваши задачи";
+"User Profile" = "Пользователь";
+"Edit" = "Редактировать";
+"Done" = "Выполнено";
+"Close" = "Закрыть";
+"Done" = "Выполнено";
+"%lld%% has done" = "%lld%% выполнено";
+"Description" = "Описание";
+"Steps" = "Шаги";
+"Name" = "Имя";
+"Mobile number" = "Номер телефона";
+"Task %lld" = "Задача %lld";
+
+//Codice fiscale
+
+"The Codice Fiscale is a tax code unique to each person. It is required for many things, including getting a Permesso di Soggiorno, signing the contract with the academy or with your landlord, or even for joining a gym." = "Codice Fiscale это уникальный налоговый номер (аналог российского ИНН или казахского ИИН). Он нужен для большинства операций в Италии: от подписания контракта с Академией до покупки абонемента в спортзал";
+
+//first step
+
+"Book an appointment" = "Записаться на приём";
+
+"Approx. time 2-4 weeks" = "Примерно 2-4 недели";
+
+"Book an appointment either online or through the app. If you can't make the appointment, remember to cancel it. Note that the English and German versions of the website are different to the Italian one.\nBook or cancel an appointment on the website: \nUse the translate service built into Safari or Google Translate to navigate the booking. \n\n [Book Appointment](https://prenotazioneweb.agenziaentrate.gov.it/PrenotazioneWeb/prenotazione.action) \n\n Agenzia app: (The Agenzia app is unlikely to be available on non-Italian app stores).\n\n[App Store](https://itunes.apple.com/it/app/agenziaentrate/id1014942268)\n\n[Play Store](https://play.google.com/store/apps/details?id=it.agenziaentrate.mobile.servizionline.ServiziActivity)" = "
+Примерно 2-4 недели
+
+Запишитесь на посещение офиса налоговой службы Италии онлайн. Если у вас не получается прийти в назначенное время, отмените бронирование, чтобы не расстраивать итальянцев. Обратите внимание, что английская и немецкая версия сайта налоговой отличается от итальянской.
+Для перевода сайта с итальянского используйте встроенный в Сафари или Хром сервис. Один хрен будет не понятно и придется страдать. Но это бюрократия, не нравится, езжайте обратно в Россию.
+Назначайте встречу в налоговой на сайте:
+
+[Записаться на визит](https://prenotazioneweb.agenziaentrate.gov.it/PrenotazioneWeb/prenotazione.action)
+
+Приложение налоговой: (вряд ли оно будет доступно для вас, но если очень надо, переключите свой регион на Италию).
+
+[AppStore](https://itunes.apple.com/it/app/agenziaentrate/id1014942268)
+[PlayStore](https://play.google.com/store/apps/details?id=it.agenziaentrate.mobile.servizionline.ServiziActivity)";
+
+//Second step
+"Gather the required documents" = "Собрать необходимые документы";
+
+"Download and fill out the form:\n\n[Editable PDF - English](https://www.agenziaentrate.gov.it/portale/documents/20143/278995/Form+AA48+Editable_AA4_8_Modello_ING.pdf/e32d806e-92e3-05a5-37ac-ab270ff86a74)\n\n[PDF - Italian/German](https://www.agenziaentrate.gov.it/portale/documents/20143/274278/Vordrucke+AA9+12+modello+AA9+12_AA9_12_modello_TED_def.pdf/3fca2bd2-e875-74fa-2b2b-c7ef966647d1)\n\nRequired documents:\n - Completed form \n- Letter of invitation from Academy (Non-EU) \n- ID (Non-EU) \n- Passport \n- Valid visa (if applicable) \n- ID (EU): \n- Passport/Passport card \n- Photocopy of passport/passport card \n- Photocopy of visa (Non-EU)" = "Загрузите и заполните форму
+
+ [Редактируемый PDF - Английский](https://www.agenziaentrate.gov.it/portale/documents/20143/278995/Form+AA48+Editable_AA4_8_Modello_ING.pdf/e32d806e-92e3-05a5-37ac-ab270ff86a74)
+
+[PDF - Итальянский/Tedesco](https://www.agenziaentrate.gov.it/portale/documents/20143/274278/Vordrucke+AA9+12+modello+AA9+12_AA9_12_modello_TED_def.pdf/3fca2bd2-e875-74fa-2b2b-c7ef966647d1)
+
+
+Необходимые документы:
+- Заполненная форма
+- Письмо-приглашение из Академии
+- Паспорт и копия
+- Действующая студенческая виза и копия";
+
+//Third step
+
+"Go to the Agenzia for your appointment" = "Сходить в налоговую";
+
+"Расположение:\n\n[Agenzia delle Entrate Office](https://maps.apple.com/?address=Via%20Guglielmo%20Oberdan%201-3,%2080134%20Naples,%20Italy&auid=6110987139943857305&ll=40.842925,14.249981&lsp=9902&q=Agenzia%20delle%20Entrate)\n(Entrance on Via Guglielmo Oberdan)" = "Posizione: [Ufficio Agenzia delle Entrate](https://maps.apple.com/?address=Via%20Guglielmo%20Oberdan%201-3,%2080134%20Naples,%20Italy&auid=6110987139943857305&ll=40.842925,14.249981&lsp=9902&q=Agenzia%20delle%20Entrate)
+(Entrata da Via Guglielmo Oberdan).
+
+Вообще офисов налоговой в Неаполе больше, но рекомендуем идти в этот, потому что проверяли его сами. В других вероятность отказа выше. Почему отказ? Да хрен знает, что-то они по-итальянски объясняли, мы не поняли. Работать не хотят, лентяи. Сиеста у них.";

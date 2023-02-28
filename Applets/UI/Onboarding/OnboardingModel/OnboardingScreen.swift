@@ -1,5 +1,5 @@
 //
-//  OnboardingScreenModel.swift
+//  OnboardingScreen.swift
 //  Applets
 //
 //  Created by シェイミ on 17/02/2023.

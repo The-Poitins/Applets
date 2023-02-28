@@ -18,6 +18,7 @@
 "Name" = "Имя";
 "Mobile number" = "Номер телефона";
 "Task %lld" = "Задача %lld";
+"[Privacy Policy](https://github.com/The-Poitins/Applets/blob/dev/Privacy%20policy.md)" = "[Политика конфиденциальности](https://github.com/The-Poitins/Applets/blob/dev/Privacy%20policy.md)";
 
 //Codice fiscale
 

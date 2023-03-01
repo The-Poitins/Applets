@@ -32,14 +32,11 @@ struct OnBoarding: View {
                         VStack(alignment: .leading, spacing: 12) {
                             Text(screen.title)
                                 .font(.largeTitle.bold())
-                                .foregroundColor(.white)
                                 .padding(.top, 20)
 
                             Text(screen.description)
                                 .fontWeight(.semibold)
-                                .foregroundColor(.white)
                         }
-                        .shadow(color: .black.opacity(0.4), radius: 4, x: 1, y: 2)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .offset(y: -70)
                     }
@@ -82,13 +79,12 @@ struct OnBoarding: View {
                     } label: {
                         Text("Skip")
                             .fontWeight(.semibold)
-                            .foregroundColor(.white)
                     }
                     // Indicators
                     HStack(spacing: 8) {
                         ForEach(OnboardingScreen.boardingScreens.indices, id: \.self) { index in
                             Circle()
-                                .fill(.white)
+                                .fill(.black)
                                 .opacity(index == getIndex() ? 1 : 0.4)
                                 .frame(width: 8, height: 8)
                                 .scaleEffect(index == (getIndex()) ? 1.3 : 0.85)
@@ -117,9 +113,7 @@ struct OnBoarding: View {
                         }
                     }
                     .fontWeight(.semibold)
-                    .foregroundColor(.white)
                 }
-                .shadow(color: .black.opacity(0.4), radius: 4, x: 1, y: 2)
                 .padding(.top, 30)
                 .padding(.horizontal, 8)
             }
@@ -155,6 +149,5 @@ extension View {
 struct OnBoarding_Previews: PreviewProvider {
     static var previews: some View {
         OnBoarding(firstRun: .constant(true))
-        //            .preferredColorScheme(.dark)
     }
 }

@@ -15,13 +15,13 @@ class OnboardingViewModel {
 
         if title == "EU" {
             if isEUButton {
-                backgroundColor = Color.blue
+                backgroundColor = Color("yellowColor")
             }
         }
 
         if title == "non-EU" {
             if !isEUButton {
-                backgroundColor = Color.blue
+                backgroundColor = Color("yellowColor")
             }
         }
         return backgroundColor

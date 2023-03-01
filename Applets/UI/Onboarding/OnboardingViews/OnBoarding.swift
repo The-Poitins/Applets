@@ -39,6 +39,7 @@ struct OnBoarding: View {
                                 .fontWeight(.semibold)
                                 .foregroundColor(.white)
                         }
+                        .shadow(color: .black.opacity(0.4), radius: 4, x: 1, y: 2)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .offset(y: -70)
                     }
@@ -51,7 +52,7 @@ struct OnBoarding: View {
         // Main background animation
         .background(
             RoundedRectangle(cornerRadius: 50)
-                .fill(.black.opacity(0.8))
+                .fill(.white.opacity(0.4))
             // Size the same as image size
                 .frame(width: getScreenBounds().width - 100, height: getScreenBounds().width - 100)
                 .scaleEffect(2)
@@ -118,6 +119,7 @@ struct OnBoarding: View {
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
                 }
+                .shadow(color: .black.opacity(0.4), radius: 4, x: 1, y: 2)
                 .padding(.top, 30)
                 .padding(.horizontal, 8)
             }

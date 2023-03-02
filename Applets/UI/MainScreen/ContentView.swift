@@ -38,6 +38,7 @@ struct ContentView: View {
                         }
                     }
                 }
+                .scrollIndicators(.hidden)
                 .padding(.top, 8)
                 .navigationTitle("Your tasks")
                 .frame(maxWidth: .infinity, maxHeight: .infinity)

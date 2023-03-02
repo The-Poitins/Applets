@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13629A9729B0BD1A0040E77A /* LinkExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13629A9629B0BD1A0040E77A /* LinkExtension.swift */; };
 		13656377299F8760003F0F31 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13656376299F8760003F0F31 /* ContentViewModel.swift */; };
 		13A114B229A3D46D00F74200 /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A114B129A3D46D00F74200 /* StepView.swift */; };
 		13A114B429A3DD2400F74200 /* ModalStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A114B329A3DD2400F74200 /* ModalStepView.swift */; };
@@ -69,7 +68,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		13629A9629B0BD1A0040E77A /* LinkExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkExtension.swift; sourceTree = "<group>"; };
 		13656376299F8760003F0F31 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		13A114B129A3D46D00F74200 /* StepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
 		13A114B329A3DD2400F74200 /* ModalStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalStepView.swift; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				C1356D1229AE1569009F4654 /* CircledProgressBar.swift */,
-				13629A9629B0BD1A0040E77A /* LinkExtension.swift */,
 				2A84DB0829A397FB00E01DC3 /* FilledCellModifier.swift */,
 			);
 			path = Modifiers;
@@ -535,7 +532,6 @@
 				C13940A229A4186A00BD7DC2 /* Goal+Extension.swift in Sources */,
 				C1356D1329AE1569009F4654 /* CircledProgressBar.swift in Sources */,
 				4C4C6F3829AF5B9E005CEB86 /* OnBoarding.swift in Sources */,
-				13629A9729B0BD1A0040E77A /* LinkExtension.swift in Sources */,
 				C1B13AAB299F7995008A8DE0 /* Applets.xcdatamodeld in Sources */,
 				C1B13A96299E2B3E008A8DE0 /* AppletsApp.swift in Sources */,
 				13A114B229A3D46D00F74200 /* StepView.swift in Sources */,

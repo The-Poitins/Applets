@@ -33,6 +33,7 @@ struct StepView: View {
                                 .foregroundColor(Color("peach"))
                         }
                     }
+                    .contentShape(Circle())
                     .onTapGesture {
                         viewModel.toggleIsDone(step: step)
                     }

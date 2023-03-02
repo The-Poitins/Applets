@@ -70,7 +70,6 @@ struct StepView: View {
                     .cornerRadius(15)
                     .shadow(color: .black.opacity(0.08), radius: 15, y: 2)
                     .padding()
-                    .padding(.horizontal, 20)
                 }
             }
         }

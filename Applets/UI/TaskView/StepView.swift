@@ -39,7 +39,8 @@ struct StepView: View {
                     }
                 }
                 .padding(.horizontal)
-            .frame(width: 370, height: 50)
+                .frame(height: 50)
+                .frame(maxWidth: .infinity)
             .background(.white)
             .cornerRadius(15)
             .shadow(color: .black.opacity(0.08), radius: 15, y: 2)

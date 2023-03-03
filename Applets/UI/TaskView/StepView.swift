@@ -39,11 +39,13 @@ struct StepView: View {
                     }
                 }
                 .padding(.horizontal)
+
                 .frame(height: 50)
                 .frame(maxWidth: .infinity)
             .background(.white)
             .cornerRadius(15)
             .shadow(color: .black.opacity(0.08), radius: 15, y: 2)
+
         }
         .sheet(isPresented: $isModal) {
             NavigationStack {
@@ -54,15 +56,24 @@ struct StepView: View {
                             Button("Close") { isModal.toggle()
                             }
                         }
-                        if !step.isDone {
-                            ToolbarItem(placement: .navigationBarLeading) {
-                                Button("Done") {
-                                    isModal.toggle()
-                                    viewModel.toggleIsDone(step: step)
-                                }
-                            }
-                        }
                     }
+
+                if !step.isDone {
+                    Button {
+                        isModal.toggle()
+                        viewModel.toggleIsDone(step: step)
+                    } label: {
+                        Spacer()
+                        Text("Done")
+                            .foregroundColor(.primary)
+                        Spacer()
+                    }
+                    .frame(height: 50)
+                    .background(Color("peach"))
+                    .cornerRadius(15)
+                    .shadow(color: .black.opacity(0.08), radius: 15, y: 2)
+                    .padding()
+                }
             }
         }
     }

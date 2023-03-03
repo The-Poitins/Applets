@@ -22,6 +22,7 @@ struct StepView: View {
                     Text(LocalizedStringKey(step.title ?? ""))
                         .multilineTextAlignment(.leading)
                         .lineLimit(2)
+
                     Spacer()
                     ZStack {
                         Circle()
@@ -39,12 +40,11 @@ struct StepView: View {
                     }
                 }
                 .padding(.horizontal)
-
                 .frame(height: 50)
                 .frame(maxWidth: .infinity)
-            .background(.white)
-            .cornerRadius(15)
-            .shadow(color: .black.opacity(0.08), radius: 15, y: 2)
+                .background(.white)
+                .cornerRadius(15)
+                .shadow(color: .black.opacity(0.08), radius: 15, y: 2)
 
         }
         .sheet(isPresented: $isModal) {

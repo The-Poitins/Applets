@@ -50,6 +50,7 @@ struct TaskView: View {
             ForEach(viewModel.sortedSteps, id: \.self) { step in
                 StepView(viewModel: viewModel, step: step)
             }
+            .padding(.horizontal)
         }
         .background(Color("yellowColor").opacity(0.10))
     }

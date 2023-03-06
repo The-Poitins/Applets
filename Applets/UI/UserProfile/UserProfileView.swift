@@ -8,106 +8,117 @@
 import SwiftUI
 
 struct UserProfileView: View {
-    @State private var firstNameTest: String = "Monty"
-    @State private var surnameTest: String = "Python"
-    @State private var codiceFiscaleNumberTest: String = "XXXXXXXXXXXXX"
-    @State private var emailAddressTest: String = "me@here.com"
-    @State private var phoneNumberTest: String = "+39 123 4567890"
-    @State private var permessoNumberTest: String = "XXXXXXXXXXXXXXXXXXXXXX"
 
-    @Binding var isEditing: Bool
+    @StateObject private var viewModel = UserProfileViewModel()
+
+    @State private var isEditing = false
 
     var body: some View {
-        VStack {
-            List {
-                Section {
-                    Button {
-                        print("List button pressed: Name")
-                    } label: {
-                        Group {
-                            if isEditing {
-                                TextField("Name", text: $firstNameTest)
-                            } else {
-                                Text(firstNameTest)
+        NavigationStack {
+            VStack {
+                List {
+                    Section {
+                        Button {
+                            print("List button pressed: Name")
+                        } label: {
+                            Group {
+                                if isEditing {
+                                    TextField("Name", text: $viewModel.userProfile.firstName.withDefault(""))
+                                } else {
+                                    Text(viewModel.userProfile.firstName ?? "Monty")
+                                }
                             }
+                            .redacted(reason: isEditing ? .privacy : .placeholder)
                         }
-                        .redacted(reason: isEditing ? .privacy : .placeholder)
+                    } header: {
+                        Text("Name")
                     }
-                } header: {
-                    Text("Name")
+                    
+                    Section {
+                        Button {
+                            print("List button pressed: Email")
+                        } label: {
+                            Group {
+                                if isEditing {
+                                    TextField("Email", text: $viewModel.userProfile.emailAddress.withDefault(""))
+                                } else {
+                                    Text(viewModel.userProfile.emailAddress ?? "me@here.com")
+                                }
+                            }
+                            .redacted(reason: isEditing ? .privacy : .placeholder)
+                        }
+                    } header: {
+                        Text("Email")
+                    }
+                    
+                    Section {
+                        Button {
+                            print("List button pressed: Mobile number")
+                        } label: {
+                            Group {
+                                if isEditing {
+                                    TextField("Mobile number", text: $viewModel.userProfile.mobileNumber.withDefault(""))
+                                } else {
+                                    Text(viewModel.userProfile.mobileNumber ?? "+39 123 4567890")
+                                }
+                            }
+                            .redacted(reason: isEditing ? .privacy : .placeholder)
+                        }
+                    } header: {
+                        Text("Mobile number")
+                    }
+                    
+                    Section {
+                        Button {
+                            print("List button pressed: Codice Fiscale")
+                        } label: {
+                            Group {
+                                if isEditing {
+                                    TextField("Codice Fiscale", text: $viewModel.userProfile.codiceFiscaleNumber.withDefault(""))
+                                } else {
+                                    Text(viewModel.userProfile.codiceFiscaleNumber ?? "XXXXXXXXXXXXX")
+                                }
+                            }
+                            .redacted(reason: isEditing ? .privacy : .placeholder)
+                        }
+                    } header: {
+                        Text("Codice Fiscale")
+                    }
+                    
+                    Section {
+                        Button {
+                            print("List button pressed: Permesso di Soggiorno")
+                        } label: {
+                            Group {
+                                if isEditing {
+                                    TextField("Permesso di Soggiorno", text: $viewModel.userProfile.permessoDiSoggiornoNumber.withDefault(""))
+                                } else {
+                                    Text(viewModel.userProfile.permessoDiSoggiornoNumber ?? "XXXXXXXXXXXXX")
+                                }
+                            }
+                            .redacted(reason: isEditing ? .privacy : .placeholder)
+                        }
+                    } header: {
+                        Text("Permesso di Soggiorno")
+                    } footer: {
+                        Text("[Privacy Policy](https://github.com/The-Poitins/Applets/blob/dev/Privacy%20policy.md)")
+                    }
                 }
-
-                Section {
-                    Button {
-                        print("List button pressed: Email")
-                    } label: {
-                        Group {
-                            if isEditing {
-                                TextField("Email", text: $emailAddressTest)
-                            } else {
-                                Text(emailAddressTest)
+                .listStyle(.insetGrouped)
+                .navigationTitle("User Profile")
+                .toolbar {
+                    ToolbarItem(placement: .automatic) {
+                        Button {
+                            isEditing.toggle()
+                            if !isEditing {
+                                viewModel.saveChanges()
                             }
+                        } label: {
+                            Text(isEditing ? "Done" : "Edit")
                         }
-                        .redacted(reason: isEditing ? .privacy : .placeholder)
                     }
-                } header: {
-                    Text("Email")
-                }
-
-                Section {
-                    Button {
-                        print("List button pressed: Mobile number")
-                    } label: {
-                        Group {
-                            if isEditing {
-                                TextField("Mobile number", text: $phoneNumberTest)
-                            } else {
-                                Text(phoneNumberTest)
-                            }
-                        }
-                        .redacted(reason: isEditing ? .privacy : .placeholder)
-                    }
-                } header: {
-                    Text("Mobile number")
-                }
-
-                Section {
-                    Button {
-                        print("List button pressed: Codice Fiscale")
-                    } label: {
-                        Group {
-                            if isEditing {
-                                TextField("Codice Fiscale", text: $codiceFiscaleNumberTest)
-                            } else {
-                                Text(codiceFiscaleNumberTest)
-                            }
-                        }
-                        .redacted(reason: isEditing ? .privacy : .placeholder)
-                    }
-                } header: {
-                    Text("Codice Fiscale")
-                }
-
-                Section {
-                    Button {
-                        print("List button pressed: Permesso di Soggiorno")
-                    } label: {
-                        Group {
-                            if isEditing {
-                                TextField("Permesso di Soggiorno", text: $permessoNumberTest)
-                            } else {
-                                Text(permessoNumberTest)
-                            }
-                        }
-                        .redacted(reason: isEditing ? .privacy : .placeholder)
-                    }
-                } header: {
-                    Text("Permesso di Soggiorno")
-                } footer: {
-                    Text("[Privacy Policy](https://github.com/The-Poitins/Applets/blob/dev/Privacy%20policy.md)")
                 }
             }
-            .listStyle(.insetGrouped)
         }
     }
 }

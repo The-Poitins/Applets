@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import LocalAuthentication
 
 struct ContentView: View {
     @StateObject var contentVM = ContentViewModel()
@@ -46,14 +47,16 @@ struct ContentView: View {
                 .toolbar {
                     ToolbarItem {
                         Button {
-                            isShowingProfilePage.toggle()
+                            authenticate()
                         } label: {
                             Image(systemName: "person.circle")
                         }
                         .font(.title)
                     }
                 }
-                .sheet(isPresented: $isShowingProfilePage, onDismiss: { isEditing = false }) {
+                .sheet(isPresented: $isShowingProfilePage, onDismiss: {
+                    isEditing = false
+                }) {
                     NavigationStack {
                         UserProfileView(isEditing: $isEditing)
                             .navigationTitle("User Profile")
@@ -69,6 +72,29 @@ struct ContentView: View {
                     }
                 }
             }
+        }
+    }
+
+    func authenticate() {
+        let context = LAContext()
+        var error: NSError?
+
+        // check whether biometric authentication is possible
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            // it's possible, so go ahead and use it
+            let reason = "We need to verify your identity to display sensitive information."
+
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
+                // authentication has now completed
+                if success {
+                    // authenticated successfully
+                    isShowingProfilePage.toggle()
+                } else {
+                    // there was a problem
+                }
+            }
+        } else {
+            // no biometrics
         }
     }
 }

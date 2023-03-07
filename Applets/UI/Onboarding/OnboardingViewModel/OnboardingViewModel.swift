@@ -9,7 +9,7 @@ import SwiftUI
 
 class OnboardingViewModel {
 // For the EU/non-EU Buttons
-    func getBackgroundColor(isEUButton: Bool?, title: String) -> Color {
+    func getBackgroundColor(isEUButton: Bool?, title: LocalizedStringKey) -> Color {
         var backgroundColor = Color.white
         guard let isEUButton else { return backgroundColor }
 

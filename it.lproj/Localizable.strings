@@ -145,3 +145,20 @@ Agenzia app: (È improbabile che l'app Agenzia sia disponibile su app store non 
 
 "In order to get a sim card you can go to a carrier's own shop, or a tabacchi or phone shop that has the sim card you are looking for. You will need to bring your passport, EU-issued driver's license or resident's permit. You can also order online, and you will need to provide scans of your ID and a valid postal address.\n\nTopping up\nYou can top up your sim in most tabacchi, although they tend to use the phrase \"charge\"." = "Per ottenere una scheda sim è possibile recarsi presso il negozio di un operatore, oppure presso un tabacchi o un negozio di telefonia che abbia la scheda sim desiderata. È necessario portare con sé il passaporto, la patente di guida o il permesso di soggiorno rilasciati dall'UE. È possibile ordinare anche online, ma è necessario fornire una scansione del documento d'identità e un indirizzo postale valido.\n\nRicarica\nÈ possibile ricaricare la propria sim nella maggior parte dei tabacchi, anche se si tende a usare l'espressione";
 
+// On-boarding
+
+"Getting things done in Napoli can be confusing, especially if you can't speak Italian.\n\nLet us know if you are an EU citizen or not, since the rules are different depending on where you are from." = "Le cose da fare a Napoli possono essere confuse, soprattutto se non si parla italiano.\n\nFateci sapere se siete cittadini dell'UE o meno, poiché le regole sono diverse a seconda dalla vostra provenienza.";
+
+"Welcome to\nthe Academy" = "Benvenuti\nin Academy ";
+"We're excited to have you join us on this amazing journey\n\nThis app will try to make your move to\nNapoli a little bit easier." = "Siamo entusiasti che tu ti unisca a noi in questo fantastico viaggio.\n\nQuesta applicazione cercherà di rendere il tuo trasferimento a Napoli un po' più facile.";
+"Navigate\nBureaucracy" = "Navigare\nBurocrazia";
+"Tips and Tricks" = "Consigli e suggerimenti";
+"We have some extra information about life in Napoli.\n\nTips about transport, mobile phone plans, accommodation and more!" = "Abbiamo alcune informazioni extra sulla vita a Napoli.\n\nSuggerimenti su trasporti, piani di telefonia mobile, alloggi e altro ancora!";
+"Enjoy yourself!" = "Divertitevi!";
+"Once the boring stuff is all sorted you can focus on making friends and creating great apps." = "Una volta sistemate le cose noiose, potrete concentrarvi sulla creazione di amicizie e di applicazioni fantastiche.";
+
+"non-EU" = "Non. Eu";
+"EU" = "Eu.";
+"Next" = "Salta.";
+"Finish" = "Finito";
+"Skip" = "Avanti";

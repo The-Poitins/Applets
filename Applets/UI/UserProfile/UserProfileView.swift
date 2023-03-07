@@ -18,86 +18,46 @@ struct UserProfileView: View {
             VStack {
                 List {
                     Section {
-                        Button {
-                            print("List button pressed: Name")
-                        } label: {
-                            Group {
-                                if isEditing {
-                                    TextField("Name", text: $viewModel.userProfile.firstName.withDefault(""))
-                                } else {
-                                    Text(viewModel.userProfile.firstName ?? "Monty")
-                                }
-                            }
-                            .redacted(reason: isEditing ? .privacy : .placeholder)
-                        }
+                        SecureTextField(
+                            placeholder: "Name",
+                            data: $viewModel.userProfile.firstName,
+                            isEditing: $isEditing)
                     } header: {
                         Text("Name")
                     }
                     
                     Section {
-                        Button {
-                            print("List button pressed: Email")
-                        } label: {
-                            Group {
-                                if isEditing {
-                                    TextField("Email", text: $viewModel.userProfile.emailAddress.withDefault(""))
-                                } else {
-                                    Text(viewModel.userProfile.emailAddress ?? "me@here.com")
-                                }
-                            }
-                            .redacted(reason: isEditing ? .privacy : .placeholder)
-                        }
+                        SecureTextField(
+                            placeholder: "Email",
+                            data: $viewModel.userProfile.emailAddress,
+                            isEditing: $isEditing)
                     } header: {
                         Text("Email")
                     }
                     
                     Section {
-                        Button {
-                            print("List button pressed: Mobile number")
-                        } label: {
-                            Group {
-                                if isEditing {
-                                    TextField("Mobile number", text: $viewModel.userProfile.mobileNumber.withDefault(""))
-                                } else {
-                                    Text(viewModel.userProfile.mobileNumber ?? "+39 123 4567890")
-                                }
-                            }
-                            .redacted(reason: isEditing ? .privacy : .placeholder)
-                        }
+                        SecureTextField(
+                            placeholder: "Mobile number",
+                            data: $viewModel.userProfile.mobileNumber,
+                            isEditing: $isEditing)
                     } header: {
                         Text("Mobile number")
                     }
                     
                     Section {
-                        Button {
-                            print("List button pressed: Codice Fiscale")
-                        } label: {
-                            Group {
-                                if isEditing {
-                                    TextField("Codice Fiscale", text: $viewModel.userProfile.codiceFiscaleNumber.withDefault(""))
-                                } else {
-                                    Text(viewModel.userProfile.codiceFiscaleNumber ?? "XXXXXXXXXXXXX")
-                                }
-                            }
-                            .redacted(reason: isEditing ? .privacy : .placeholder)
-                        }
+                        SecureTextField(
+                            placeholder: "Codice Fiscale",
+                            data: $viewModel.userProfile.codiceFiscaleNumber,
+                            isEditing: $isEditing)
                     } header: {
                         Text("Codice Fiscale")
                     }
                     
                     Section {
-                        Button {
-                            print("List button pressed: Permesso di Soggiorno")
-                        } label: {
-                            Group {
-                                if isEditing {
-                                    TextField("Permesso di Soggiorno", text: $viewModel.userProfile.permessoDiSoggiornoNumber.withDefault(""))
-                                } else {
-                                    Text(viewModel.userProfile.permessoDiSoggiornoNumber ?? "XXXXXXXXXXXXX")
-                                }
-                            }
-                            .redacted(reason: isEditing ? .privacy : .placeholder)
-                        }
+                        SecureTextField(
+                            placeholder: "Permesso di Soggiorno",
+                            data: $viewModel.userProfile.mobileNumber,
+                            isEditing: $isEditing)
                     } header: {
                         Text("Permesso di Soggiorno")
                     } footer: {

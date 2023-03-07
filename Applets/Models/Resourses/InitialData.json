@@ -126,47 +126,26 @@
         "isEnabled": true,
         "steps": [
             {
-               "title": "Mobile service providers",
-               "number": 1,
-               "text": "Service providers build and control their own networks. You'll usually get better quality of service with a provider.\n\n- [Vodafone](https://privati.vodafone.it)\n- [Tim](https://www.tim.it/fisso-e-mobile/mobile)\n- [Wind Tre](https://www.windtre.it/)\n- [Iliad](https://www.iliad.it)\n- [Fastweb](https://www.fastweb.it)",
-               "isDone": false,
-               "weight": 0.125
+                "title": "Сollect information about mobile operators",
+                "number": 1,
+                "text": "Mobile service providers\nService providers build and control their own networks. You'll usually get better quality of service with a provider.\n\n- [Vodafone](https://privati.vodafone.it)\n- [Tim](https://www.tim.it/fisso-e-mobile/mobile)\n- [Wind Tre](https://www.windtre.it/)\n- [Iliad](https://www.iliad.it)\n- [Fastweb](https://www.fastweb.it)\n\nMVNOs\nMVNOs rent bandwidth from the providers. You might be able to get better deals with an MVNO. If you are concerned with the coverage area of an MVNO, you should check which network it uses. New MVNOs are coming to market all the time, so this list is not exhaustive.\n\n- [Postemobile](http://www.postemobile.it)\n- [ho. mobile](https://www.ho-mobile.it)\n- [Kena mobile](https://www.kenamobile.it)\n- [CoopVoce](https://www.coopvoce.it)\n- [Lyca mobile](https://www.lycamobile.it/en)\n- [Very Mobile](https://verymobile.it)\n- [Spusu](https://www.spusu.it)\n- [Optima](https://www.optimaitalia.com)\n- [eliMobile](https://elimobile.it)\n- [Tiscali](https://casa.tiscali.it/mobile/)",
+                "isDone": false,
+                "weight": 0.5
             },
             {
-               "title": "MVNOs",
-               "number": 2,
-               "text": "MVNOs rent bandwidth from the providers. You might be able to get better deals with an MVNO. If you are concerned with the coverage area of an MVNO, you should check which network it uses. New MVNOs are coming to market all the time, so this list is not exhaustive.\n\n- [Postemobile](http://www.postemobile.it)\n- [ho. mobile](https://www.ho-mobile.it)\n- [Kena mobile](https://www.kenamobile.it)\n- [CoopVoce](https://www.coopvoce.it)\n- [Lyca mobile](https://www.lycamobile.it/en)\n- [Very Mobile](https://verymobile.it)\n- [Spusu](https://www.spusu.it)\n- [Optima](https://www.optimaitalia.com)\n- [eliMobile](https://elimobile.it)\n- [Tiscali](https://casa.tiscali.it/mobile/)",
-               "isDone": false,
-               "weight": 0.125
+                "title": "Comparing offers",
+                "number": 2,
+                "text": "You can look for deals by comparing plans using a site such as [Facile](https://www.facile.it/telefonia/risultati/solo-sim.html?gclid=EAIaIQobChMI6ez38pS4_QIVdo9oCR1sLgDIEAAYAiAAEgJs_vD_BwE).\n\nCoverage\nCurrently Vodafone has the largest coverage in Italy.",
+                "isDone": false,
+                "weight": 0.2
             },
             {
-               "title": "Comparing offers",
-               "number": 3,
-               "text": "You can look for deals by comparing plans using a site such as [Facile](https://www.facile.it/telefonia/risultati/solo-sim.html?gclid=EAIaIQobChMI6ez38pS4_QIVdo9oCR1sLgDIEAAYAiAAEgJs_vD_BwE).",
-               "isDone": false,
-               "weight": 0.125
-            },
-            {
-               "title": "Coverage",
-               "number": 4,
-               "text": "Currently Vodafone has the largest coverage in Italy.",
-               "isDone": false,
-               "weight": 0.125
-            },
-            {
-               "title": "Getting a sim card",
-               "number": 5,
-               "text": "In order to get a sim card you can go to a carrier's own shop, or a tabacchi or phone shop that has the sim card you are looking for. You will need to bring your passport, EU-issued driver's license or resident's permit. You can also order online, and you will need to provide scans of your ID and a valid postal address.",
-               "isDone": false,
-               "weight": 0.125
-            },
-            {
-               "title": "Topping up",
-               "number": 6,
-               "text": "You can top up your sim in most tabacchi, although they tend to use the phrase \"charge\".",
-               "isDone": false,
-               "weight": 0.125
-            },
+                "title": "Getting a sim card",
+                "number": 3,
+                "text": "In order to get a sim card you can go to a carrier's own shop, or a tabacchi or phone shop that has the sim card you are looking for. You will need to bring your passport, EU-issued driver's license or resident's permit. You can also order online, and you will need to provide scans of your ID and a valid postal address.\n\nTopping up\nYou can top up your sim in most tabacchi, although they tend to use the phrase \"charge\".",
+                "isDone": false,
+                "weight": 0.3
+            }
         ]
     }
 ]

@@ -33,7 +33,7 @@
         "title": "Permesso di Soggiorno",
         "information": "Permesso di Soggiorno (temporary residence permit) gives permission for non-EU citizens to stay legally in Italy if they intend to live here for more than three months. Since the Academy course lasts longer than three months, it is a requirement. The permit should be requested within 8 work days of arriving to Italy (excluding Sundays and public holidays).",
         "timeFrame": "2-3 months",
-        "imageName": "",
+        "imageName": "pds",
         "isEnabled": true,
         "steps": [
             {

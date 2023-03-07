@@ -24,7 +24,7 @@ struct TaskView: View {
                     .foregroundColor(.clear)
                     .cornerRadius(20)
                     .shadow(color: .black.opacity(0.1), radius: 20, y: 2)
-                Text("\(viewModel.goal.percentOfDone)% has done")
+                Text("\(viewModel.goal.percentOfDone)% done")
                     .frame(maxWidth: .infinity)
             }
             .padding(.horizontal)
@@ -50,6 +50,7 @@ struct TaskView: View {
             ForEach(viewModel.sortedSteps, id: \.self) { step in
                 StepView(viewModel: viewModel, step: step)
             }
+            .padding(.horizontal)
         }
         .background(Color("yellowColor").opacity(0.10))
     }

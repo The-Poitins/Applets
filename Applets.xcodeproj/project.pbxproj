@@ -19,6 +19,11 @@
 		2A689D0729A4C9D6003908A4 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A689D0629A4C9D6003908A4 /* TaskView.swift */; };
 		2A689D0E29A4E861003908A4 /* InitialData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A689D0D29A4E861003908A4 /* InitialData.json */; };
 		2A84DB0929A397FB00E01DC3 /* FilledCellModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A84DB0829A397FB00E01DC3 /* FilledCellModifier.swift */; };
+		4C4C6F3729AF5B9E005CEB86 /* QuestionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4C6F3029AF5B9E005CEB86 /* QuestionButtonView.swift */; };
+		4C4C6F3829AF5B9E005CEB86 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4C6F3129AF5B9E005CEB86 /* OnBoarding.swift */; };
+		4C4C6F3929AF5B9E005CEB86 /* OffsetPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4C6F3229AF5B9E005CEB86 /* OffsetPageTabView.swift */; };
+		4C4C6F3A29AF5B9E005CEB86 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4C6F3429AF5B9E005CEB86 /* OnboardingViewModel.swift */; };
+		4C4C6F3B29AF5B9E005CEB86 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4C6F3629AF5B9E005CEB86 /* OnboardingScreen.swift */; };
 		4CB2E5AC29A4D84100839C9A /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2E5AB29A4D84100839C9A /* UserProfileView.swift */; };
 		4CE53EC529AA72EE00792923 /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE53EC429AA72EE00792923 /* UserProfileModel.swift */; };
 		C106ACCB29ACC79E003B27E2 /* TasksData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A09D33C29A57340009ACE7C /* TasksData.swift */; };
@@ -77,6 +82,11 @@
 		2A689D0629A4C9D6003908A4 /* TaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		2A689D0D29A4E861003908A4 /* InitialData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = InitialData.json; sourceTree = "<group>"; };
 		2A84DB0829A397FB00E01DC3 /* FilledCellModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledCellModifier.swift; sourceTree = "<group>"; };
+		4C4C6F3029AF5B9E005CEB86 /* QuestionButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionButtonView.swift; sourceTree = "<group>"; };
+		4C4C6F3129AF5B9E005CEB86 /* OnBoarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
+		4C4C6F3229AF5B9E005CEB86 /* OffsetPageTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffsetPageTabView.swift; sourceTree = "<group>"; };
+		4C4C6F3429AF5B9E005CEB86 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		4C4C6F3629AF5B9E005CEB86 /* OnboardingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		4CB2E5AB29A4D84100839C9A /* UserProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		4CE53EC429AA72EE00792923 /* UserProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = "<group>"; };
 		C106ACE929ACC79E003B27E2 /* Swiftlint Autocorrect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swiftlint Autocorrect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,13 +135,13 @@
 			path = TaskView;
 			sourceTree = "<group>";
 		};
-		2A689D0C29A4E84C003908A4 /* Resourses */ = {
+		2A689D0C29A4E84C003908A4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				2A689D0D29A4E861003908A4 /* InitialData.json */,
 			);
-			name = Resourses;
-			path = Models/Resourses;
+			name = Resources;
+			path = Models/Resources;
 			sourceTree = "<group>";
 		};
 		2A84DB0729A397E400E01DC3 /* Modifiers */ = {
@@ -141,6 +151,42 @@
 				2A84DB0829A397FB00E01DC3 /* FilledCellModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		4C4C6F2E29AF5B9E005CEB86 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				4C4C6F2F29AF5B9E005CEB86 /* OnboardingViews */,
+				4C4C6F3329AF5B9E005CEB86 /* OnboardingViewModel */,
+				4C4C6F3529AF5B9E005CEB86 /* OnboardingModel */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		4C4C6F2F29AF5B9E005CEB86 /* OnboardingViews */ = {
+			isa = PBXGroup;
+			children = (
+				4C4C6F3029AF5B9E005CEB86 /* QuestionButtonView.swift */,
+				4C4C6F3129AF5B9E005CEB86 /* OnBoarding.swift */,
+				4C4C6F3229AF5B9E005CEB86 /* OffsetPageTabView.swift */,
+			);
+			path = OnboardingViews;
+			sourceTree = "<group>";
+		};
+		4C4C6F3329AF5B9E005CEB86 /* OnboardingViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4C4C6F3429AF5B9E005CEB86 /* OnboardingViewModel.swift */,
+			);
+			path = OnboardingViewModel;
+			sourceTree = "<group>";
+		};
+		4C4C6F3529AF5B9E005CEB86 /* OnboardingModel */ = {
+			isa = PBXGroup;
+			children = (
+				4C4C6F3629AF5B9E005CEB86 /* OnboardingScreen.swift */,
+			);
+			path = OnboardingModel;
 			sourceTree = "<group>";
 		};
 		4CB2E5AA29A4D83000839C9A /* UserProfile */ = {
@@ -183,7 +229,7 @@
 			children = (
 				13DFD6C929A8D26300003B64 /* Info.plist */,
 				C1B13AAC299F7A30008A8DE0 /* Core */,
-				2A689D0C29A4E84C003908A4 /* Resourses */,
+				2A689D0C29A4E84C003908A4 /* Resources */,
 				C1B13AA6299E609B008A8DE0 /* Models */,
 				C1B13AA4299E5D75008A8DE0 /* UI */,
 				C1B13A95299E2B3E008A8DE0 /* AppletsApp.swift */,
@@ -204,6 +250,7 @@
 		C1B13AA4299E5D75008A8DE0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4C4C6F2E29AF5B9E005CEB86 /* Onboarding */,
 				C1B29EB929A8B2BA00A55192 /* StepView */,
 				4CB2E5AA29A4D83000839C9A /* UserProfile */,
 				136DCD6829A38142001ED23F /* TaskView */,
@@ -473,6 +520,7 @@
 				2A201FD6299F82DE00F06692 /* CellView.swift in Sources */,
 				13A114B429A3DD2400F74200 /* ModalStepView.swift in Sources */,
 				2A689D0729A4C9D6003908A4 /* TaskView.swift in Sources */,
+				4C4C6F3A29AF5B9E005CEB86 /* OnboardingViewModel.swift in Sources */,
 				2A201FD8299F834000F06692 /* ContentView.swift in Sources */,
 				C1B29EB829A7759400A55192 /* DataPreloadAction.swift in Sources */,
 				4CB2E5AC29A4D84100839C9A /* UserProfileView.swift in Sources */,
@@ -483,12 +531,16 @@
 				C1B29EB429A771C100A55192 /* LocalStorage.swift in Sources */,
 				C13940A229A4186A00BD7DC2 /* Goal+Extension.swift in Sources */,
 				C1356D1329AE1569009F4654 /* CircledProgressBar.swift in Sources */,
+				4C4C6F3829AF5B9E005CEB86 /* OnBoarding.swift in Sources */,
 				C1B13AAB299F7995008A8DE0 /* Applets.xcdatamodeld in Sources */,
 				C1B13A96299E2B3E008A8DE0 /* AppletsApp.swift in Sources */,
 				13A114B229A3D46D00F74200 /* StepView.swift in Sources */,
 				C1B29EB129A76E5500A55192 /* DataPopulateService.swift in Sources */,
+				4C4C6F3729AF5B9E005CEB86 /* QuestionButtonView.swift in Sources */,
 				13656377299F8760003F0F31 /* ContentViewModel.swift in Sources */,
 				C1B29EBB29A8B2DB00A55192 /* TaskViewModel.swift in Sources */,
+				4C4C6F3929AF5B9E005CEB86 /* OffsetPageTabView.swift in Sources */,
+				4C4C6F3B29AF5B9E005CEB86 /* OnboardingScreen.swift in Sources */,
 				2A84DB0929A397FB00E01DC3 /* FilledCellModifier.swift in Sources */,
 				4CE53EC529AA72EE00792923 /* UserProfileModel.swift in Sources */,
 				2A09D33F29A573E9009ACE7C /* TasksDataParser.swift in Sources */,
@@ -519,7 +571,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Applets/Preview Content\"";
-				DEVELOPMENT_TEAM = 3523U23689;
+				DEVELOPMENT_TEAM = U77Q6FJLJF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Applets/Info.plist;
@@ -551,7 +603,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Applets/Preview Content\"";
-				DEVELOPMENT_TEAM = 3523U23689;
+				DEVELOPMENT_TEAM = U77Q6FJLJF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Applets/Info.plist;
@@ -697,7 +749,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Applets/Preview Content\"";
-				DEVELOPMENT_TEAM = 3523U23689;
+				DEVELOPMENT_TEAM = U77Q6FJLJF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Applets/Info.plist;

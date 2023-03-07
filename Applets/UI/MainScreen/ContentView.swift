@@ -80,21 +80,23 @@ struct ContentView: View {
         var error: NSError?
 
         // check whether biometric authentication is possible
-        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+        if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) {
             // it's possible, so go ahead and use it
             let reason = "We need to verify your identity to display sensitive information."
-
-            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
+            // Use .deviceOwnerAuthenticationWithBiometrics for only biometrics, no passcode access.
+            context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reason) { success, authenticationError in
                 // authentication has now completed
                 if success {
                     // authenticated successfully
                     isShowingProfilePage.toggle()
                 } else {
                     // there was a problem
+                    print("Authentication failed")
                 }
             }
         } else {
-            // no biometrics
+            // no authentication
+            print("No authentication")
         }
     }
 }

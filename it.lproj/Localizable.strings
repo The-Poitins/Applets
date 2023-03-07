@@ -12,7 +12,7 @@
 "Done" = "Finito";
 "Close" = "Chiudi";
 "Done" = "Finito";
-"%lld%% has done" = "%lld%% ha finito";
+"%lld%% done" = "%lld%% finito";
 "Description" = "Descrizione";
 "Steps" = "Fase";
 "Name" = "Nome";

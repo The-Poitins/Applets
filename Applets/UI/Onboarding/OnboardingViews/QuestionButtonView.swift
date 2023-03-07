@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QuestionButtonView: View {
     var onboardingVM = OnboardingViewModel()
-    var title: String
+    var title: LocalizedStringKey
     @Binding var isEUButton: Bool?
 
     var body: some View {

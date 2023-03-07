@@ -11,15 +11,11 @@ import SwiftUI
 struct OnboardingScreen: Identifiable {
     var id = UUID().uuidString
     var image: String
-    var title: String
-    var description: String
+    var title: LocalizedStringKey
+    var description: LocalizedStringKey
 }
 extension OnboardingScreen {
-    static var longText = """
-Getting things done in Napoli can be confusing, especially if you can't speak Italian.
-
-Let us know if you are an EU citizen or not, since the rules are different depending on where you are from.
-"""
+    static var longText: LocalizedStringKey = "Getting things done in Napoli can be confusing, especially if you can't speak Italian.\n\nLet us know if you are an EU citizen or not, since the rules are different depending on where you are from."
 
     static var boardingScreens: [OnboardingScreen] = [
         OnboardingScreen(image: "profiles_undraw",

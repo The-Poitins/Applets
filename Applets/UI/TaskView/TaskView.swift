@@ -17,38 +17,35 @@ struct TaskView: View {
 
     var body: some View {
         ScrollView {
-            ZStack(alignment: .leading) {
-                Rectangle()
-                    .frame(width: 370, height: 25)
-                    .modifier(FilledCellModifier(percentOfDone: viewModel.goal.fractionOfDone))
-                    .foregroundColor(.clear)
-                    .cornerRadius(20)
-                    .shadow(color: .black.opacity(0.1), radius: 20, y: 2)
-                Text("\(viewModel.goal.percentOfDone)% has done")
-                    .frame(maxWidth: .infinity)
-            }
-            .padding(.horizontal)
-
             VStack(alignment: .leading) {
-                if let image = viewModel.goal.image, !image.isEmpty {
-                    Image(image)
-                        .resizable()
-                        .scaledToFit()
-                        .cornerRadius(20)
-                        .shadow(color: .black.opacity(0.08), radius: 20, y: 2)
-                }
+                ProgressBarView(fractionOfDone: viewModel.goal.fractionOfDone)
+                    .animation(.default, value: viewModel.goal.fractionOfDone)
 
-                Text("Description")
-                    .font(.title)
-                    .padding(.vertical, 2)
-                Text(LocalizedStringKey(viewModel.goal.information ?? ""))
-                Text("Steps")
-                    .font(.title)
-                    .padding(.top, 2)
+                    if let image = viewModel.goal.image, !image.isEmpty {
+                        Image(image)
+                            .resizable()
+                            .scaledToFit()
+                            .cornerRadius(20)
+                            .shadow(color: .black.opacity(0.08), radius: 20, y: 2)
+                    }
+
+                    Text("Description")
+                        .font(.title)
+                        .padding(.vertical, 2)
+                    Text(LocalizedStringKey(viewModel.goal.information ?? ""))
             }
             .padding(.horizontal)
-            ForEach(viewModel.sortedSteps, id: \.self) { step in
-                StepView(viewModel: viewModel, step: step)
+
+            if !viewModel.goal.allSteps.isEmpty {
+                VStack(alignment: .leading) {
+                    Text("Steps")
+                        .font(.title)
+                        .padding(.top, 2)
+                    ForEach(viewModel.sortedSteps, id: \.self) { step in
+                        StepView(viewModel: viewModel, step: step)
+                    }
+                }
+                .padding(.horizontal)
             }
         }
         .background(Color("yellowColor").opacity(0.10))

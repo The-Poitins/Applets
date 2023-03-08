@@ -25,7 +25,7 @@ struct UserProfileView: View {
                     } header: {
                         Text("Name")
                     }
-                    
+
                     Section {
                         SecureTextField(
                             placeholder: "Email",
@@ -34,7 +34,7 @@ struct UserProfileView: View {
                     } header: {
                         Text("Email")
                     }
-                    
+
                     Section {
                         SecureTextField(
                             placeholder: "Mobile number",
@@ -43,7 +43,7 @@ struct UserProfileView: View {
                     } header: {
                         Text("Mobile number")
                     }
-                    
+
                     Section {
                         SecureTextField(
                             placeholder: "Codice Fiscale",
@@ -52,7 +52,7 @@ struct UserProfileView: View {
                     } header: {
                         Text("Codice Fiscale")
                     }
-                    
+
                     Section {
                         SecureTextField(
                             placeholder: "Permesso di Soggiorno",

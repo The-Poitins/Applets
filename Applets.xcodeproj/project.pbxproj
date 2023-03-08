@@ -61,6 +61,9 @@
 		C1B29EB629A7731D00A55192 /* LocalStorageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B29EB529A7731D00A55192 /* LocalStorageKey.swift */; };
 		C1B29EB829A7759400A55192 /* DataPreloadAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B29EB729A7759400A55192 /* DataPreloadAction.swift */; };
 		C1B29EBB29A8B2DB00A55192 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B29EBA29A8B2DB00A55192 /* TaskViewModel.swift */; };
+		C1C21E0129B88DEF004E3E13 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164598F29B74F70003A709F /* ProgressBarView.swift */; };
+		C1C21E0229B88DF4004E3E13 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164598529B73B59003A709F /* SecureTextField.swift */; };
+		C1C21E0329B88E0D004E3E13 /* Binding+DefaultValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D904CC29AF6DA50042193A /* Binding+DefaultValue.swift */; };
 		C1D904C929AF627E0042193A /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D904C829AF627E0042193A /* UserProfileViewModel.swift */; };
 		C1D904CA29AF627E0042193A /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D904C829AF627E0042193A /* UserProfileViewModel.swift */; };
 		C1D904CD29AF6DA50042193A /* Binding+DefaultValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D904CC29AF6DA50042193A /* Binding+DefaultValue.swift */; };
@@ -472,17 +475,19 @@
 				C106ACD129ACC79E003B27E2 /* UserProfileView.swift in Sources */,
 				C106ACD229ACC79E003B27E2 /* DataManager.swift in Sources */,
 				C1D904CF29AF6F230042193A /* UserProfileModel.swift in Sources */,
+				C1C21E0229B88DF4004E3E13 /* SecureTextField.swift in Sources */,
 				C106ACD329ACC79E003B27E2 /* LocalStorageKey.swift in Sources */,
 				C106ACD429ACC79E003B27E2 /* Step+Extension.swift in Sources */,
 				C106ACD529ACC79E003B27E2 /* PersistenceController.swift in Sources */,
 				C106ACD629ACC79E003B27E2 /* LocalStorage.swift in Sources */,
-				C164599129B75197003A709F /* ProgressBarView.swift in Sources */,
+				C1C21E0129B88DEF004E3E13 /* ProgressBarView.swift in Sources */,
 				C106ACD729ACC79E003B27E2 /* Goal+Extension.swift in Sources */,
 				C13A772A29AE1D8F006E9AC4 /* CircledProgressBar.swift in Sources */,
 				C106ACD829ACC79E003B27E2 /* Applets.xcdatamodeld in Sources */,
 				C106ACD929ACC79E003B27E2 /* AppletsApp.swift in Sources */,
 				C106ACDA29ACC79E003B27E2 /* StepView.swift in Sources */,
 				C106ACDB29ACC79E003B27E2 /* DataPopulateService.swift in Sources */,
+				C1C21E0329B88E0D004E3E13 /* Binding+DefaultValue.swift in Sources */,
 				C106ACDC29ACC79E003B27E2 /* ContentViewModel.swift in Sources */,
 				C106ACDD29ACC79E003B27E2 /* TaskViewModel.swift in Sources */,
 				C106ACDE29ACC79E003B27E2 /* FilledCellModifier.swift in Sources */,

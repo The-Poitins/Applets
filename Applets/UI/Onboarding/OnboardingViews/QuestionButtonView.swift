@@ -22,7 +22,7 @@ struct QuestionButtonView: View {
             } label: {
                 Text(title)
                     .fontWeight(.semibold)
-                    .foregroundColor(.black)
+                    .foregroundColor(onboardingVM.getForegroundColor(isEUButton: isEUButton, title: title))
                     .padding(.vertical, 20)
                     .frame(maxWidth: .infinity)
                     .background(onboardingVM.getBackgroundColor(isEUButton: isEUButton, title: title), in: RoundedRectangle(cornerRadius: 12))

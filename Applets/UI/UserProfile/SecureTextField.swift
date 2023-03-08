@@ -35,6 +35,9 @@ struct SecureTextField: View {
             }
             .redacted(reason: isEditing || isDataRevealed ? .privacy : .placeholder)
         }
+        .onChange(of: isEditing) { newValue in
+            isDataRevealed = newValue
+        }
     }
 
     private func revealData() {

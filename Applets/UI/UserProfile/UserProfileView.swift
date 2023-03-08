@@ -56,7 +56,7 @@ struct UserProfileView: View {
                     Section {
                         SecureTextField(
                             placeholder: "Permesso di Soggiorno",
-                            data: $viewModel.userProfile.mobileNumber,
+                            data: $viewModel.userProfile.permessoDiSoggiornoNumber,
                             isEditing: $isEditing)
                     } header: {
                         Text("Permesso di Soggiorno")

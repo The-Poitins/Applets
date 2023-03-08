@@ -25,6 +25,7 @@
 		4C4C6F3A29AF5B9E005CEB86 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4C6F3429AF5B9E005CEB86 /* OnboardingViewModel.swift */; };
 		4C4C6F3B29AF5B9E005CEB86 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4C6F3629AF5B9E005CEB86 /* OnboardingScreen.swift */; };
 		4CB2E5AC29A4D84100839C9A /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2E5AB29A4D84100839C9A /* UserProfileView.swift */; };
+		4CDF13FF29B75C6D00EB7DB9 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDF13FE29B75C6D00EB7DB9 /* CustomAlertView.swift */; };
 		4CE53EC529AA72EE00792923 /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE53EC429AA72EE00792923 /* UserProfileModel.swift */; };
 		C106ACCB29ACC79E003B27E2 /* TasksData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A09D33C29A57340009ACE7C /* TasksData.swift */; };
 		C106ACCC29ACC79E003B27E2 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A201FD5299F82DE00F06692 /* CellView.swift */; };
@@ -88,6 +89,7 @@
 		4C4C6F3429AF5B9E005CEB86 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		4C4C6F3629AF5B9E005CEB86 /* OnboardingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		4CB2E5AB29A4D84100839C9A /* UserProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		4CDF13FE29B75C6D00EB7DB9 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		4CE53EC429AA72EE00792923 /* UserProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = "<group>"; };
 		C106ACE929ACC79E003B27E2 /* Swiftlint Autocorrect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swiftlint Autocorrect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1356D1229AE1569009F4654 /* CircledProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircledProgressBar.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 			children = (
 				4CE53EC329AA72D300792923 /* UserProfileModel */,
 				4CB2E5AB29A4D84100839C9A /* UserProfileView.swift */,
+				4CDF13FE29B75C6D00EB7DB9 /* CustomAlertView.swift */,
 			);
 			path = UserProfile;
 			sourceTree = "<group>";
@@ -535,6 +538,7 @@
 				C1B13AAB299F7995008A8DE0 /* Applets.xcdatamodeld in Sources */,
 				C1B13A96299E2B3E008A8DE0 /* AppletsApp.swift in Sources */,
 				13A114B229A3D46D00F74200 /* StepView.swift in Sources */,
+				4CDF13FF29B75C6D00EB7DB9 /* CustomAlertView.swift in Sources */,
 				C1B29EB129A76E5500A55192 /* DataPopulateService.swift in Sources */,
 				4C4C6F3729AF5B9E005CEB86 /* QuestionButtonView.swift in Sources */,
 				13656377299F8760003F0F31 /* ContentViewModel.swift in Sources */,

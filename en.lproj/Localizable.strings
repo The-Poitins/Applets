@@ -11,7 +11,7 @@
 "Done" = "Done";
 "Close" = "Close";
 "Done" = "Done";
-"%lld%% has done" = "%lld%% has done";
+"%lld%% done" = "%lld%% done";
 "Description";
 "Steps";
 "Name";

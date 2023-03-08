@@ -12,7 +12,7 @@
 "Done" = "Finito";
 "Close" = "Chiudi";
 "Done" = "Finito";
-"%lld%% has done" = "%lld%% ha finito";
+"%lld%% done" = "%lld%% finito";
 "Description" = "Descrizione";
 "Steps" = "Fase";
 "Name" = "Nome";
@@ -69,3 +69,96 @@ Agenzia app: (È improbabile che l'app Agenzia sia disponibile su app store non 
 
 "Location:\n\n[Agenzia delle Entrate Office](https://maps.apple.com/?address=Via%20Guglielmo%20Oberdan%201-3,%2080134%20Naples,%20Italy&auid=6110987139943857305&ll=40.842925,14.249981&lsp=9902&q=Agenzia%20delle%20Entrate)\n(Entrance on Via Guglielmo Oberdan)" = "Posizione: [Ufficio Agenzia delle Entrate](https://maps.apple.com/?address=Via%20Guglielmo%20Oberdan%201-3,%2080134%20Naples,%20Italy&auid=6110987139943857305&ll=40.842925,14.249981&lsp=9902&q=Agenzia%20delle%20Entrate)
 (Entrata da Via Guglielmo Oberdan)";
+
+
+//Permesso di Soggiorno
+
+"Permesso di Soggiorno (temporary residence permit) gives permission for non-EU citizens to stay legally in Italy if they intend to live here for more than three months. Since the Academy course lasts longer than three months, it is a requirement. The permit should be requested within 8 work days of arriving to Italy (excluding Sundays and public holidays)." = "Il permesso di soggiorno temporaneo consente ai cittadini extracomunitari di soggiornare legalmente in Italia se intendono vivere qui per più di tre mesi. Poiché il corso dell’Academy dura più di tre mesi, è un requisito necessario. Il permesso va richiesto entro 8 giorni lavorativi dall'arrivo in Italia (escluse le domeniche e i giorni festivi).";
+
+"2-3 months" = "2-3 mesi";
+
+// 1 step
+
+"Obtain a KIT" = "Ottenere un KIT";
+
+"You will first need to go to the Post Office. Ask for the KIT GIALLO for the Permesso di Soggiorno, which consists of an envelope, two forms and a blank receipt (Ricevuta di Accredito). Only one of the forms (Modulo 1) will be needed. The other form (Modulo 2) can be discarded. Not every Post Office has the kit, so it's better to check which Post Office does by searching \"Sportello Amico Poste Italiane\". The kit is free of charge. There are Post Offices next to the Academy and Central Post Office:\n\n[Post Office near the Academy](https://goo.gl/maps/TNs54py1Hfbtsn7x8)\n[Central Post Office](https://goo.gl/maps/z4Jfi1xY8tLPBfnF9)" = "Per prima cosa è necessario recarsi all'Ufficio Postale. Chiedete il KIT GIALLO per il Permesso di Soggiorno, che consiste in una busta, due moduli e una ricevuta in bianco (ricevuta di Accredito) . Sarà sufficiente solo uno dei due  moduli (Modulo 1). L'altro modulo (Modulo 2) può essere scartato.  Non tutti gli uffici postali hanno il kit, quindi è meglio verificare quale ufficio postale ha la scritta \"Sportello Amico Poste Italiane\". Il kit è gratuito. Ci sono uffici postali accanto all'Academy e all'ufficio di postale centrale:\n\n[Ufficio postale vicino all’Accademy](https://goo.gl/maps/TNs54py1Hfbtsn7x8)\n[Ufficio di posta centrale](https://goo.gl/maps/z4Jfi1xY8tLPBfnF9)";
+
+// 2 step
+
+"Buy a payment stamp" = "Acquistare una Marca di Bollo";
+
+"The next step is to buy a revenue stamp, called a \"Marca da Bollo\". This stamp is commonly used in Italy as a proof of payment. You can get one at a tobacco shop (tabaccheria). For the permesso application it needs to me exactly €16, no more and no less. There is a place for it on the form, but you don't attach it, one of the clerks will. You just take it with you." = "ll passo successivo è l'acquisto di una marca da bollo. Questa marca da bollo  è comunemente usata in Italia come prova di pagamento. È possibile ottenerla presso una tabaccheria. Per la richiesta del permesso è necessario che sia esattamente di 16 euro, né più né meno. C'è un posto per questo sul modulo, ma non dovete allegarlo, lo farà uno degli impiegati. Basta portarlo con sé.";
+
+// 3 step
+
+"Fill out the form" = "Compila il modulo";
+
+"There will be 2 questionnaires in the envelope, but you only need to fill out one form - Modulo 1. You need to write in capital letters with a black pen, following the instructions included in the kit. Unfortunately the instructions are in Italian only, so you can check out the useful link below where you will find tips for filling the form out.\n\n[Useful tips for filling out the form](http://expatalexa.com/bureaucracy-tips/fill-permesso-di-soggiorno-step-step-guide/)" = "Nella busta ci saranno 2 questionari, ma è sufficiente compilare un solo modulo, il Modulo 1. Dovrete scrivere in stampatello con una penna nera, seguendo le istruzioni incluse nel kit. Purtroppo le istruzioni sono solo in italiano, quindi potete consultare l'utile link qui sotto dove troverete i consigli per la compilazione del modulo.\n\n[Consigli utili per la compilazione del modulo](http://expatalexa.com/bureaucracy-tips/fill-permesso-di-soggiorno-step-step-guide/)";
+
+// 4 step
+
+"Fill out the Ricevuta di Accredito" = "Compilare la Ricevuta di Accredito";
+
+"Next, on the Ricevuta you need to fill in the Name and Surname, Address, Zip Сode and Сity fields. You need to fill in the main part, as well as the part on the left." = "Successivamente, nella ricevuta è necessario compilare i campi Nome e cognome, Indirizzo, Codice  postale e Città. È necessario compilare la parte principale e quella a sinistra.";
+
+// 5 step
+
+"Make copies of documents" = "Eseguire le copie di documenti";
+
+"You will need to make copies of the following documents:\n- Passport\n- Visa\n- Codice Fiscale\n- Insurance policy and payment receipt (A receipt may not be necessary, but some people have been asked for one)\n- Admission/enrolment letter from the Academy" = "È necessario fare copie dei seguenti documenti:\n\n- Passaporto\n- Visto\n- Codice fiscale\n- Polizza assicurativa e ricevuta di Pagamento (la ricevuta potrebbe non essere necessaria, ma ad alcuni è stata richiesta)\n- Lettera di ammissione/iscrizione per l’Academy";
+
+// 6 step
+
+"Submit you application through the Post Office" = "Presentare la domanda tramite all'Ufficio postale";
+
+"The next step is to go to the Post Office again. Bring all the copies that you have made, along with the Marca da Bollo, the completed A4 form from step 3 and the ricevuta from step 4 and give them all to the employee in the window. Then you pay for everything that they tell you (the cost is about €100 euros). After that you get a new ricevuta (DO NOT LOSE THIS). It tells you the date, time and address of your appointment with the police." = "Il passo successivo è recarsi nuovamente all'Ufficio Postale. Portate tutte le copie che avete fatto, insieme alla Marca da Bollo, al modulo A4 compilato del punto 3 e alla ricevuta del punto 4 e consegnate tutto all'impiegato dello sportello. Poi pagate tutto quello che vi dicono (il costo è di circa 100 euro). Dopodiché si ottiene una ricevuta (da non perdere). In essa sono indicati la data, l'ora e l'indirizzo dell'appuntamento con la polizia.";
+
+// 7 step
+
+"Go to the Polizia" = "Vai alla Polizia";
+
+"It is quite common for the appointment to be 1-2 months after submitting your application. You should arrive on the appointed date to [Questura](https://goo.gl/maps/WmZSkN24dExCVog36) (This is the branch that most people have their appointments, but it may be different). Take the following documents with you:\n- Ricevuta from Post Office\n- Appointment details which was issued along with the second richevuta\n- 3x4cm photos (4 photos)\n- Passport\n- Original insurance policy\n- Original Codice Fiscale\n- Admission/enrolment letter\n- Accommodation contract OR Declaration of Hospitality (Dichiarazione di Ospitalità) from your host or landlord.\n\nAlso bring copies of these documents. They shouldn't be required, but just in case. At the police station all the documents will be checked and your fingerprints will be taken. It is better to come to the police 40 minutes in advance, and be sure to take something to eat: you will likely be waiting a very long time." = "È abbastanza comune che l'appuntamento avvenga 1-2 mesi dopo la presentazione della domanda. È necessario presentarsi alla data stabilita in [Questura](https://goo.gl/maps/WmZSkN24dExCVog36) (Questa è la filiale in cui la maggior parte delle persone ha l'appuntamento, ma potrebbe essere diversa). Portate con voi i seguenti documenti:\n\n- Ricevuta dell'ufficio postale\n- Dettagli dell'appuntamento che è stato emesso insieme alla seconda ricevuta\n- Foto 3x4 (4 foto)\n- Passaporto\n- Polizza assicurativa originale\n- Codice fiscale originale\n- Lettera di ammissione/iscrizione\n- Contratto di alloggio O Dichiarazione di Ospitalità (Dichiarazione di Ospitalità) da parte dell'ospitante o del padrone di casa.\n\nPortate con voi anche le copie di questi documenti. Non dovrebbero essere necessarie, ma non si sa mai. Alla stazione di polizia verranno controllati tutti i documenti e verranno prese le impronte digitali. È meglio presentarsi alla polizia con 40 minuti di anticipo e assicurarsi di prendere qualcosa da mangiare: è probabile che l'attesa sia molto lunga.";
+
+// 8 step
+
+"Go to the Polizia again to collect your Permesso" = "Recatevi di nuovo in Polizia per ritirare il vostro permesso";
+
+"About a month after going to the police station, you will receive an SMS saying the permesso is ready to be collected. Go to the same police whenever it is convenient. Collect your card, and start to enjoy life. The most difficult task is over!" = "Circa un mese dopo essersi recati alla stazione di polizia, riceverete un SMS che vi dirà che il permesso è pronto per essere ritirato. Recatevi alla stessa polizia ogni volta che lo ritenete opportuno. Ritirate il permesso e iniziate a godervi la vita. Il compito più difficile è finito!";
+
+// SIM card
+
+"Mobile operator" = "Scheda Sim";
+
+"If you need to get a mobile phone plan while in Italy, here is a list of service providers and MVNOs." = "Se avete  bisogno di un piano di telefonia mobile mentre siete in Italia, ecco un elenco di operatori di servizi e MVNO (operatore virtuale di rete mobile).";
+
+"1-2 days" = "2-3 giorni";
+
+"Сollect information about mobile operators" = "Raccogli informazioni sugli operatori di telefonia mobile";
+
+"Mobile service providers\nService providers build and control their own networks. You'll usually get better quality of service with a provider.\n\n- [Vodafone](https://privati.vodafone.it)\n- [Tim](https://www.tim.it/fisso-e-mobile/mobile)\n- [Wind Tre](https://www.windtre.it/)\n- [Iliad](https://www.iliad.it)\n- [Fastweb](https://www.fastweb.it)\n\nMVNOs\nMVNOs rent bandwidth from the providers. You might be able to get better deals with an MVNO. If you are concerned with the coverage area of an MVNO, you should check which network it uses. New MVNOs are coming to market all the time, so this list is not exhaustive.\n\n- [Postemobile](http://www.postemobile.it)\n- [ho. mobile](https://www.ho-mobile.it)\n- [Kena mobile](https://www.kenamobile.it)\n- [CoopVoce](https://www.coopvoce.it)\n- [Lyca mobile](https://www.lycamobile.it/en)\n- [Very Mobile](https://verymobile.it)\n- [Spusu](https://www.spusu.it)\n- [Optima](https://www.optimaitalia.com)\n- [eliMobile](https://elimobile.it)\n- [Tiscali](https://casa.tiscali.it/mobile/)" = "Gli operatori di servizi forniscono le proprie reti e le controllano. Di solito la qualità del servizio offerto da un provider è migliore.\n\n- [Vodafone](https://privati.vodafone.it)\n- [Tim](https://www.tim.it/fisso-e-mobile/mobile)\n- [Wind Tre](https://www.windtre.it/)\n- [Iliad](https://www.iliad.it)\n- [Fastweb](https://www.fastweb.it)\n\nMVNO (operatore virtuale di rete mobile)\nGli MVNO affittano la larghezza di banda dai provider. Potreste essere in grado di ottenere offerte migliori con un MVNO. Se siete interessati all'area di copertura di un MVNO, dovete verificare quale rete utilizza. Il mercato è sempre più ricco di nuovi MVNO, quindi questo  elenco non è esaustivo.\n\n- [Postemobile](http://www.postemobile.it)\n- [ho. mobile](https://www.ho-mobile.it)\n- [Kena mobile](https://www.kenamobile.it)\n- [CoopVoce](https://www.coopvoce.it)\n- [Lyca mobile](https://www.lycamobile.it/en)\n- [Very Mobile](https://verymobile.it)\n- [Spusu](https://www.spusu.it)\n- [Optima](https://www.optimaitalia.com)\n- [eliMobile](https://elimobile.it)\n- [Tiscali](https://casa.tiscali.it/mobile/)";
+
+"Comparing offers" = "Offerte a confronto";
+
+"You can look for deals by comparing plans using a site such as [Facile](https://www.facile.it/telefonia/risultati/solo-sim.html?gclid=EAIaIQobChMI6ez38pS4_QIVdo9oCR1sLgDIEAAYAiAAEgJs_vD_BwE).\n\nCoverage\nCurrently Vodafone has the largest coverage in Italy." = "È possibile cercare le offerte confrontando i piani utilizzando un sito come [Facile](https://www.facile.it/telefonia/risultati/solo-sim.html?gclid=EAIaIQobChMI6ez38pS4_QIVdo9oCR1sLgDIEAAYAiAAEgJs_vD_BwE).\n\nCopertura\nAttualmente Vodafone ha la maggiore copertura in Italia.";
+
+"Getting a sim card" = "Come ottenere una scheda sim";
+
+"In order to get a sim card you can go to a carrier's own shop, or a tabacchi or phone shop that has the sim card you are looking for. You will need to bring your passport, EU-issued driver's license or resident's permit. You can also order online, and you will need to provide scans of your ID and a valid postal address.\n\nTopping up\nYou can top up your sim in most tabacchi, although they tend to use the phrase \"charge\"." = "Per ottenere una scheda sim è possibile recarsi presso il negozio di un operatore, oppure presso un tabacchi o un negozio di telefonia che abbia la scheda sim desiderata. È necessario portare con sé il passaporto, la patente di guida o il permesso di soggiorno rilasciati dall'UE. È possibile ordinare anche online, ma è necessario fornire una scansione del documento d'identità e un indirizzo postale valido.\n\nRicarica\nÈ possibile ricaricare la propria sim nella maggior parte dei tabacchi, anche se si tende a usare l'espressione";
+
+// On-boarding
+
+"Getting things done in Napoli can be confusing, especially if you can't speak Italian.\n\nLet us know if you are an EU citizen or not, since the rules are different depending on where you are from." = "Le cose da fare a Napoli possono essere confuse, soprattutto se non si parla italiano.\n\nFateci sapere se siete cittadini dell'UE o meno, poiché le regole sono diverse a seconda dalla vostra provenienza.";
+
+"Welcome to\nthe Academy" = "Benvenuti\nin Academy ";
+"We're excited to have you join us on this amazing journey\n\nThis app will try to make your move to\nNapoli a little bit easier." = "Siamo entusiasti che tu ti unisca a noi in questo fantastico viaggio.\n\nQuesta applicazione cercherà di rendere il tuo trasferimento a Napoli un po' più facile.";
+"Navigate\nBureaucracy" = "Navigare\nBurocrazia";
+"Tips and Tricks" = "Consigli e suggerimenti";
+"We have some extra information about life in Napoli.\n\nTips about transport, mobile phone plans, accommodation and more!" = "Abbiamo alcune informazioni extra sulla vita a Napoli.\n\nSuggerimenti su trasporti, piani di telefonia mobile, alloggi e altro ancora!";
+"Enjoy yourself!" = "Divertitevi!";
+"Once the boring stuff is all sorted you can focus on making friends and creating great apps." = "Una volta sistemate le cose noiose, potrete concentrarvi sulla creazione di amicizie e di applicazioni fantastiche.";
+
+"non-EU" = "Non. Eu";
+"EU" = "Eu.";
+"Next" = "Salta.";
+"Finish" = "Finito";
+"Skip" = "Avanti";

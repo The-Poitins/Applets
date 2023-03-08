@@ -13,4 +13,5 @@ protocol LocalStorageKeyProtocol {
 
 enum LocalStorageKey: String, LocalStorageKeyProtocol {
     case hasPreloadedData
+    case isFirstRun
 }

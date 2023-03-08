@@ -16,7 +16,7 @@ final class DataManager: NSObject, ObservableObject, NSFetchedResultsControllerD
     @Published var goals: [Goal] = []
 
     private let goalsFRC: NSFetchedResultsController<Goal>
-    private let managedObjectContext: NSManagedObjectContext
+    let managedObjectContext: NSManagedObjectContext
 
     init(isPreview: Bool) {
         managedObjectContext = isPreview ? PersistenceController.preview.context : PersistenceController.shared.context

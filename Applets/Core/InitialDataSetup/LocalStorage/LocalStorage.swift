@@ -9,17 +9,15 @@ import Foundation
 
 final class LocalStorage {
 
-    private let userDefaults = UserDefaults.standard
-
-    func value<T>(for key: LocalStorageKeyProtocol) -> T? {
-        userDefaults.object(forKey: key.rawValue) as? T
+    static func value<T>(for key: LocalStorageKeyProtocol) -> T? {
+        UserDefaults.standard.object(forKey: key.rawValue) as? T
     }
 
-    func write<T>(value: T, for key: LocalStorageKeyProtocol) {
-        userDefaults.set(value, forKey: key.rawValue)
+    static func write<T>(value: T, for key: LocalStorageKeyProtocol) {
+        UserDefaults.standard.set(value, forKey: key.rawValue)
     }
 
-    func removeValue(for key: LocalStorageKeyProtocol) {
-        userDefaults.removeObject(forKey: key.rawValue)
+    static func removeValue(for key: LocalStorageKeyProtocol) {
+        UserDefaults.standard.removeObject(forKey: key.rawValue)
     }
 }

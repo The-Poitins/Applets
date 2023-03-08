@@ -32,12 +32,12 @@ struct OnBoarding: View {
                         VStack(alignment: .leading, spacing: 12) {
                             Text(screen.title)
                                 .font(.largeTitle.bold())
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                                 .padding(.top, 20)
 
                             Text(screen.description)
                                 .fontWeight(.semibold)
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .offset(y: -70)
@@ -61,7 +61,7 @@ struct OnBoarding: View {
 
             , alignment: .leading
         )
-        .background(Color("screen\(getIndex() + 1)"))
+        .background(Color("yellowColor"))
         .animation(.easeInOut, value: getIndex())
         .ignoresSafeArea(.container, edges: .all)
         .overlay(
@@ -81,13 +81,13 @@ struct OnBoarding: View {
                     } label: {
                         Text("Skip")
                             .fontWeight(.semibold)
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                     }
                     // Indicators
                     HStack(spacing: 8) {
                         ForEach(OnboardingScreen.boardingScreens.indices, id: \.self) { index in
                             Circle()
-                                .fill(.white)
+                                .fill(.black)
                                 .opacity(index == getIndex() ? 1 : 0.4)
                                 .frame(width: 8, height: 8)
                                 .scaleEffect(index == (getIndex()) ? 1.3 : 0.85)
@@ -116,7 +116,7 @@ struct OnBoarding: View {
                         }
                     }
                     .fontWeight(.semibold)
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                 }
                 .padding(.top, 30)
                 .padding(.horizontal, 8)

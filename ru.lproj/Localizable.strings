@@ -12,11 +12,12 @@
 "Done" = "Выполнено";
 "Close" = "Закрыть";
 "Done" = "Выполнено";
-"%lld%% has done" = "%lld%% выполнено";
+"%lld%% done" = "%lld%% выполнено";
 "Description" = "Описание";
 "Steps" = "Шаги";
 "Name" = "Имя";
 "Mobile number" = "Номер телефона";
+"2-3 months" = "2-3 месяца";
 "Task %lld" = "Задача %lld";
 "[Privacy Policy](https://github.com/The-Poitins/Applets/blob/dev/Privacy%20policy.md)" = "[Политика конфиденциальности](https://github.com/The-Poitins/Applets/blob/dev/Privacy%20policy.md)";
 
@@ -28,7 +29,7 @@
 
 "Book an appointment" = "Записаться на приём";
 
-"Approx. time 2-4 weeks" = "Примерно 2-4 недели";
+"2-4 weeks" = "2-4 недели";
 
 "Book an appointment either online or through the app. If you can't make the appointment, remember to cancel it. Note that the English and German versions of the website are different to the Italian one.\nBook or cancel an appointment on the website: \nUse the translate service built into Safari or Google Translate to navigate the booking. \n\n [Book Appointment](https://prenotazioneweb.agenziaentrate.gov.it/PrenotazioneWeb/prenotazione.action) \n\n Agenzia app: (The Agenzia app is unlikely to be available on non-Italian app stores).\n\n[App Store](https://itunes.apple.com/it/app/agenziaentrate/id1014942268)\n\n[Play Store](https://play.google.com/store/apps/details?id=it.agenziaentrate.mobile.servizionline.ServiziActivity)" = "
 Примерно 2-4 недели
@@ -68,3 +69,96 @@
 (Entrata da Via Guglielmo Oberdan).
 
 Вообще офисов налоговой в Неаполе больше, но рекомендуем идти в этот, потому что проверяли его сами. В других вероятность отказа выше. Почему отказ? Да хрен знает, что-то они по-итальянски объясняли, мы не поняли. Работать не хотят, лентяи. Сиеста у них.";
+
+
+//Permesso di Soggiorno
+
+"Permesso di Soggiorno (temporary residence permit) gives permission for non-EU citizens to stay legally in Italy if they intend to live here for more than three months. Since the Academy course lasts longer than three months, it is a requirement. The permit should be requested within 8 work days of arriving to Italy (excluding Sundays and public holidays)." = "Permesso di Soggiorno (временный вид на жительство) дает разрешение гражданам стран, не входящих в ЕС, легально оставаться в Италии, если они намерены жить здесь более трех месяцев. Поскольку курс Академии длится более трех месяцев, это обязательное требование. Разрешение должно быть запрошено в течение 8 рабочих дней после прибытия в Италию (кроме воскресенья и праздничных дней).";
+
+"2-3 months" = "2-3 месяца";
+
+// 1 step
+
+"Obtain a KIT" = "Получить комплект с формой для заполнения";
+
+"You will first need to go to the Post Office. Ask for the KIT GIALLO for the Permesso di Soggiorno, which consists of an envelope, two forms and a blank receipt (Ricevuta di Accredito). Only one of the forms (Modulo 1) will be needed. The other form (Modulo 2) can be discarded. Not every Post Office has the kit, so it's better to check which Post Office does by searching \"Sportello Amico Poste Italiane\". The kit is free of charge. There are Post Offices next to the Academy and Central Post Office:\n\n[Post Office near the Academy](https://goo.gl/maps/TNs54py1Hfbtsn7x8)\n[Central Post Office](https://goo.gl/maps/z4Jfi1xY8tLPBfnF9)" = "Сначала тебе необходимо зайти на почту. Попроси KIT GIALLO для Permesso di Soggiorno, который состоит из конверта, двух форм и пустой квитанции (Ricevuta di Accredito). Тебе нужна только одна из форм (MODULO 1). Другая форма (MODULO 2) не понадобится, поэтому просто отложи ее. Не в каждом почтовом отделении есть комплект, поэтому лучше проверь заранее, какое почтовое отделение подойдет, выполнив поиск «Sportello Amico Poste Italiane». Комплект предоставляется бесплатно. Ниже ты найдешь адрес почты рядом с Академией, а также Центральное отделение (на всякий случай):\n\n[Почта рядом с Академией](https://goo.gl/maps/TNs54py1Hfbtsn7x8)\n[Центральная почта](https://goo.gl/maps/z4Jfi1xY8tLPBfnF9)";
+
+// 2 step
+
+"Buy a payment stamp" = "Купить почтовую марку";
+
+"The next step is to buy a revenue stamp, called a \"Marca da Bollo\". This stamp is commonly used in Italy as a proof of payment. You can get one at a tobacco shop (tabaccheria). For the permesso application it needs to me exactly €16, no more and no less. There is a place for it on the form, but you don't attach it, one of the clerks will. You just take it with you." = "Следующим шагом является покупка почтовой марки, которая называется \"Marca da Bollo\". Эта марка обычно используется в Италии в качестве подтверждения платежа. Ты можешь получить ее в табачном магазине (tabaccheria). Она стоит ровно €16, не больше и не меньше, поэтому убедись, что покупаешь правильную марку. На бланке есть место для нее, но самим крепить ее не нужно, это сделает почтовый работник. Тебе необходимо просто взять ее с собой.";
+
+// 3 step
+
+"Fill out the form" = "Заполни форму";
+
+"There will be 2 questionnaires in the envelope, but you only need to fill out one form - Modulo 1. You need to write in capital letters with a black pen, following the instructions included in the kit. Unfortunately the instructions are in Italian only, so you can check out the useful link below where you will find tips for filling the form out.\n\n[Useful tips for filling out the form](http://expatalexa.com/bureaucracy-tips/fill-permesso-di-soggiorno-step-step-guide/)" = "Как я уже рассказывала, в конверте будет 2 анкеты, но заполнить нужно только одну форму - MODULO 1. Писать нужно заглавными буквами черной ручкой, следуя инструкции, входящей в комплект. К сожалению, инструкция представлена только на итальянском языке, поэтому можешь перейти по полезным ссылкам ниже, где ты найдешь советы по заполнению формы.\n\n[Полезные советы по заполнению формы на английском](http://expatalexa.com/bureaucracy-tips/fill-permesso-di-soggiorno-step-step-guide/)";
+
+// 4 step
+
+"Fill out the Ricevuta di Accredito" = "Заполни Ricevuta di Accredito";
+
+"Next, on the Ricevuta you need to fill in the Name and Surname, Address, Zip Сode and Сity fields. You need to fill in the main part, as well as the part on the left." = "Далее на Ricevuta di Accredito (в конверте также есть небольшой лист) необходимо заполнить поля с именем и фамилией, почтовый индекс, город и адрес в Италии. Вам необходимо заполнить основную часть, а также часть поменьше слева.";
+
+// 5 step
+
+"Make copies of documents" = "Сделай копии документов";
+
+"You will need to make copies of the following documents:\n- Passport\n- Visa\n- Codice Fiscale\n- Insurance policy and payment receipt (A receipt may not be necessary, but some people have been asked for one)\n- Admission/enrolment letter from the Academy" = "Вам нужно будет сделать копии следующих документов:\n\n- Паспорт\n- Виза\n- Codice Fiscale\n- Страховой полис и квитанция об оплате (Квитанция может не понадобиться, но иногда ее спрашивают) \n- Приглашение в Академию.";
+
+// 6 step
+
+"Submit you application through the Post Office" = "Подайте документы через почтовое отделение";
+
+"The next step is to go to the Post Office again. Bring all the copies that you have made, along with the Marca da Bollo, the completed A4 form from step 3 and the ricevuta from step 4 and give them all to the employee in the window. Then you pay for everything that they tell you (the cost is about €100 euros). After that you get a new ricevuta (DO NOT LOSE THIS). It tells you the date, time and address of your appointment with the police." = "Следующий шаг — снова пойти на почту. Принеси все копии, которые ты сделал в шаге 5, вместе с Marca da Bollo из шага 2, заполненной формой из шага 3 и Ricevuta di Accredito из шага 4 и отдайте их все сотруднику в окне (необходимо взять талончик и дождаться своей очереди). Потом заплати необходимую сумму (около 100 евро). После этого ты получишь новую Ricevuta (НИ В КОЕМ СЛУЧАЕ НЕ ПОТЕРЯЙ). В ней будет написана дата, время и адрес твоей записи в полицию.";
+
+// 7 step
+
+"Go to the Polizia" = "Подать документы в отделении полиции (Questura)";
+
+"It is quite common for the appointment to be 1-2 months after submitting your application. You should arrive on the appointed date to [Questura](https://goo.gl/maps/WmZSkN24dExCVog36) (This is the branch that most people have their appointments, but it may be different). Take the following documents with you:\n\n- Ricevuta from Post Office\n- Appointment details which was issued along with the second richevuta\n- 3x4cm photos (4 photos)\n- Passport\n- Original insurance policy\n- Original Codice Fiscale\n- Admission/enrolment letter\n- Accommodation contract OR Declaration of Hospitality (Dichiarazione di Ospitalità) from your host or landlord.\n\nAlso bring copies of these documents. They shouldn't be required, but just in case. At the police station all the documents will be checked and your fingerprints will be taken. It is better to come to the police 40 minutes in advance, and be sure to take something to eat: you will likely be waiting a very long time." = "Обычно запись назначается через 1-2 месяца после подачи заявления. Вы должны прибыть в назначенный день в [Questura di Napoli - Ufficio Immigrazione](https://goo.gl/maps/WmZSkN24dExCVog36) (Миграционный офис). Возьмите с собой следующие документы:\n- Ricevuta с Почты\n- Назначение встречи, которое было выдано вместе со второй Ricevuta при подаче документов\n- Фотографии 3х4 (4 фото)\n- Паспорт\n- Оригинал страхового полиса\n- Оригинал Codice Fiscale\n– Приглашение в Академию\n– Договор аренды ИЛИ Декларация о гостеприимстве (Dichiarazione di Ospitalità) от принимающей стороны или арендодателя.\n\nТакже принеси копии этих документов. Это не обязательно, но на всякий случай. В полицейском участке тебя вызовут по номеру (который нужно взять по приходу), проверят все документы и возьмут отпечатки пальцев. В полицию лучше прийти за 40 минут и взять с собой что-нибудь поесть: ждать придется очень долго.";
+
+// 8 step
+
+"Go to the Polizia again to collect your Permesso" = "Забрать свой Permesso";
+
+"About a month after going to the police station, you will receive an SMS saying the permesso is ready to be collected. Go to the same police whenever it is convenient. Collect your card, and start to enjoy life. The most difficult task is over!" = "Примерно через месяц после обращения в полицию тебе придет SMS о том, что Permesso готово к выдаче. Иди в ту же Questura, когда тебе удобно (только проверь время работы отделения). Забери свой Permesso и начинай радоваться жизни, ведь самое сложное задание выполнено!";
+
+// SIM card
+
+"Mobile operator" = "Мобильный оператор";
+
+"If you need to get a mobile phone plan while in Italy, here is a list of service providers and MVNOs." = "Если тебе нужно получить местную SIM-карту, то ниже ты найдешь список провайдеров и MVNO (англ. mobile virtual network operator — виртуальный оператор мобильной сети).";
+
+"1-2 days" = "1-2 дня";
+
+"Сollect information about mobile operators" = "Собери информацию об операторах связи";
+
+"Mobile service providers\nService providers build and control their own networks. You'll usually get better quality of service with a provider.\n\n- [Vodafone](https://privati.vodafone.it)\n- [Tim](https://www.tim.it/fisso-e-mobile/mobile)\n- [Wind Tre](https://www.windtre.it/)\n- [Iliad](https://www.iliad.it)\n- [Fastweb](https://www.fastweb.it)\n\nMVNOs\nMVNOs rent bandwidth from the providers. You might be able to get better deals with an MVNO. If you are concerned with the coverage area of an MVNO, you should check which network it uses. New MVNOs are coming to market all the time, so this list is not exhaustive.\n\n- [Postemobile](http://www.postemobile.it)\n- [ho. mobile](https://www.ho-mobile.it)\n- [Kena mobile](https://www.kenamobile.it)\n- [CoopVoce](https://www.coopvoce.it)\n- [Lyca mobile](https://www.lycamobile.it/en)\n- [Very Mobile](https://verymobile.it)\n- [Spusu](https://www.spusu.it)\n- [Optima](https://www.optimaitalia.com)\n- [eliMobile](https://elimobile.it)\n- [Tiscali](https://casa.tiscali.it/mobile/)" = "Провайдеры обладают своими собственными сетями, и как правило, именно они оказывают лучшее качество обслуживания.\n\n- [Vodafone](https://privati.vodafone.it)\n- [Tim](https://www.tim.it/fisso-e-mobile/mobile)\n- [Wind Tre](https://www.windtre.it/)\n- [Iliad](https://www.iliad.it)\n- [Fastweb](https://www.fastweb.it)\n\nВиртуальный оператор выпускает и продаёт брендированные сим-карты с собственными тарифами и услугами, а всю техническую базу (трафик, сеть и коммутаторы) ему предоставляет другая компания. Есть вероятность заключения более выгодной сделки с MVNO. Если тебя беспокоит зона покрытия MVNO, то следует проверить, какую сеть он использует. Новые MVNO появляются на рынке постоянно, поэтому этот список операторов не является окончательным, можно поискать другие.\n\n- [Postemobile](http://www.postemobile.it)\n- [ho. mobile](https://www.ho-mobile.it)\n- [Kena mobile](https://www.kenamobile.it)\n- [CoopVoce](https://www.coopvoce.it)\n- [Lyca mobile](https://www.lycamobile.it/en)\n- [Very Mobile](https://verymobile.it)\n- [Spusu](https://www.spusu.it)\n- [Optima](https://www.optimaitalia.com)\n- [eliMobile](https://elimobile.it)\n- [Tiscali](https://casa.tiscali.it/mobile/)";
+
+"Comparing offers" = "Сравни предложения";
+
+"You can look for deals by comparing plans using a site such as [Facile](https://www.facile.it/telefonia/risultati/solo-sim.html?gclid=EAIaIQobChMI6ez38pS4_QIVdo9oCR1sLgDIEAAYAiAAEgJs_vD_BwE).\n\nCoverage\nCurrently Vodafone has the largest coverage in Italy." = "Ты можешь сравнить предложения мобильных операторов с помощью сайта [Facile](https://www.facile.it/telefonia/risultati/solo-sim.html?gclid=EAIaIQobChMI6ez38pS4_QIVdo9oCR1sLgDIEAAYAiAAEgJs_vD_BwE).\n\nЗона покрытия\nВ настоящее время наибольшей зоной покрытия в Италии обладает компания Vodafone.";
+
+"Getting a sim card" = "Получи сим-карту";
+
+"In order to get a sim card you can go to a carrier's own shop, or a tabacchi or phone shop that has the sim card you are looking for. You will need to bring your passport, EU-issued driver's license or resident's permit. You can also order online, and you will need to provide scans of your ID and a valid postal address.\n\nTopping up\nYou can top up your sim in most tabacchi, although they tend to use the phrase \"charge\"." = "Приобрести сим-карту можно напрямую в магазине оператора, их очень много по городу. Также найти сим-карты можно в табакерии или магазине электроники. Нужно будет принести свой паспорт, водительские права, выданные ЕС, или вид на жительство. Сим-карту можно также заказать онлайн, для этого нужно предоставить сканы удостоверения личности и действительный почтовый адрес.\n\nПополнения счета\nПополнить счет можно в любой табакерии, там используют фразу \"зарядить\". В большинстве компаний есть мобильное приложение, через которое можно пополнять удаленно.";
+
+// On-boarding
+
+"Getting things done in Napoli can be confusing, especially if you can't speak Italian.\n\nLet us know if you are an EU citizen or not, since the rules are different depending on where you are from." = "Оформление документов в Неаполе — травматичный опыт, особенно если ты не знаешь итальянский.\n\nОтметь ниже, являешься ли ты гражданином ЕС или нет, ведь правила оформления документов отличаются.";
+
+"Welcome to\nthe Academy" = "Добро пожаловать\nв Академию";
+"We're excited to have you join us on this amazing journey\n\nThis app will try to make your move to\nNapoli a little bit easier." = "Мы рады, что ты присоединился к нам\nв этом удивительном приключении!\n\nЭто приложение поможет тебе сделать переезд в Неаполь чуточку проще и быстрее.";
+"Navigate\nBureaucracy" = "Путешествие\nв итальянскую бюрократию";
+"Tips and Tricks" = "Советы и уловки";
+"We have some extra information about life in Napoli.\n\nTips about transport, mobile phone plans, accommodation and more!" = "У нас есть много полезностей для счастливой жизни в Неаполе.\n\nСоветы о мобильных операторах, транспортной системе, аренде жилья и многое другое!";
+"Enjoy yourself!" = "Наслаждайся!";
+"Once the boring stuff is all sorted you can focus on making friends and creating great apps." = "Как только скучная бумажная волокита закончится, ты сможешь сосредоточиться на новых интересных знакомствах и создании удивительных приложений.";
+
+"non-EU" = "Не ЕС";
+"EU" = "ЕС";
+"Next" = "Дальше";
+"Finish" = "Завершить";
+"Skip" = "Пропустить";

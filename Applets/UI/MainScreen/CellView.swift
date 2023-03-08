@@ -15,13 +15,13 @@ struct CellView: View {
         ZStack(alignment: .center) {
             VStack(alignment: .leading) {
                 VStack {
-                    Text(model.title ?? "")
+                    Text(LocalizedStringKey(model.title ?? ""))
                         .font(.system(size: 20, weight: .semibold))
                         .frame(maxWidth: .infinity, alignment: .topLeading)
                         .padding(.bottom, 4)
                         .foregroundColor(model.isEnabled ? .black : .gray)
 
-                    Text(model.goalDescription ?? "")
+                    Text(LocalizedStringKey(model.goalDescription ?? ""))
                         .frame(maxWidth: .infinity, alignment: .topLeading)
                         .font(.system(size: 16))
                         .foregroundColor(model.isEnabled ? .gray : .gray.opacity(0.50))
@@ -45,7 +45,7 @@ struct CellView: View {
                     Spacer()
                     HStack {
                         Image(systemName: "clock")
-                        Text("\(model.timeFrame ?? "")")
+                        Text(LocalizedStringKey(model.timeFrame ?? ""))
                             .font(.system(size: 16))
                     }
                     Spacer()

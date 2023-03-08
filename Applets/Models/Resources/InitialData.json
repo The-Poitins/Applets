@@ -31,15 +31,15 @@
     },
     {
         "title": "Permesso di Soggiorno",
-        "information": "Permesso di Soggiorno (temporary residence permit) gives permission for non-EU citizens to stay legally in Italy if they intend to live here for more than three months. Since the Academy course lasts longer than three months, it is a requirement. The permit should be requested within 8 work days of arriving to Italy (excluding Sundays and public holidays).  (<- or 90...?)",
+        "information": "Permesso di Soggiorno (temporary residence permit) gives permission for non-EU citizens to stay legally in Italy if they intend to live here for more than three months. Since the Academy course lasts longer than three months, it is a requirement. The permit should be requested within 8 work days of arriving to Italy (excluding Sundays and public holidays).",
         "timeFrame": "2-3 months",
-        "imageName": "",
+        "imageName": "pds",
         "isEnabled": true,
         "steps": [
             {
                "title": "Obtain a KIT",
                "number": 1,
-               "text": "You will first need to go to the Post Office. Ask for the KIT GIALLO for the Permesso di Soggiorno, which consists of an envelope a form , and two forms. Not every Post Office has the kit, so it's better to check which Post Office does by searching \"Sportello Amico Poste Italiane\". The kit is free of charge. There are Post Offices next to the Academy and Central Post Office:\n\n[Post Office near the Academy](https://goo.gl/maps/TNs54py1Hfbtsn7x8)\n[Central Post Office](https://goo.gl/maps/z4Jfi1xY8tLPBfnF9)",
+               "text": "You will first need to go to the Post Office. Ask for the KIT GIALLO for the Permesso di Soggiorno, which consists of an envelope, two forms and a blank receipt (Ricevuta di Accredito). Only one of the forms (Modulo 1) will be needed. The other form (Modulo 2) can be discarded. Not every Post Office has the kit, so it's better to check which Post Office does by searching \"Sportello Amico Poste Italiane\". The kit is free of charge. There are Post Offices next to the Academy and Central Post Office:\n\n[Post Office near the Academy](https://goo.gl/maps/TNs54py1Hfbtsn7x8)\n[Central Post Office](https://goo.gl/maps/z4Jfi1xY8tLPBfnF9)",
                "isDone": false,
                "weight": 0.125
             },
@@ -58,30 +58,30 @@
                "weight": 0.125
             },
             {
-               "title": "Fill out the application",
+               "title": "Fill out the Ricevuta di Accredito",
                "number": 4,
-               "text": "Next, you need to get another small piece of paper out of the envelope. You need to fill in the fields Name and Surname, Address, Zip Сode and Сity in Italy. You need to fill in the main part, as well as the part on the left. (<- needs to be more descriptive or have a pic)",
+               "text": "Next, on the Ricevuta you need to fill in the Name and Surname, Address, Zip Сode and Сity fields. You need to fill in the main part, as well as the part on the left.",
                "isDone": false,
                "weight": 0.125
             },
             {
                "title": "Make copies of documents",
                "number": 5,
-               "text": "You will need to make copies of the following documents:\n- Passport\n- Visa\n- Codice Fiscale\n- Insurance policy and check (fattura) (<- what's a check?)\n- Admission/enrolment letter from the Academy",
+               "text": "You will need to make copies of the following documents:\n- Passport\n- Visa\n- Codice Fiscale\n- Insurance policy and payment receipt (A receipt may not be necessary, but some people have been asked for one)\n- Admission/enrolment letter from the Academy",
                "isDone": false,
                "weight": 0.125
             },
             {
                "title": "Submit you application through the Post Office",
                "number": 6,
-               "text": "The next step is to go to the Post Office again. Bring all the copies that you have made, along with the Marca da Bollo, the completed A4 form from step 3 and the small piece of paper from step 4 and give them all to the employee in the window. Then you pay for everything that they tell you (the cost is about €100 euros). After that you get a receipt (ricevuta) (DO NOT LOSE THIS). It tells you the date, time and address of your appointment with the police.",
+               "text": "The next step is to go to the Post Office again. Bring all the copies that you have made, along with the Marca da Bollo, the completed A4 form from step 3 and the ricevuta from step 4 and give them all to the employee in the window. Then you pay for everything that they tell you (the cost is about €100 euros). After that you get a new ricevuta (DO NOT LOSE THIS). It tells you the date, time and address of your appointment with the police.",
                "isDone": false,
                "weight": 0.125
             },
             {
                "title": "Go to the Polizia",
                "number": 7,
-               "text": "It is quite common for the appointment to be 1-2 months after submitting your application. You should arrive on the appointed date to [Questura](https://goo.gl/maps/WmZSkN24dExCVog36) (This is the branch that most people have their appointments, but it may be different). Take the following documents  with you:\n- Ricevuta from Post Office\n- Appointment details which was issued along with the richevuta\n- 3x4 photos (4 photos)  (3x4 what? cm? are these standard passport photos?)\n- Passport\n- Original insurance policy\n- Original Codice Fiscale\n- Admission/enrolment letter\n- Accommodation contract OR (<- The other thing)\n\nAlso bring copies of these documents. They shouldn't be required, but just in case. At the police station all the documents will be checked and your fingerprints will be taken. It is better to come to the police 40 minutes in advance, and be sure to take something to eat: you will likely be waiting a very long time.",
+               "text": "It is quite common for the appointment to be 1-2 months after submitting your application. You should arrive on the appointed date to [Questura](https://goo.gl/maps/WmZSkN24dExCVog36) (This is the branch that most people have their appointments, but it may be different). Take the following documents with you:\n- Ricevuta from Post Office\n- Appointment details which was issued along with the second richevuta\n- 3x4cm photos (4 photos)\n- Passport\n- Original insurance policy\n- Original Codice Fiscale\n- Admission/enrolment letter\n- Accommodation contract OR Declaration of Hospitality (Dichiarazione di Ospitalità) from your host or landlord.\n\nAlso bring copies of these documents. They shouldn't be required, but just in case. At the police station all the documents will be checked and your fingerprints will be taken. It is better to come to the police 40 minutes in advance, and be sure to take something to eat: you will likely be waiting a very long time.",
                "isDone": false,
                "weight": 0.125
             },
@@ -120,10 +120,32 @@
     },
     {
         "title": "Mobile operator",
-        "information": "",
+        "information": "If you need to get a mobile phone plan while in Italy, here is a list of service providers and MVNOs.",
         "timeFrame": "1-2 days",
         "imageName": "",
-        "isEnabled": false,
-        "steps": []
+        "isEnabled": true,
+        "steps": [
+            {
+                "title": "Сollect information about mobile operators",
+                "number": 1,
+                "text": "Mobile service providers\nService providers build and control their own networks. You'll usually get better quality of service with a provider.\n\n- [Vodafone](https://privati.vodafone.it)\n- [Tim](https://www.tim.it/fisso-e-mobile/mobile)\n- [Wind Tre](https://www.windtre.it/)\n- [Iliad](https://www.iliad.it)\n- [Fastweb](https://www.fastweb.it)\n\nMVNOs\nMVNOs rent bandwidth from the providers. You might be able to get better deals with an MVNO. If you are concerned with the coverage area of an MVNO, you should check which network it uses. New MVNOs are coming to market all the time, so this list is not exhaustive.\n\n- [Postemobile](http://www.postemobile.it)\n- [ho. mobile](https://www.ho-mobile.it)\n- [Kena mobile](https://www.kenamobile.it)\n- [CoopVoce](https://www.coopvoce.it)\n- [Lyca mobile](https://www.lycamobile.it/en)\n- [Very Mobile](https://verymobile.it)\n- [Spusu](https://www.spusu.it)\n- [Optima](https://www.optimaitalia.com)\n- [eliMobile](https://elimobile.it)\n- [Tiscali](https://casa.tiscali.it/mobile/)",
+                "isDone": false,
+                "weight": 0.5
+            },
+            {
+                "title": "Comparing offers",
+                "number": 2,
+                "text": "You can look for deals by comparing plans using a site such as [Facile](https://www.facile.it/telefonia/risultati/solo-sim.html?gclid=EAIaIQobChMI6ez38pS4_QIVdo9oCR1sLgDIEAAYAiAAEgJs_vD_BwE).\n\nCoverage\nCurrently Vodafone has the largest coverage in Italy.",
+                "isDone": false,
+                "weight": 0.2
+            },
+            {
+                "title": "Getting a sim card",
+                "number": 3,
+                "text": "In order to get a sim card you can go to a carrier's own shop, or a tabacchi or phone shop that has the sim card you are looking for. You will need to bring your passport, EU-issued driver's license or resident's permit. You can also order online, and you will need to provide scans of your ID and a valid postal address.\n\nTopping up\nYou can top up your sim in most tabacchi, although they tend to use the phrase \"charge\".",
+                "isDone": false,
+                "weight": 0.3
+            }
+        ]
     }
 ]

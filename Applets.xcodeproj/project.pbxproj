@@ -54,6 +54,8 @@
 		C13940A229A4186A00BD7DC2 /* Goal+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13940A129A4186A00BD7DC2 /* Goal+Extension.swift */; };
 		C13A772A29AE1D8F006E9AC4 /* CircledProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1356D1229AE1569009F4654 /* CircledProgressBar.swift */; };
 		C1479A4D29A4E4F5008023B6 /* Step+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1479A4C29A4E4F5008023B6 /* Step+Extension.swift */; };
+		C164598629B73B59003A709F /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164598529B73B59003A709F /* SecureTextField.swift */; };
+		C164599029B74F70003A709F /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164598F29B74F70003A709F /* ProgressBarView.swift */; };
 		C1B13A96299E2B3E008A8DE0 /* AppletsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B13A95299E2B3E008A8DE0 /* AppletsApp.swift */; };
 		C1B13A9A299E2B3F008A8DE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B13A99299E2B3F008A8DE0 /* Assets.xcassets */; };
 		C1B13A9D299E2B3F008A8DE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B13A9C299E2B3F008A8DE0 /* Preview Assets.xcassets */; };
@@ -64,6 +66,13 @@
 		C1B29EB629A7731D00A55192 /* LocalStorageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B29EB529A7731D00A55192 /* LocalStorageKey.swift */; };
 		C1B29EB829A7759400A55192 /* DataPreloadAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B29EB729A7759400A55192 /* DataPreloadAction.swift */; };
 		C1B29EBB29A8B2DB00A55192 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B29EBA29A8B2DB00A55192 /* TaskViewModel.swift */; };
+		C1C21E0129B88DEF004E3E13 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164598F29B74F70003A709F /* ProgressBarView.swift */; };
+		C1C21E0229B88DF4004E3E13 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164598529B73B59003A709F /* SecureTextField.swift */; };
+		C1C21E0329B88E0D004E3E13 /* Binding+DefaultValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D904CC29AF6DA50042193A /* Binding+DefaultValue.swift */; };
+		C1D904C929AF627E0042193A /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D904C829AF627E0042193A /* UserProfileViewModel.swift */; };
+		C1D904CA29AF627E0042193A /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D904C829AF627E0042193A /* UserProfileViewModel.swift */; };
+		C1D904CD29AF6DA50042193A /* Binding+DefaultValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D904CC29AF6DA50042193A /* Binding+DefaultValue.swift */; };
+		C1D904CF29AF6F230042193A /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE53EC429AA72EE00792923 /* UserProfileModel.swift */; };
 		C1E43AB529A382AD0008D7B0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E43AB429A382AD0008D7B0 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +102,8 @@
 		C1356D1229AE1569009F4654 /* CircledProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircledProgressBar.swift; sourceTree = "<group>"; };
 		C13940A129A4186A00BD7DC2 /* Goal+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goal+Extension.swift"; sourceTree = "<group>"; };
 		C1479A4C29A4E4F5008023B6 /* Step+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Step+Extension.swift"; sourceTree = "<group>"; };
+		C164598529B73B59003A709F /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
+		C164598F29B74F70003A709F /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		C1B13A92299E2B3E008A8DE0 /* Applets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Applets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B13A95299E2B3E008A8DE0 /* AppletsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppletsApp.swift; sourceTree = "<group>"; };
 		C1B13A99299E2B3F008A8DE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,6 +115,8 @@
 		C1B29EB529A7731D00A55192 /* LocalStorageKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageKey.swift; sourceTree = "<group>"; };
 		C1B29EB729A7759400A55192 /* DataPreloadAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPreloadAction.swift; sourceTree = "<group>"; };
 		C1B29EBA29A8B2DB00A55192 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		C1D904C829AF627E0042193A /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
+		C1D904CC29AF6DA50042193A /* Binding+DefaultValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+DefaultValue.swift"; sourceTree = "<group>"; };
 		C1E43AB429A382AD0008D7B0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +144,7 @@
 				2A689D0629A4C9D6003908A4 /* TaskView.swift */,
 				13A114B129A3D46D00F74200 /* StepView.swift */,
 				C1B29EBA29A8B2DB00A55192 /* TaskViewModel.swift */,
+				C164598F29B74F70003A709F /* ProgressBarView.swift */,
 			);
 			path = TaskView;
 			sourceTree = "<group>";
@@ -192,8 +206,10 @@
 		4CB2E5AA29A4D83000839C9A /* UserProfile */ = {
 			isa = PBXGroup;
 			children = (
+				C164598529B73B59003A709F /* SecureTextField.swift */,
 				4CE53EC329AA72D300792923 /* UserProfileModel */,
 				4CB2E5AB29A4D84100839C9A /* UserProfileView.swift */,
+				C1D904C829AF627E0042193A /* UserProfileViewModel.swift */,
 			);
 			path = UserProfile;
 			sourceTree = "<group>";
@@ -227,6 +243,7 @@
 		C1B13A94299E2B3E008A8DE0 /* Applets */ = {
 			isa = PBXGroup;
 			children = (
+				C1D904CB29AF6D940042193A /* Extensions */,
 				13DFD6C929A8D26300003B64 /* Info.plist */,
 				C1B13AAC299F7A30008A8DE0 /* Core */,
 				2A689D0C29A4E84C003908A4 /* Resources */,
@@ -341,6 +358,14 @@
 				13A114B329A3DD2400F74200 /* ModalStepView.swift */,
 			);
 			path = StepView;
+			sourceTree = "<group>";
+		};
+		C1D904CB29AF6D940042193A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C1D904CC29AF6DA50042193A /* Binding+DefaultValue.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,6 +512,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1D904CA29AF627E0042193A /* UserProfileViewModel.swift in Sources */,
 				C106ACCB29ACC79E003B27E2 /* TasksData.swift in Sources */,
 				C106ACCC29ACC79E003B27E2 /* CellView.swift in Sources */,
 				C106ACCD29ACC79E003B27E2 /* ModalStepView.swift in Sources */,
@@ -495,16 +521,20 @@
 				C106ACD029ACC79E003B27E2 /* DataPreloadAction.swift in Sources */,
 				C106ACD129ACC79E003B27E2 /* UserProfileView.swift in Sources */,
 				C106ACD229ACC79E003B27E2 /* DataManager.swift in Sources */,
+				C1D904CF29AF6F230042193A /* UserProfileModel.swift in Sources */,
+				C1C21E0229B88DF4004E3E13 /* SecureTextField.swift in Sources */,
 				C106ACD329ACC79E003B27E2 /* LocalStorageKey.swift in Sources */,
 				C106ACD429ACC79E003B27E2 /* Step+Extension.swift in Sources */,
 				C106ACD529ACC79E003B27E2 /* PersistenceController.swift in Sources */,
 				C106ACD629ACC79E003B27E2 /* LocalStorage.swift in Sources */,
+				C1C21E0129B88DEF004E3E13 /* ProgressBarView.swift in Sources */,
 				C106ACD729ACC79E003B27E2 /* Goal+Extension.swift in Sources */,
 				C13A772A29AE1D8F006E9AC4 /* CircledProgressBar.swift in Sources */,
 				C106ACD829ACC79E003B27E2 /* Applets.xcdatamodeld in Sources */,
 				C106ACD929ACC79E003B27E2 /* AppletsApp.swift in Sources */,
 				C106ACDA29ACC79E003B27E2 /* StepView.swift in Sources */,
 				C106ACDB29ACC79E003B27E2 /* DataPopulateService.swift in Sources */,
+				C1C21E0329B88E0D004E3E13 /* Binding+DefaultValue.swift in Sources */,
 				C106ACDC29ACC79E003B27E2 /* ContentViewModel.swift in Sources */,
 				C106ACDD29ACC79E003B27E2 /* TaskViewModel.swift in Sources */,
 				C106ACDE29ACC79E003B27E2 /* FilledCellModifier.swift in Sources */,
@@ -524,8 +554,11 @@
 				2A201FD8299F834000F06692 /* ContentView.swift in Sources */,
 				C1B29EB829A7759400A55192 /* DataPreloadAction.swift in Sources */,
 				4CB2E5AC29A4D84100839C9A /* UserProfileView.swift in Sources */,
+				C1D904CD29AF6DA50042193A /* Binding+DefaultValue.swift in Sources */,
 				C1E43AB529A382AD0008D7B0 /* DataManager.swift in Sources */,
 				C1B29EB629A7731D00A55192 /* LocalStorageKey.swift in Sources */,
+				C164599029B74F70003A709F /* ProgressBarView.swift in Sources */,
+				C164598629B73B59003A709F /* SecureTextField.swift in Sources */,
 				C1479A4D29A4E4F5008023B6 /* Step+Extension.swift in Sources */,
 				C1B13AAF299F7A5A008A8DE0 /* PersistenceController.swift in Sources */,
 				C1B29EB429A771C100A55192 /* LocalStorage.swift in Sources */,
@@ -535,6 +568,7 @@
 				C1B13AAB299F7995008A8DE0 /* Applets.xcdatamodeld in Sources */,
 				C1B13A96299E2B3E008A8DE0 /* AppletsApp.swift in Sources */,
 				13A114B229A3D46D00F74200 /* StepView.swift in Sources */,
+				C1D904C929AF627E0042193A /* UserProfileViewModel.swift in Sources */,
 				C1B29EB129A76E5500A55192 /* DataPopulateService.swift in Sources */,
 				4C4C6F3729AF5B9E005CEB86 /* QuestionButtonView.swift in Sources */,
 				13656377299F8760003F0F31 /* ContentViewModel.swift in Sources */,

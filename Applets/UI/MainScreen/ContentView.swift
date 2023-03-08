@@ -13,7 +13,6 @@ struct ContentView: View {
 
     @State private var firstRun = true
     @State private var isShowingProfilePage = false
-    @State private var isEditing = false
 
     var body: some View {
         if firstRun {
@@ -54,23 +53,9 @@ struct ContentView: View {
                         .font(.title)
                     }
                 }
-                .sheet(isPresented: $isShowingProfilePage, onDismiss: {
-                    isEditing = false
-                }) {
-                    NavigationStack {
-                        UserProfileView(isEditing: $isEditing)
-                            .navigationTitle("User Profile")
-                            .toolbar {
-                                ToolbarItem(placement: .automatic) {
-                                    Button {
-                                        isEditing.toggle()
-                                    } label: {
-                                        Text("Edit")
-                                    }
-                                }
-                            }
-                    }
-                }
+            }
+            .sheet(isPresented: $isShowingProfilePage) {
+                UserProfileView()
             }
         }
     }
